@@ -25,7 +25,7 @@ html{
   --toggle-bg:#f0eb96;
   --toggle-fg:#ffd000;
   --body-font--:"roboto",sans-serif;
-  --button-style--:border:none; 
+ 
   --font-size--:16px;
   --font-size-about:15px;
   --hero-font--:50px;
@@ -50,7 +50,7 @@ html{
   --button-justify-content: center;
   --button-align-items: center;
   --button-hover-bg-color: #4C2F9D; 
-  --btn-opacity-:opacity: 0.9;
+  --btn-opacity-: 0.9;
   --btn-font-size:16px;
 }
 
