@@ -25,27 +25,27 @@ function Header() {
         <div className="nav-menu">
           <ul className={`nav-list grid ${isMenuOpen ? "active" : ""}`}> 
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="example.com">
                 Home
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="example.com">
                 About
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="example.com">
                 Skills
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="example.com">
                 CV
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <a className="nav__link" href="example.com">
                 Contact
               </a>
             </li>
