@@ -109,7 +109,7 @@
 
     .nav__link {
         padding: 0.5rem 0; /* Add padding for touch targets */
-        transition: color 0.4s, background-color 0.4s; /* Add transition for background color */
+        transition: color 0.4s, background-color 0.4s; 
     }
 
     .nav__link:hover {
