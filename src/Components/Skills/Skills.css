@@ -1,0 +1,78 @@
+.skills__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.row {
+  display: grid; /* Set to grid layout */
+  grid-template-columns: repeat(9, 1fr); /* 9 equal columns */
+  gap: 16px; /* Space between grid items */
+  align-items: center; /* Center items vertically */
+}
+
+.row-item {
+  display: flex; /* Center content within each item */
+  justify-content: center; /* Center horizontally */
+  position: relative; /* Position relative to allow absolute positioning of label */
+}
+
+.svg {
+  width: 78px; 
+  height: 78px; 
+  background-color: #f4f4f4; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  padding: 7px;
+  animation: move 5s linear infinite;
+  margin: 16px; /* Margin handled by gap */
+  transition: transform 0.3s ease; /* Transition for scaling effect */
+}
+
+.icon-label {
+  position: absolute; /* Position it absolutely */
+  top: -25px; /* Position it above the icon */
+  background-color: rgba(255, 255, 255, 0.9); /* Background for readability */
+  border: 1px solid #ccc; /* Optional border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 4px 8px; /* Padding */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  font-size: 14px; /* Font size */
+  white-space: nowrap; /* Prevent text wrapping */
+  z-index: 10; /* Ensure label appears above other elements */
+  opacity: 0; /* Start as invisible */
+  visibility: hidden; /* Hide visually */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.row-item:hover .icon-label {
+  opacity: 1; /* Make visible */
+  visibility: visible; /* Ensure it's visible */
+}
+
+@keyframes move {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); 
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .svg {
+        width: 50px; 
+        height: 50px;
+    }
+
+    .skills__title {
+        font-size: 1.5rem; 
+    }
+}
+
+.svg:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+}

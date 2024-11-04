@@ -1,0 +1,28 @@
+.form{
+background-color: var( --primary-font-color--);
+}
+
+.form-btn{
+    display: flex;
+    border: var(--button-border);
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(128, 0, 128, 0.8), rgba(0, 128, 255, 0.8), rgba(255, 20, 147, 0.8));
+
+    color: var(--button-text-color);
+    width: fit-content;
+    height: 39px;
+    padding: var(--button-padding);
+    display: var(--button-display);
+    justify-content: var(--button-justify-content);
+    align-items: var(--button-align-items);
+    transition: all 0.3s ease;
+    margin: 10px;
+    cursor: pointer; 
+    font-size: var( --btn-font-size);
+}
+
+.form-btn:hover{
+    background-color: var(  --button-hover-bg-color);
+    opacity: var( --btn-opacity-);
+    transform: scale(1.05); 
+}

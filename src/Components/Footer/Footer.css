@@ -1,0 +1,13 @@
+.home-social{
+
+}
+
+
+.link-list{
+    color: var( --font-color-2);
+}
+.links{
+    display: flex;
+    text-decoration: none;
+  
+}

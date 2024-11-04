@@ -1,0 +1,115 @@
+.section__title {
+   font-size: 36px;
+    margin-bottom: 1rem; 
+    color: var( --font-color-2); 
+}
+
+.section__subtitle {
+    font-size: 1.2rem; 
+    color: #666; 
+    margin-bottom: 1.5rem; 
+}
+
+.about-message{
+    margin-bottom: 1.5rem; 
+}
+
+.about__description {
+    max-width: 600px; 
+   font-size: 16px;
+    line-height: 1.6; 
+    color: #ffffff; 
+}
+
+
+
+.about.section {
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding-top: 5.5rem;
+    align-items: center;
+    padding: 2rem; 
+    max-width: 750px;
+}
+
+.about-list {
+    list-style: none; 
+    padding: 0; 
+    margin: 1.5rem 0; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+}
+
+.nav_item {
+    padding: 0.5rem 1rem; 
+    background-color: rgba(200, 177, 247, 0.212); 
+    border-radius: 5px; 
+    margin: 0; 
+    transition: background-color 0.3s; 
+}
+
+.nav_item:hover {
+    background-color: rgba(218, 211, 231, 0.8); 
+}
+
+.uil {
+    margin-right: 10px; 
+    color: #6a5acd; 
+    font-size: 27px; 
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.uil:hover {
+    color: #86457e; 
+    border-radius: 50%; 
+    padding: 10px; 
+    background-color: rgba(67, 52, 165, 0.1); 
+    transform: scale(1.2); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    animation: bounce 0.5s; 
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-2px);
+    }
+}
+
+.cv-btn a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.cv-btn:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05); 
+}
+
+.cv-btn{
+    display: flex;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    width: 127px;
+    height: var(--button-height);
+    padding: var(--button-padding);
+    display: var(--button-display);
+    justify-content: var(--button-justify-content);
+    align-items: var(--button-align-items);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    font-size: var(--font-size-about);
+}
+.cv-btn:hover{
+    background-color: var(  --button-hover-bg-color);
+    opacity: var( --btn-opacity-);
+}

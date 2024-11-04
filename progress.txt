@@ -1,0 +1,25 @@
+The names on the left aren’t a part of the React API. You can name your own state variables:
+
+
+easy to navigate consistent styling 
+
+i had a checklist iused to navigate my development process
+
+i used this website that has an intresting article
+iused problem solving techniqueslike ... to breakdown the task into ....
+my process was not a liner process but iterative waterfall etc pick one 
+
+i crreated sub folders etc folder forthis how coded is structured comments etc
+
+i installed two font in terminal 
+added box icons in html amd unicons
+
+add soft skills to skillspart 
+
+submit git repo
+
+
+Admin@DESKTOP-EQ55Q8H MINGW64 ~
+$ cd C:\Users\Admin\Documents\git practice
+
+"C:\Users\Admin\Documents\git-practice"
