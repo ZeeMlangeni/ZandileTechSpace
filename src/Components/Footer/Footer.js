@@ -14,11 +14,11 @@ function Footer() {
 
 <a href="https://www.instagram.com/zeeicygirl/" className='home-social-icon' target='_blank' rel='noreferrer'><i class="uil uil-instagram-alt"></i></a>
 
-        <li className='links'><a href="#">Home</a></li>
-        <li className='links'><a href="#">About</a></li>
-        <li className='links'><a href="#">Skills</a></li>
-        <li className='links'><a href="#">CV</a></li>
-        <li className='links'><a href="#">Contact</a></li>
+        <li className='links'><a href="example.com">Home</a></li>
+        <li className='links'><a href="example.com">About</a></li>
+        <li className='links'><a href="example.com">Skills</a></li>
+        <li className='links'><a href="example.com">CV</a></li>
+        <li className='links'><a href="#example.com">Contact</a></li>
       </ul>
 
  

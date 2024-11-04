@@ -30,7 +30,7 @@ function Section() {
           I’m available for freelance work and collaborations. Feel free to reach out, I’d love to connect!
         </p>
       </div>
-      <button className='cv-btn'><a href="">Download CV</a></button>
+      <button className='cv-btn'><a href="example.com">Download CV</a></button>
     </div>
   );
 }
