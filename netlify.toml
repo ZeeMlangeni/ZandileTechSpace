@@ -1,5 +1,5 @@
 [build]
-  publish = "my-port/build"
+  publish = "build"
   command = "npm run build"  
 
 [[redirects]]
