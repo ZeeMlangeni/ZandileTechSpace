@@ -13,39 +13,42 @@ html {
 /*======================website variables =================*/
 :root {
   --header-height: 3rem;
-  --first-container-background: #ffffff;
-  --second-container-background: #f0f0f4;
-  --primary-font-color: #5D35BB;
-  --font-color-1: #333333;
-  --font-color-2: #A9A9A9;
-  --toggle-bg: #f0eb96;
-  --toggle-fg: #ffd000;
-  --body-font: "Roboto", sans-serif;
+  --first-container-background: #fdfaf6; /* Warm off-white background */
+  --second-container-background: #f3f1eb; /* Slightly darker beige for contrast */
+  --primary-font-color: #33334d; /* Deep, slightly muted navy for primary text */
+  --font-color-1: #4f4f4f; /* Dark gray for secondary text */
+  --font-color-2: #808080; /* Medium gray for tertiary text */
+  --toggle-bg: #ffd966; /* Soft yellow toggle background */
+  --toggle-fg: #ff8c42; /* Warm, bright orange toggle foreground */
+  --body-font: "Lato", sans-serif; /* Updated to 'Lato' for a fresh, modern look */
 
+  /* Font Sizes */
   --font-size: 16px;
   --font-size-about: 15px;
   --hero-font: 50px;
 
-  /*======================Font weight====================*/
+  /* Font Weight */
   --font-normal: 400;
   --font-medium: 500;
   --font-bold: 600;
 
-  /*======Button Styles===========*/
+  /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #5D35BB;
-  --button-text-color: #fff;
+  --button-bg-color: #ff8c42; /* Warm orange for button background */
+  --button-text-color: #ffffff; /* White text for button */
   --button-width: 110px;
   --button-height: 47px;
   --button-padding: 10px;
   --button-display: flex;
   --button-justify-content: center;
   --button-align-items: center;
-  --button-hover-bg-color: #4C2F9D;
+  --button-hover-bg-color: #cc7035; /* Darker shade of orange for hover */
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
 }
+
+
 
 /* Dark mode settings */
 body[data-theme="dark"] {
