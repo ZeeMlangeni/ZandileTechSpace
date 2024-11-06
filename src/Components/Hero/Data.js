@@ -8,7 +8,9 @@ function Data() {
         <span className='letter'>Front-End</span> Developer
       </h1>
       <p className='home__description'>
-        I’m learning how to create impactful, engaging digital experiences and I’m just getting started. From HTML to React, my journey is all about growth, curiosity, and using tech to uplift lives. Grateful for every opportunity to learn, build, and make a difference. 
+      I’m learning how to create impactful, engaging digital experiences and I’m just getting started. From HTML to React, my journey is all about growth, curiosity, and using tech to uplift lives. Grateful for every opportunity to learn, build, and make a difference. (Don’t worry, I’m not a “404”—I’m here and ready to build something amazing!)
+
+
       </p>
 
       <div className='reach-me'>
