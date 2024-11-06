@@ -54,7 +54,7 @@ function Header() {
        </li>
           </ul>
           <div className="nav__toggle" onClick={toggleMenu}> 
-            <i className={`uil ${isMenuOpen ? 'uil-times' : 'uil-bars'}`} nav___icon></i> {/* Change icon based on state */}
+            <i className={`uil ${isMenuOpen ? 'uil-times' : 'uil-bars'}`} nav___icon></i> 
           </div>
         </div>
       </nav>
