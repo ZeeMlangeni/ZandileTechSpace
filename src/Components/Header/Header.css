@@ -34,7 +34,7 @@
 }
 
 .nav__toggle {
-    display: none; /* Default to not displayed */
+    display: none; 
 }
 
 .nav__toggle {
@@ -70,7 +70,7 @@
     display: block;
     width: 0;
     height: 3px; 
-    background: var(--primary-font-color--); 
+    background: var(--primary-font-color); 
     transition: width 0.4s;
     position: absolute;
     left: 50%;
@@ -113,7 +113,7 @@
     }
 
     .nav__link:hover {
-        color: var(  --primary-font-color--); /* Change color on hover if desired */
+        color: var(  --primary-font-color); /* Change color on hover if desired */
         background-color: rgba(0, 0, 0, 0.1); /* Optional background color change on hover */
     }
     
