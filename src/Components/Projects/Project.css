@@ -16,7 +16,7 @@
       
 .git-btn:hover {
     background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity-);
+    opacity: var( --btn-opacity);
       
 }
 .visit-btn{
@@ -32,7 +32,7 @@
       
       .visit-btn:hover {
         background-color: #8b5eff;
-    opacity: var( --btn-opacity-);
+    opacity: var( --btn-opacity);
       }
 
       .container{
@@ -67,8 +67,8 @@ padding-top: 5.5rem;
   background-color: aquamarine;
 }
       .techs{
-        color: var(  --font-color-1-);
-        font-size: var(  --font-size--);
+        color: var(  --font-color-1);
+        font-size: var(  --font-size);
       }
 
       .project__title{
