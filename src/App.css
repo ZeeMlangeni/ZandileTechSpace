@@ -13,21 +13,27 @@ html {
 /*======================website variables =================*/
 :root {
   --header-height: 3rem;
-  --first-container-background: #fdfaf6; /* Warm off-white background */
-  --second-container-background: #f3f1eb; /* Slightly darker beige for contrast */
-  --primary-font-color: #33334d; /* Deep, slightly muted navy for primary text */
-  --font-color-1: #4f4f4f; /* Dark gray for secondary text */
-  --font-color-2: #808080; /* Medium gray for tertiary text */
-  --toggle-bg: #ffd966; /* Soft yellow toggle background */
-  --toggle-fg: #ff8c42; /* Warm, bright orange toggle foreground */
-  --body-font: "Lato", sans-serif; /* Updated to 'Lato' for a fresh, modern look */
 
-  /* Font Sizes */
+  /* Background Colors */
+  --first-container-background: #f5f8fa; /* Soft white for a clean, modern look */
+  --second-container-background: #e1eaf2; /* Light cobalt-tinted background for subtle contrast */
+
+  /* Font Colors */
+  --primary-font-color: #002147; /* Deep navy blue for primary text */
+  --font-color-1: #1a3a6e; /* Rich navy for secondary text */
+  --font-color-2: #0047ab; /* Cobalt blue for accents and highlights */
+
+  /* Toggle Switch Colors */
+  --toggle-bg: #cfd9e6; /* Soft, cool gray-blue for toggle background */
+  --toggle-fg: #0047ab; /* Vibrant cobalt blue for toggle switch */
+
+  /* Font and Typography */
+  --body-font: "Lato", sans-serif;
   --font-size: 16px;
   --font-size-about: 15px;
   --hero-font: 50px;
 
-  /* Font Weight */
+  /* Font Weights */
   --font-normal: 400;
   --font-medium: 500;
   --font-bold: 600;
@@ -35,18 +41,19 @@ html {
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #ff8c42; /* Warm orange for button background */
-  --button-text-color: #ffffff; /* White text for button */
+  --button-bg-color: #0047ab; /* Bright cobalt blue for buttons */
+  --button-text-color: #ffffff; /* White text for clear contrast */
   --button-width: 110px;
   --button-height: 47px;
   --button-padding: 10px;
   --button-display: flex;
   --button-justify-content: center;
   --button-align-items: center;
-  --button-hover-bg-color: #cc7035; /* Darker shade of orange for hover */
+  --button-hover-bg-color: #002147; /* Darker navy for hover effect */
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
 }
+
 
 
 
