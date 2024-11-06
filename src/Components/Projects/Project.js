@@ -3,7 +3,7 @@ import './Project.css';
 
 function Project(props) {
   return (
-    <div className=' container gird'>
+    <div className='main'>
       <div className='cards'>
         <div className='cards_item'>
           <div className='card'>
@@ -20,7 +20,7 @@ function Project(props) {
           </div>
         </div>
       </div>
-      
+      <p className="made_by">Made with 💻 by Zandile</p>
     </div>
   );
 }
