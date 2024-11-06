@@ -60,18 +60,18 @@ body [data-theme="dark"] {
 
 
     --header-height:3rem;
-    --first-container-background--:#211C26;
-    --second-container-background--:#F0F0F4;
-    --primary-font-color--:#5D35BB;
-    --font-color-1-:#ffff;
+    --first-container-background:#211C26;
+    --second-container-background:#F0F0F4;
+    --primary-font-color:#5D35BB;
+    --font-color-1:#ffff;
     --font-color-2:#A9A9A9;
     --toggle-bg:#f0eb96;
     --toggle-fg:#ffd000;
-    --body-font--:"roboto",sans-serif;
+    --body-font:"roboto",sans-serif;
    
-    --font-size--:16px;
+    --font-size:16px;
     --font-size-about:15px;
-    --hero-font--:50px;
+    --hero-font:50px;
   
   
   
@@ -102,7 +102,7 @@ body [data-theme="dark"] {
 
 /*App body container styling*/
 .app{
-background-color: var(--first-container-background--);
+background-color: var(--first-container-background);
 /*   border-radius: 20px; */
   border-width: 29px;
 
@@ -111,7 +111,7 @@ background-color: var(--first-container-background--);
   max-width: 100%;
   height: auto;
   padding: 5%;
-  font-family: var(  --body-font--);
+  font-family: var(  --body-font);
   backdrop-filter: blur(10px);
   align-items: center;
  
@@ -155,9 +155,9 @@ h3{
 
 }
 span{
-  color: var(  --primary-font-color--);
+  color: var(  --primary-font-color);
   font-weight: var(--font-bold);
-  font-family:var(  --body-font--) ;
+  font-family:var(  --body-font) ;
 }
 p{
   color: var(  --font-color-2); 
@@ -168,8 +168,8 @@ p{
   border-radius: var(--button-border-radius);
   background-color: var(--button-bg-color);
   color: var(--button-text-color);
-  width: auto; /* Allows button to adjust size */
-  max-width: 200px; /* Limit button size */
+  width: auto; 
+  max-width: 200px; 
   height: auto;
   padding: var(--button-padding);
   display: inline-flex;
@@ -190,7 +190,7 @@ img{
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
   gap: 1.5rem;
 }
 .container{
@@ -200,12 +200,12 @@ img{
 }
 
 hr {
-  border: none; /* Remove the default border */
-  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Super light color */
-  margin: 20px 0; /* Adjust spacing as needed */
-  width: 100%; /* Full width */
-  height: 1px; /* Thickness of the line */
-  border-top: 1px solid rgba(230, 230, 250, 0.1); /* Very light lavender */
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.3); 
+  margin: 20px 0;
+  width: 100%; 
+  height: 1px; 
+  border-top: 1px solid rgba(230, 230, 250, 0.1); 
 
 }
 
