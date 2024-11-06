@@ -106,7 +106,7 @@ name={projectData[3].name}
      <hr/>
 
      <Form/>
-     <hr/>
+   
      <Footer/>
 
     </div>
