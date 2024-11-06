@@ -95,7 +95,7 @@ body [data-theme="dark"] {
     --button-justify-content: center;
     --button-align-items: center;
     --button-hover-bg-color: #4C2F9D; 
-    --btn-opacity-: 0.9;
+    --btn-opacity: 0.9;
     --btn-font-size:16px;
   }
 

@@ -29,7 +29,7 @@ padding-top: 5.5rem;
 }
 .Touch-btn:hover{
     background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity-);
+    opacity: var( --btn-opacity);
     transform: scale(1.05); /* Slightly scale up button on hover */
 }
 
