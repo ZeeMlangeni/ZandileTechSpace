@@ -19,9 +19,9 @@ html {
   --second-container-background: #e1eaf2; /* Light cobalt-tinted background for subtle contrast */
 
   /* Font Colors */
-  --primary-font-color: #002147; /* Deep navy blue for primary text */
+  --primary-font-color:  #0047ab; /* Deep navy blue for primary text */
   --font-color-1: #1a3a6e; /* Rich navy for secondary text */
-  --font-color-2: #0047ab; /* Cobalt blue for accents and highlights */
+  --font-color-2: #002147; /* Cobalt blue for accents and highlights */
 
   /* Toggle Switch Colors */
   --toggle-bg: #cfd9e6; /* Soft, cool gray-blue for toggle background */
