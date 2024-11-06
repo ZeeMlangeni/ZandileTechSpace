@@ -1,5 +1,5 @@
 .form{
-background-color: var( --primary-font-color--);
+background-color: var( --primary-font-color);
 }
 
 .form-btn{
@@ -23,6 +23,6 @@ background-color: var( --primary-font-color--);
 
 .form-btn:hover{
     background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity-);
+    opacity: var( --btn-opacity);
     transform: scale(1.05); 
 }
