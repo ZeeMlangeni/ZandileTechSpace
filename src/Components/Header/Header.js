@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Import useState
 import "./Header.css";
 import Switch from "./Switch";
-/* import DarkMode from "./DarkMode"; */
+import DarkMode from "./DarkMode";
 
 function Header() {
   
@@ -51,8 +51,8 @@ function Header() {
               </a>
             </li>
        <li className="nav__item">
-       <Switch />
-      {/*  <DarkMode/> */}
+    {/*    <Switch /> */}
+       <DarkMode/>
        </li>
           </ul>
           <div className="nav__toggle" onClick={toggleMenu}> 

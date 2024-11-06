@@ -59,7 +59,7 @@ technologies:"",
 <div className="app" data-theme="dark">
  {/*     <h1>hello world</h1>{/**for testing purposes */} 
      <Header/>
-     <DarkMode/>
+   
      <Hero/>
      <hr/>
      <Section/>
