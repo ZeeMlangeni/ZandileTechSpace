@@ -15,7 +15,7 @@
   
   
   /*======================website variables =================*/
-  body:root{
+:root{
       --header-height: 3rem;
       --first-container-background: #ffffff; 
       --second-container-background: #f0f0f4; 
