@@ -1,6 +1,11 @@
 .dark_mode {
     margin-top: -20px;
     margin-left: 10px;
+    position: absolute;
+    
+    right: 30px; /* Adjust horizontal position to the right corner */
+  
+    z-index: 10;
 }
 
 .dark_mode_label {
