@@ -3,7 +3,7 @@ import './Project.css';
 
 function Project(props) {
   return (
-    <div className='main'>
+    <div className='project section container'>
       <div className='cards'>
         <div className='cards_item'>
           <div className='card'>
@@ -14,13 +14,14 @@ function Project(props) {
               <p className="techs">
                 Technologies Used<br />{props.technologies}
               </p>
-              <button className="btn git-btn">Git repository</button>
-              <button className="btn visit-btn">Visit Site</button>
+              <div className="buttons">
+                <button className="btn git-btn">Git repository</button>
+                <button className="btn visit-btn">Visit Site</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <p className="made_by">Made with 💻 by Zandile</p>
     </div>
   );
 }
