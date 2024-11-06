@@ -41,7 +41,7 @@ padding-top: 5.5rem;
 .dot {
     width: 10px; 
     height: 10px;
-    background-color:var( --primary-font-color--);
+    background-color:rgb(168, 236, 32);
     border-radius: 50%; 
     display: inline-block;
     margin-right: 8px; 
