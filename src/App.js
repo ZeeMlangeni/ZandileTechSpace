@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer';
 import Project from './Components/Projects/Project';
 import project1 from "./Assets/RecipeWebsite.png"
 import project2 from './Assets/Game.png'
-import DarkMode from "./Components/Header/DarkMode";
+
 
 
 function App() {
