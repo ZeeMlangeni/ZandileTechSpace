@@ -1,0 +1,95 @@
+/*============styling that applies to everything==============*/
+*, *::before, *::after {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var( --body-font--);
+    }
+    
+    
+    html{
+      scroll-behavior: smooth;
+    }
+    
+    
+    
+    /*======================website variables =================*/
+    :root{
+      --header-height:3rem;
+      --first-container-background--:#211C26;
+      --second-container-background--:#F0F0F4;
+      --primary-font-color--:#5D35BB;
+      --font-color-1-:#ffff;
+      --font-color-2:#A9A9A9;
+      --toggle-bg:#f0eb96;
+      --toggle-fg:#ffd000;
+      --body-font--:"roboto",sans-serif;
+     
+      --font-size--:16px;
+      --font-size-about:15px;
+      --hero-font--:50px;
+    
+    
+    
+    
+      /*======================Font weight====================*/
+    --font-normal:400;
+    --font-medium:500;
+    --font-bold:600;
+    
+    
+    /*======Button Styles===========*/
+    
+    --button-border: none;
+      --button-border-radius: 13px;
+      --button-bg-color: #5D35BB;
+      --button-text-color: #fff;
+      --button-width: 110px; 
+      --button-height: 47px; 
+      --button-padding: 10px;
+      --button-display: flex;
+      --button-justify-content: center;
+      --button-align-items: center;
+      --button-hover-bg-color: #4C2F9D; 
+      --btn-opacity-: 0.9;
+      --btn-font-size:16px;
+    }
+    
+    
+    /* Light Mode Variables */
+    [data-theme="light"] {
+      --header-height: 3rem;
+      --first-container-background: #ffffff; 
+      --second-container-background: #f0f0f4; 
+      --primary-font-color: #5D35BB; 
+      --font-color-1: #333333;
+      --font-color-2: #A9A9A9; 
+      --toggle-bg: #f0eb96; 
+      --toggle-fg: #ffd000; 
+      --body-font: "Roboto", sans-serif;
+      
+      --font-size: 16px;
+      --font-size-about: 15px;
+      --hero-font: 50px;
+    
+      /*======================Font weight====================*/
+      --font-normal: 400;
+      --font-medium: 500;
+      --font-bold: 600;
+    
+      /*======Button Styles===========*/
+      --button-border: none;
+      --button-border-radius: 13px;
+      --button-bg-color: #5D35BB; /* Button color remains the same */
+      --button-text-color: #fff;
+      --button-width: 110px;
+      --button-height: 47px;
+      --button-padding: 10px;
+      --button-display: flex;
+      --button-justify-content: center;
+      --button-align-items: center;
+      --button-hover-bg-color: #4C2F9D;
+      --btn-opacity: 0.9;
+      --btn-font-size: 16px;
+    }
