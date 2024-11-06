@@ -1,175 +1,125 @@
 /*============styling that applies to everything==============*/
 *, *::before, *::after {
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: var( --body-font);
-  }
-  
-  
-  html{
-    scroll-behavior: smooth;
-  }
-  
-  
-  
-  /*======================website variables =================*/
-body:root{
-      --header-height: 3rem;
-      --first-container-background: #ffffff; 
-      --second-container-background: #f0f0f4; 
-      --primary-font-color: #5D35BB; 
-      --font-color-1: #333333;
-      --font-color-2: #A9A9A9; 
-      --toggle-bg: #f0eb96; 
-      --toggle-fg: #ffd000; 
-      --body-font: "Roboto", sans-serif;
-      
-      --font-size: 16px;
-      --font-size-about: 15px;
-      --hero-font: 50px;
-    
-      /*======================Font weight====================*/
-      --font-normal: 400;
-      --font-medium: 500;
-      --font-bold: 600;
-    
-      /*======Button Styles===========*/
-      --button-border: none;
-      --button-border-radius: 13px;
-      --button-bg-color: #5D35BB; /* Button color remains the same */
-      --button-text-color: #fff;
-      --button-width: 110px;
-      --button-height: 47px;
-      --button-padding: 10px;
-      --button-display: flex;
-      --button-justify-content: center;
-      --button-align-items: center;
-      --button-hover-bg-color: #4C2F9D;
-      --btn-opacity: 0.9;
-      --btn-font-size: 16px;
+  font-family: var(--body-font);
+}
 
-  }
-  
+html {
+  scroll-behavior: smooth;
+}
 
-body [data-theme="dark"] {
-  
+/*======================website variables =================*/
+body:root {
+  --header-height: 3rem;
+  --first-container-background: #ffffff;
+  --second-container-background: #f0f0f4;
+  --primary-font-color: #5D35BB;
+  --font-color-1: #333333;
+  --font-color-2: #A9A9A9;
+  --toggle-bg: #f0eb96;
+  --toggle-fg: #ffd000;
+  --body-font: "Roboto", sans-serif;
 
+  --font-size: 16px;
+  --font-size-about: 15px;
+  --hero-font: 50px;
 
+  /*======================Font weight====================*/
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 600;
 
-
-    --header-height:3rem;
-    --first-container-background:#211C26;
-    --second-container-background:#F0F0F4;
-    --primary-font-color:#5D35BB;
-    --font-color-1:#ffff;
-    --font-color-2:#A9A9A9;
-    --toggle-bg:#f0eb96;
-    --toggle-fg:#ffd000;
-    --body-font:"roboto",sans-serif;
-   
-    --font-size:16px;
-    --font-size-about:15px;
-    --hero-font:50px;
-  
-  
-  
-  
-    /*======================Font weight====================*/
-  --font-normal:400;
-  --font-medium:500;
-  --font-bold:600;
-  
-  
   /*======Button Styles===========*/
-  
   --button-border: none;
-    --button-border-radius: 13px;
-    --button-bg-color: #5D35BB;
-    --button-text-color: #fff;
-    --button-width: 110px; 
-    --button-height: 47px; 
-    --button-padding: 10px;
-    --button-display: flex;
-    --button-justify-content: center;
-    --button-align-items: center;
-    --button-hover-bg-color: #4C2F9D; 
-    --btn-opacity: 0.9;
-    --btn-font-size:16px;
-  }
+  --button-border-radius: 13px;
+  --button-bg-color: #5D35BB;
+  --button-text-color: #fff;
+  --button-width: 110px;
+  --button-height: 47px;
+  --button-padding: 10px;
+  --button-display: flex;
+  --button-justify-content: center;
+  --button-align-items: center;
+  --button-hover-bg-color: #4C2F9D;
+  --btn-opacity: 0.9;
+  --btn-font-size: 16px;
+}
 
+/* Dark mode settings */
+body[data-theme="dark"] {
+  --first-container-background: #211C26;
+  --second-container-background: #2C2A36;
+  --primary-font-color: #5D35BB;
+  --font-color-1: #ffffff;
+  --font-color-2: #A9A9A9;
+  --toggle-bg: #f0eb96;
+  --toggle-fg: #ffd000;
+  --body-font: "Roboto", sans-serif;
 
-/*App body container styling*/
-.app{
-background-color: var(--first-container-background);
-/*   border-radius: 20px; */
+  --font-size: 16px;
+  --font-size-about: 15px;
+  --hero-font: 50px;
+
+  /* Button styles */
+  --button-bg-color: #5D35BB;
+  --button-text-color: #fff;
+  --button-hover-bg-color: #4C2F9D;
+}
+
+/* App body container styling */
+.app {
+  background-color: var(--first-container-background);
   border-width: 29px;
-
   margin: 0 auto;
-
   max-width: 100%;
   height: auto;
   padding: 5%;
-  font-family: var(  --body-font);
+  font-family: var(--body-font);
   backdrop-filter: blur(10px);
   align-items: center;
- 
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/*styling for all links */
+/* Styling for all links */
 a {
   cursor: pointer;
   display: inline;
   text-decoration: none;
   list-style: none;
-  transition: color 0.3s ease; /* Smooth transition */
+  transition: color 0.3s ease;
 }
 
-
-/*dark mode settings*/
-
-/* [data-theme="dark"]{
-  --background--:#211C26;
-  --secondary-color--:#5D35BB;
-  --font-color-1-:#A9A9A9;
-  --font-color-2:#ffff;
-  --toggle-bg:#283452;
-  --toggle-fg:#00a6ff;
-
-
-} */
-
-
-/*Responsiveness variables*/
-
-
-
-h1,h2{
-font-weight: var(--font-bold);
-color: var(  --font-color-2);
-}
-h3{
-  font-weight: var(--font-normal);
-  color: var(  --font-color-2);
-
-}
-span{
-  color: var(  --primary-font-color);
+/* Heading and paragraph styles */
+h1, h2 {
   font-weight: var(--font-bold);
-  font-family:var(  --body-font) ;
-}
-p{
-  color: var(  --font-color-2); 
+  color: var(--font-color-2);
 }
 
+h3 {
+  font-weight: var(--font-normal);
+  color: var(--font-color-2);
+}
+
+span {
+  color: var(--primary-font-color);
+  font-weight: var(--font-bold);
+  font-family: var(--body-font);
+}
+
+p {
+  color: var(--font-color-2);
+}
+
+/* Button styling */
 .all-btn {
   border: var(--button-border);
   border-radius: var(--button-border-radius);
   background-color: var(--button-bg-color);
   color: var(--button-text-color);
-  width: auto; 
-  max-width: 200px; 
+  width: auto;
+  max-width: 200px;
   height: auto;
   padding: var(--button-padding);
   display: inline-flex;
@@ -182,30 +132,52 @@ p{
   opacity: var(--btn-opacity);
 }
 
-
-img{
+/* Image styling */
+img {
   max-width: 100%;
   height: auto;
 }
 
+/* Grid styling */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
 }
-.container{
-  margin-left:  auto;
+
+/* Container styling */
+.container {
+  margin-left: auto;
   margin-right: auto;
   max-width: 100%;
 }
 
+/* Horizontal rule */
 hr {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.3); 
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin: 20px 0;
-  width: 100%; 
-  height: 1px; 
-  border-top: 1px solid rgba(230, 230, 250, 0.1); 
-
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid rgba(230, 230, 250, 0.1);
 }
 
+/* Transitions for smooth theme change */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
