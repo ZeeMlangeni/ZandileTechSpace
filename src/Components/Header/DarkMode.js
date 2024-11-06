@@ -4,6 +4,15 @@ import { ReactComponent as Moon } from "./Assets/Moon.svg"
 import "./DarkMode.css";
 
 const DarkMode = () => {
+
+    const setDarkMode=() =>{
+        document.querySelector("body").setAttribute('data-theme', 'dark')
+    }
+
+    const setLightMode=() =>{
+        document.querySelector("body").setAttribute('data-theme', 'light')
+    }
+    setDarkMode();
     return (
         <div className='dark_mode'>
             <input
