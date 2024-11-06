@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ReactComponent as Sun } from '../../Assets/Sun.svg';
 import { ReactComponent as Moon } from '../../Assets/Moon.svg';
-import '/DarkMode.css'
+import "./DarkMode.css";
+
 
 const DarkMode = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
