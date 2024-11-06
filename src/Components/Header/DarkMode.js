@@ -7,19 +7,25 @@ const DarkMode = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {
-        // Check if dark mode is active on page load
-        const currentTheme = document.body.getAttribute('data-theme');
+        // Check the saved theme preference in localStorage
+        const savedTheme = localStorage.getItem('theme');
+        const currentTheme = savedTheme || (document.body.getAttribute('data-theme') === 'dark' ? 'dark' : 'light');
         setIsDarkMode(currentTheme === 'dark');
+
+        // Apply the theme to the body element
+        document.body.setAttribute('data-theme', currentTheme);
     }, []);
 
     const setDarkMode = () => {
-        document.querySelector("body").setAttribute('data-theme', 'dark');
-        setIsDarkMode(true); // Update state when dark mode is set
+        document.body.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); // Save the preference
+        setIsDarkMode(true); // Update the state
     };
 
     const setLightMode = () => {
-        document.querySelector("body").setAttribute('data-theme', 'light');
-        setIsDarkMode(false); // Update state when light mode is set
+        document.body.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); // Save the preference
+        setIsDarkMode(false); // Update the state
     };
 
     const toggleTheme = (e) => {
