@@ -61,14 +61,26 @@ body[data-theme="dark"] {
   --font-size: 16px;
   --font-size-about: 15px;
   --hero-font: 50px;
+/*======================Font weight====================*/
+--font-normal: 400;
+--font-medium: 500;
+--font-bold: 600;
 
-  /* Button styles */
+  /*=================== Button styles===================== */
   --button-bg-color: #5D35BB;
   --button-text-color: #fff;
   --button-hover-bg-color: #4C2F9D;
+  --button-width: 110px;
+  --button-height: 47px;
+  --button-padding: 10px;
+  --button-display: flex;
+  --button-justify-content: center;
+  --button-align-items: center;
+  --btn-opacity: 0.9;
+  --btn-font-size: 16px;
 }
 
-/* App body container styling */
+/*App body container styling */
 .app {
   background-color: var(--first-container-background);
   border-width: 29px;
