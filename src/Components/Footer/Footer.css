@@ -1,6 +1,6 @@
 /* Footer Section Styling */
 .footer-section {
-    background-color: #333;
+    background-color: var( --second-container-background)
     color: #fff;
     padding: 2rem;
     text-align: center;
