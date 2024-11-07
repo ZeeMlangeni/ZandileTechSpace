@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Import useState
 import "./Header.css";
-import Switch from "./Switch";
-import DarkMode from "./DarkMode";
+/* import Switch from "./Switch"; */
+import DarkMode from "./DarkMode.js";
 
 function Header() {
   
