@@ -1,28 +1,88 @@
-.form{
-background-color: var( --primary-font-color);
-}
-
-.form-btn{
-    display: flex;
-    border: var(--button-border);
+/* Main container for the form section */
+.form.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1a1a3b;
+    color: #ffffff;
     border-radius: 8px;
-    background: linear-gradient(135deg, rgba(128, 0, 128, 0.8), rgba(0, 128, 255, 0.8), rgba(255, 20, 147, 0.8));
-
-    color: var(--button-text-color);
-    width: fit-content;
-    height: 39px;
-    padding: var(--button-padding);
-    display: var(--button-display);
-    justify-content: var(--button-justify-content);
-    align-items: var(--button-align-items);
-    transition: all 0.3s ease;
-    margin: 10px;
-    cursor: pointer; 
-    font-size: var( --btn-font-size);
+    font-family: Arial, sans-serif;
 }
 
-.form-btn:hover{
-    background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity);
-    transform: scale(1.05); 
+/* Section styling for form elements */
+.form.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Form heading and subtext */
+.form.section h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.form.section p {
+    font-size: 1em;
+    text-align: center;
+    color: #d0d0d0;
+    max-width: 500px;
+}
+
+/* Icons and contact info styling */
+.uil {
+    font-size: 1.2em;
+    margin-right: 8px;
+    color: #4a90e2;
+}
+
+.form.section h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+/* Styling for input fields */
+.form-input, .form-textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #4a90e2;
+    background-color: #292b5f;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+/* Larger text area for the message */
+.form-textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Focus effect for inputs */
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+    border-color: #4a90e2;
+}
+
+/* Button styling */
+.form-btn {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-btn:hover {
+    background-color: #357ab7;
 }
