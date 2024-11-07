@@ -3,7 +3,7 @@ import './Project.css';
 
 function Project(props) {
   return (
-    <div className='project section container'>
+    <div className='project-section-container'>
       <div className='cards'>
         <div className='cards_item'>
           <div className='card'>
@@ -15,9 +15,14 @@ function Project(props) {
                 Technologies Used<br />{props.technologies}
               </p>
               <div className="buttons">
-                <button className="btn git-btn">Git repository</button>
-                <button className="btn visit-btn">Visit Site</button>
-              </div>
+  <a href={props.gitUrl} target="_blank" rel="noopener noreferrer">
+    <button className="btn git-btn">Git repository</button>
+  </a>
+  <a href={props.siteUrl} target="_blank" rel="noopener noreferrer">
+    <button className="btn visit-btn">Visit Site</button>
+  </a>
+</div>
+
             </div>
           </div>
         </div>
