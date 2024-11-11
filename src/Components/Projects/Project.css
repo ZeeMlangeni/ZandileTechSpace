@@ -8,39 +8,54 @@
 }
 
 .project__card {
-  background-color: rgba(219, 233, 241, 0.726);
+  background-color: #ffffff;
+  border: 2px solid #c1d1dc;
+  border-radius: 15px;
+  width: 370px;
+  margin: 10px;
+  height: 525px;
+  position: relative;
   padding: 1rem;
-  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .project__card img {
-  width: 100%;
-  height: auto;
-  max-width: 250px;
-  margin-bottom: 1rem;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  margin: 9px;
+  left: 12px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: block;
+  margin-top: 20px;
 }
 
 .project__title {
+  margin: 9px;
+  font-weight: 500;
+  color: #0e2632;
+  text-align: center;
   font-size: 24px;
-  margin-bottom: 1rem;
-  color: var(--font-color-2);
 }
 
 .project__desc {
   max-width: 400px;
   font-size: 16px;
   line-height: 1.6;
-  color: var(--font-color-2);
+  color: #a5aeb9;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .techs {
   color: var(--font-color-1);
   font-size: var(--font-size--);
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .buttons {
@@ -48,15 +63,17 @@
   justify-content: center;
   gap: 10px;
   width: 100%;
+  margin-top: auto;
 }
 
 .git-btn {
-  background-color: #5D35BB;
+  background-color: #5d35bb;
   color: #fff;
   border: none;
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .git-btn:hover {
@@ -67,10 +84,11 @@
 .visit-btn {
   background-color: transparent;
   color: #fff;
-  border: 1px solid #5D35BB;
-  padding: 5px;
+  border: 1px solid #5d35bb;
+  padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .visit-btn:hover {
@@ -93,4 +111,29 @@
   border-radius: 8px;
   padding: 2px;
   margin: 5px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__card .image {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.project__card .anchor {
+  color: #278bff;
+  text-decoration: none;
+  background-color: #e0efff;
+  padding: 10px 10px;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.project__card .anchor:hover {
+  cursor: pointer;
 }
