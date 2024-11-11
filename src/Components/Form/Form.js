@@ -27,7 +27,7 @@ function Form() {
   };
 
   return (
-    <div className="form-container">
+    <div className="form-container" id="#form">
       <div className="left-panel">
         <h1>Get in Touch</h1>
         <p>I'd love to collaborate on a project or chat! Fill out this form, or message me on my socials.</p>

@@ -16,7 +16,7 @@ function Header() {
   };
 
   return (
-    <header className="header" id="home">
+    <header className="header" >
       <nav className="nav container">
         <a href="index.html" className="nav logo">
           <h2>
@@ -26,7 +26,7 @@ function Header() {
         <div className="nav-menu">
           <ul className={`nav-list grid ${isMenuOpen ? "active" : ""}`}> 
             <li className="nav__item">
-              <a className="nav__link" href="#home" onClick={() => setIsMenuOpen(false)}>
+              <a className="nav__link" href="#hero" onClick={() => setIsMenuOpen(false)}>
                 Home
               </a>
             </li>
@@ -40,6 +40,8 @@ function Header() {
                 Skills
               </a>
             </li>
+
+            
             <li className="nav__item">
               <a className="nav__link" href="#about">
                 CV
