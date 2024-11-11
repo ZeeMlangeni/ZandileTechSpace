@@ -6,7 +6,7 @@ import Data from './Data'
 
 function Hero() {
   return (
-<section className='hero section' id='hero'>
+<section className='hero' id='hero'>
 
 
   <div className='home___container container grid'>
