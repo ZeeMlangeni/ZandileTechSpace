@@ -16,7 +16,7 @@ function Header() {
   };
 
   return (
-    <header className="header" >
+    <header className="header container grid " >
       <nav className="nav container">
         <a href="index.html" className="nav logo">
           <h2>
