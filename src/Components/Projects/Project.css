@@ -1,105 +1,119 @@
-/* Styling for the project section container */
-.project-section-container {
-  padding: 60px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #f8f8f8;
-  width: 100%;
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.cards {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+body {
+    background: #ecececdb;
 }
 
-/* Card styling */
-.cards_item {
-  width: 300px;
-  display: flex;
-  justify-content: center;
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1250px;
+    margin: 150px auto;
+    padding: 20px;
+    gap: 20px;
 }
 
-.card {
-  width: 100%;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
+.card-list .card-item {
+    background: #fff;
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+    list-style: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: border 0.5s ease;
 }
 
-.card:hover {
-  transform: translateY(-10px);
+.card-list .card-item:hover {
+    border: 2px solid #000;
 }
 
-/* Image styling */
-.projectImg {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-bottom: 2px solid #ddd;
+.card-list .card-item img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
-/* Card content styling */
-.card_content {
-  padding: 20px;
-  text-align: center;
+.card-list span {
+    display: inline-block;
+    background: #F7DFF5;
+    margin-top: 32px;
+    padding: 8px 15px;
+    font-size: 0.75rem;
+    border-radius: 50px;
+    font-weight: 600;
 }
 
-.card_title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
+.card-list .developer {
+    background-color: #F7DFF5;
+    color: #B22485;
 }
 
-.card_text {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
+.card-list .designer {
+    background-color: #d1e8ff;
+    color: #2968a8;
 }
 
-.techs {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 20px;
+.card-list .editor {
+    background-color: #d6f8d6;
+    color: #205c20;
 }
 
-/* Button container */
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
+.card-item h3 {
+    color: #000;
+    font-size: 1.438rem;
+    margin-top: 28px;
+    font-weight: 600;
 }
 
-/* General button styling */
-.btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  border: none;
-  transition: background-color 0.3s ease;
-  color: white;
+.card-item .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-35deg);
+    height: 40px;
+    width: 40px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-top: 40px;
+    transition: 0.2s ease;
+    padding: 8px;
 }
 
-.git-btn {
-  background-color: #28a745;
+.card-list .card-item:hover .arrow {
+    background: #000;
+    color: #fff;
+    transform: scale(1.1) rotate(-35deg); /* Scale the arrow slightly on hover */
 }
 
-.git-btn:hover {
-  background-color: #218838;
+@media (max-width: 1200px) {
+    .card-list .card-item {
+        padding: 15px;
+    }
 }
 
-.visit-btn {
-  background-color: #ffc107;
-}
+@media screen and (max-width: 980px) {
+    .card-list {
+        margin: 0 auto;
+    }
 
-.visit-btn:hover {
-  background-color: #e0a800;
+    /* Adjust font size for smaller screens */
+    .card-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-list span {
+        font-size: 0.7rem;
+    }
 }
