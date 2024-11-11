@@ -31,7 +31,7 @@ function Section() {
         </p>
       </div>
       <button className='cv-btn'>
-  <a href="/path/to/ZandileCV.pdf" download target="_blank" rel="noopener noreferrer">Download CV</a>
+  <a href="/ZandileCV.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
 </button>
 
     </div>
