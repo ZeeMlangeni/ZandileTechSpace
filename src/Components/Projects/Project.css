@@ -1,87 +1,96 @@
-.project-card{
 
-   
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding-top: 5.5rem;
 }
-.git-btn{
-   
-        background-color: #5D35BB; 
-        color: #fff; 
-        border: none;
-        padding: 5px; 
-        margin-right: 5px;
-        font-size: 14px;
-        cursor: pointer;
-      }
-      
+
+.project__card {
+  background-color: rgba(219, 233, 241, 0.726);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__card img {
+  width: 100%;
+  height: auto;
+  max-width: 250px;
+  margin-bottom: 1rem;
+}
+
+.project__title {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: var(--font-color-2);
+}
+
+.project__desc {
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--font-color-2);
+  margin-bottom: 1rem;
+}
+
+.techs {
+  color: var(--font-color-1);
+  font-size: var(--font-size--);
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.git-btn {
+  background-color: #5D35BB;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 .git-btn:hover {
-    background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity-);
-      
+  background-color: var(--button-hover-bg-color);
+  opacity: var(--btn-opacity);
 }
-.visit-btn{
 
-        background-color: transparent; 
-        color: #ffff;
-        border: 1px solid #5D35BB; 
-       margin-left: 5px;
-        padding: 5px ;
-        font-size: 14px;
-        cursor: pointer;
-      }
-      
-      .visit-btn:hover {
-        background-color: #8b5eff;
-    opacity: var( --btn-opacity-);
-      }
-
-      .container{
-        max-width: 800px;
-      }
-
-      .projectImg{
-        width: 250px;
-        height: 300px;
-      }
-      .filter-btn{
-        background-color: var( --button-bg-color);
-        color: var( --button-text-color);
-        height: auto;
-        width: fit-content;
-        justify-content: var(  --button-justify-content);
-        border: none;
-        border-radius: 8px;
-      padding: 2px;
-        margin: 5px;
-      }
-
-      .project{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows: 1fr 1fr;
-padding-top: 5.5rem;
- column-gap: 2rem;
-
-
-      }
-.project-card{
-  background-color: aquamarine;
+.visit-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #5D35BB;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
 }
-      .techs{
-        color: var(  --font-color-1-);
-        font-size: var(  --font-size--);
-      }
 
-      .project__title{
-        font-size: 24px;
-        margin-bottom: 1rem; 
-        color: var( --font-color-2); 
-      }
+.visit-btn:hover {
+  background-color: #8b5eff;
+  opacity: var(--btn-opacity);
+}
 
-      .project__desc{
-        max-width: 400px; 
-        font-size: 16px;
-         line-height: 1.6; 
-         color: var( --font-color-2);
-     
-       
-      }
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.filter-btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  height: auto;
+  width: fit-content;
+  justify-content: var(--button-justify-content);
+  border: none;
+  border-radius: 8px;
+  padding: 2px;
+  margin: 5px;
+}
