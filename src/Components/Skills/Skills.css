@@ -7,7 +7,7 @@
 .row {
   display: grid; 
   grid-template-columns: repeat(9, 1fr); 
-  gap: 14px; 
+  gap: 16px; 
   align-items: center; 
 }
 
