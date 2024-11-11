@@ -1,4 +1,4 @@
-
+/* 
 .footer-section {
     background-color: var( --second-container-background);
     color: #fff;
@@ -62,7 +62,7 @@
     margin-top: 1.5rem;
   }
   
-  /* Responsive Styles */
+
   @media (max-width: 768px) {
     .link-list {
       flex-direction: column;
@@ -74,4 +74,4 @@
       gap: 1rem;
     }
   }
-  
+   */
