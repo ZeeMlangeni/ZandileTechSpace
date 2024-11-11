@@ -59,7 +59,6 @@ technologies:"",
 <div className="app" >
  {/*     <h1>hello world</h1>{/**for testing purposes */} 
      <Header/>
-   
      <Hero/>
      <hr/>
      <Section/>
