@@ -47,7 +47,8 @@
   }
   
   .links {
-    color: #fff;
+    color: var(--font-color-2);
+    font-size: var( --btn-font-size);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
@@ -59,7 +60,8 @@
   
   .copyright {
     font-size: 0.9rem;
-    color: #ccc;
+    color: #d3caca;
+    font-size: var( --btn-font-size);
     margin-top: 1.5rem;
   }
   
