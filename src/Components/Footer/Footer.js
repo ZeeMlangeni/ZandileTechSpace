@@ -3,7 +3,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer-section" >
+    <footer className="footer section " >
       <div className="footer-content">
         {/* Social Media Icons */}
         <div className="home-social">
