@@ -37,21 +37,21 @@
 }
 
 .nav__toggle {
-    cursor: pointer; /* Change cursor on hover */
-    padding: 0.5rem; /* Add some padding for touch targets */
-    transition: transform 0.3s ease; /* Add transition for animation effect */
+    cursor: pointer; 
+    padding: 0.5rem; 
+    transition: transform 0.3s ease; 
 }
 
-/* Increase icon size and make it more visually appealing */
+
 .nav__toggle i {
-    font-size: 2rem; /* Adjust this size as needed */
-    color: var(--font-color-2); /* Set color to match your theme */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 2rem; 
+    color: var(--font-color-2); 
+    transition: color 0.3s ease; 
 }
 
 .nav__toggle:hover i {
-    color: var(--hover-color); /* Change color on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover for effect */
+    color: var(--hover-color); 
+    transform: scale(1.1); 
 }
 
 .nav__link {
@@ -82,45 +82,45 @@
 }
 
 .nav__link:hover {
-    color: var(--hover-color); /* Change color on hover if desired */
+    color: var(--hover-color); 
 }
 
 .nav-list.active {
-    display: flex; /* Show the menu when active */
+    display: flex; 
 }
 
 
 @media screen and (max-width: 768px) {
     .nav-list {
-        display: none; /* Hide by default on small screens */
-        flex-direction: column; /* Stack vertically */
-        width: 100%; /* Full width */
-        padding: 1rem; /* Optional padding */
-        background: rgba(255, 255, 255, 0.9); /* Background with transparency */
-        position: absolute; /* Position dropdown under header */
-        top: 4.5rem; /* Below header height */
-        left: 0; /* Align to left */
-        pointer-events: auto; /* Ensure pointer events work when active */
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        padding: 1rem; 
+        background: rgba(255, 255, 255, 0.9); 
+        position: absolute; 
+        top: 4.5rem; 
+        left: 0; 
+        pointer-events: auto;
     }
 
     .nav-list.active {
-        display: flex; /* Show when active */
+        display: flex; 
     }
 
     .nav__link {
-        padding: 0.5rem 0; /* Add padding for touch targets */
+        padding: 0.5rem 0;
         transition: color 0.4s, background-color 0.4s; 
     }
 
     .nav__link:hover {
-        color: var(  --primary-font-color); /* Change color on hover if desired */
-        background-color: rgba(0, 0, 0, 0.1); /* Optional background color change on hover */
+        color: var(  --primary-font-color); 
+        background-color: rgba(0, 0, 0, 0.1); 
     }
     
     .nav__toggle {
-        display: block; /* Show toggle icon */
-        cursor: pointer; /* Change cursor */
-        margin: 1rem 0; /* Add some margin for spacing */
+        display: block; 
+        cursor: pointer; 
+        margin: 1rem 0; 
     }
 }
  */
