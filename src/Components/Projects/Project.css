@@ -1,87 +1,103 @@
-
-.project-card{
-
-   
+/* Global Variables */
+:root {
+  --btn-opacity: 0.85;
+  --button-bg-color: #5D35BB;
+  --button-text-color: #ffffff;
+  --button-hover-bg-color: #8b5eff;
+  --font-color-1: #333;
+  --font-color-2: #555;
+  --font-size: 16px;
 }
-.git-btn{
-   
-        background-color: #5D35BB; 
-        color: #fff; 
-        border: none;
-        padding: 5px; 
-        margin-right: 5px;
-        font-size: 14px;
-        cursor: pointer;
-      }
-      
-.git-btn:hover {
-    background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity-);
-      
+
+/* Container for layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem; /* Optional padding for spacing */
 }
-.visit-btn{
 
-        background-color: transparent; 
-        color: #ffff;
-        border: 1px solid #5D35BB; 
-       margin-left: 5px;
-        padding: 5px ;
-        font-size: 14px;
-        cursor: pointer;
-      }
-      
-      .visit-btn:hover {
-        background-color: #8b5eff;
-    opacity: var( --btn-opacity-);
-      }
+/* Project Grid */
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  padding-top: 5.5rem;
+}
 
-      .container{
-        max-width: 800px;
-      }
-
-      .projectImg{
-        width: 250px;
-        height: 300px;
-      }
-      .filter-btn{
-        background-color: var( --button-bg-color);
-        color: var( --button-text-color);
-        height: auto;
-        width: fit-content;
-        justify-content: var(  --button-justify-content);
-        border: none;
-        border-radius: 8px;
-      padding: 2px;
-        margin: 5px;
-      }
-
-      .project{
-        grid-template-columns:255px repeat(2,1fr );
-        grid-template-rows: 1fr 1fr;
-padding-top: 5.5rem;
- column-gap: 2rem;
-
-
-      }
-.project-card{
+/* Project Card Styling */
+.project-card {
   background-color: aquamarine;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
-      .techs{
-        color: var(  --font-color-1-);
-        font-size: var(  --font-size--);
-      }
 
-      .project__title{
-        font-size: 24px;
-        margin-bottom: 1rem; 
-        color: var( --font-color-2); 
-      }
+.project-card:hover {
+  transform: scale(1.03);
+}
 
-      .project__desc{
-        max-width: 400px; 
-        font-size: 16px;
-         line-height: 1.6; 
-         color: var( --font-color-2);
-     
-       
-      }
+/* Button Styling */
+.git-btn, .visit-btn, .filter-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.git-btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  margin-right: 5px;
+}
+
+.git-btn:hover {
+  background-color: var(--button-hover-bg-color);
+  opacity: var(--btn-opacity);
+}
+
+.visit-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid var(--button-bg-color);
+  margin-left: 5px;
+}
+
+.visit-btn:hover {
+  background-color: var(--button-hover-bg-color);
+  opacity: var(--btn-opacity);
+}
+
+/* Filter Button */
+.filter-btn {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  width: fit-content;
+  margin: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project Title and Description */
+.project__title {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: var(--font-color-2);
+}
+
+.project__desc {
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--font-color-2);
+}
+
+/* Image Styling */
+.projectImg {
+  width: 100%;
+  max-width: 250px;
+  height: auto; /* Maintain aspect ratio */
+}
