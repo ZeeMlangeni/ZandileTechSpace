@@ -41,7 +41,11 @@ function Header() {
               </a>
             </li>
 
-            
+            <li className="nav__item">
+              <a className="nav__link" href="#projects">
+               Projects
+              </a>
+            </li>
             <li className="nav__item">
               <a className="nav__link" href="#about">
                 CV
