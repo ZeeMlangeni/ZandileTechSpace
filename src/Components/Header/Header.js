@@ -26,7 +26,7 @@ function Header() {
         <div className="nav-menu">
           <ul className={`nav-list grid ${isMenuOpen ? "active" : ""}`}> 
             <li className="nav__item">
-              <a className="nav__link" href="#home">
+              <a className="nav__link" href="#home" onClick={() => setIsMenuOpen(false)}>
                 Home
               </a>
             </li>
