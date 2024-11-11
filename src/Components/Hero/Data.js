@@ -29,10 +29,10 @@ function Data() {
         </span>
       </div>
 
-      {/* CV Download Link */}
+    
       <a
         className="nav__link"
-        href="/Zandile_CV.pdf" // Make sure this path points to your CV file
+        href="/ZandileCV.pdf" 
         download
         target="_blank"
         rel="noopener noreferrer"
