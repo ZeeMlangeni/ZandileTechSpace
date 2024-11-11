@@ -51,11 +51,7 @@ function Header() {
                 CV
               </a>
             </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#contact" onClick={() => setIsMenuOpen(false)}>
-                Contact
-              </a>
-            </li>
+          
        <li className="nav__item">
     {/*    <Switch /> */}
        <DarkMode/>
