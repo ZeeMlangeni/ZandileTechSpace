@@ -1,56 +1,67 @@
-/* Global Variables */
-:root {
-  --btn-opacity: 0.85;
-  --button-bg-color: #5D35BB;
-  --button-text-color: #ffffff;
-  --button-hover-bg-color: #8b5eff;
-  --font-color-1: #333;
-  --font-color-2: #555;
-  --font-size: 16px;
+.project-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; /* Add some space between cards */
 }
 
-/* Container for layout */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem; /* Optional padding for spacing */
-}
-
-/* Project Grid */
-.project {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2rem;
-  padding-top: 5.5rem;
-}
-
-/* Project Card Styling */
 .project-card {
   background-color: aquamarine;
-  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  width: 300px;
+  padding: 1.5rem;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
 
-.project-card:hover {
-  transform: scale(1.03);
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Makes sure the image covers the container without stretching */
+  border-radius: 8px;
 }
 
-/* Button Styling */
-.git-btn, .visit-btn, .filter-btn {
-  padding: 5px 10px;
+.project-details {
+  margin-top: 1rem;
+}
+
+.project-title {
+  font-size: 20px;
+  color: var(--font-color-2);
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--font-color-1);
+  margin-bottom: 1rem;
+}
+
+.project-tech {
+  font-size: 14px;
+  color: var(--font-color-1);
+  margin-bottom: 1rem;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 10px 15px;
+  border-radius: 5px;
   font-size: 14px;
   cursor: pointer;
-  border: none;
-  border-radius: 8px;
-  transition: background-color 0.3s, opacity 0.3s;
+  width: 48%;
 }
 
 .git-btn {
-  background-color: var(--button-bg-color);
-  color: var(--button-text-color);
-  margin-right: 5px;
+  background-color: #5D35BB;
+  color: #fff;
+  border: none;
 }
 
 .git-btn:hover {
@@ -60,9 +71,8 @@
 
 .visit-btn {
   background-color: transparent;
-  color: #ffffff;
-  border: 1px solid var(--button-bg-color);
-  margin-left: 5px;
+  color: #5D35BB;
+  border: 1px solid #5D35BB;
 }
 
 .visit-btn:hover {
@@ -70,34 +80,14 @@
   opacity: var(--btn-opacity);
 }
 
-/* Filter Button */
-.filter-btn {
-  background-color: var(--button-bg-color);
-  color: var(--button-text-color);
-  width: fit-content;
-  margin: 5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+@media (max-width: 768px) {
+  .project-card {
+    width: 48%; /* Make two cards per row on medium screens */
+  }
 }
 
-/* Project Title and Description */
-.project__title {
-  font-size: 24px;
-  margin-bottom: 1rem;
-  color: var(--font-color-2);
-}
-
-.project__desc {
-  max-width: 400px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--font-color-2);
-}
-
-/* Image Styling */
-.projectImg {
-  width: 100%;
-  max-width: 250px;
-  height: auto; /* Maintain aspect ratio */
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%; /* Make cards full width on small screens */
+  }
 }
