@@ -2,7 +2,6 @@
 .footer{
     background-color: var( --second-container-background);
     color: var(--font-color-2);
-    font-size: var( --btn-font-size);
     padding: 2rem;
     text-align: center;
   }
@@ -26,7 +25,8 @@
   
   .home-social-icon {
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--font-color-2);
+    font-size: var( --btn-font-size);
     transition: color 0.3s;
   }
   
