@@ -31,28 +31,28 @@ function Header() {
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#about">
+              <a className="nav__link" href="#about"  onClick={() => setIsMenuOpen(false)}>
                 About
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#skills">
+              <a className="nav__link" href="#skills" onClick={() => setIsMenuOpen(false)}>
                 Skills
               </a>
             </li>
 
             <li className="nav__item">
-              <a className="nav__link" href="#projects">
+              <a className="nav__link" href="#projects" onClick={() => setIsMenuOpen(false)}>
                Projects
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#about">
+              <a className="nav__link" href="#about" onClick={() => setIsMenuOpen(false)}>
                 CV
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#contact">
+              <a className="nav__link" href="#contact" onClick={() => setIsMenuOpen(false)}>
                 Contact
               </a>
             </li>
