@@ -17,20 +17,20 @@ html {
   --header-height: 3rem;
 
   /* Background Colors */
-  --first-container-background: #f5f8fa; /* Soft white for a clean, modern look */
-  --second-container-background: #e1eaf2; /* Light cobalt-tinted background for subtle contrast */
+  --first-container-background: F3F3E0; /* Soft cream for the main container background */
+  --second-container-background: rgb(203, 220, 235); /* Light grayish blue for secondary container or accents */
 
   /* Font Colors */
-  --primary-font-color: #0047ab; /* Deep navy blue for primary text */
-  --font-color-1: #1a3a6e; /* Rich navy for secondary text */
-  --font-color-2: #002147; /* Cobalt blue for accents and highlights */
+  --primary-font-color: rgb(19, 62, 135); /* Deep blue for primary text */
+  --font-color-1: rgb(96, 139, 193); /* Light blue for secondary text */
+  --font-color-2: rgb(19, 62, 135); /* Deep blue for highlights and accents */
 
   /* Toggle Switch Colors */
-  --toggle-bg: #cfd9e6; /* Soft, cool gray-blue for toggle background */
-  --toggle-fg: #0047ab; /* Vibrant cobalt blue for toggle switch */
+  --toggle-bg: rgb(203, 220, 235); /* Light grayish blue for toggle background */
+  --toggle-fg: rgb(19, 62, 135); /* Deep blue for the toggle switch */
 
   /* Font and Typography */
-  --body-font: "roboto", sans-serif;
+  --body-font: "Roboto", sans-serif;
   --font-size: 16px;
   --font-size-about: 15px;
   --hero-font: 50px;
@@ -43,7 +43,7 @@ html {
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #0047ab; /* Bright cobalt blue for buttons */
+  --button-bg-color: rgb(19, 62, 135); /* Deep blue for buttons */
   --button-text-color: #ffffff; /* White text for clear contrast */
   --button-width: 110px;
   --button-height: 47px;
@@ -51,10 +51,15 @@ html {
   --button-display: flex;
   --button-justify-content: center;
   --button-align-items: center;
-  --button-hover-bg-color: #002147; /* Darker navy for hover effect */
+  --button-hover-bg-color: rgb(96, 139, 193); /* Light blue for hover effect */
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
+
+  /* Link Styles */
+  --link-color: rgb(96, 139, 193); /* Light blue for links */
+  --link-hover-color: rgb(19, 62, 135); /* Deep blue for link hover effect */
 }
+
 
 /* Dark mode settings */
 body[data-theme="dark"] {
