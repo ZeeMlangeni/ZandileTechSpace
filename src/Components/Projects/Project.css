@@ -1,119 +1,86 @@
-/* Importing Google font - Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+.project-card{
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+   
 }
-
-body {
-    background: #ecececdb;
+.git-btn{
+   
+        background-color: #5D35BB; 
+        color: #fff; 
+        border: none;
+        padding: 5px; 
+        margin-right: 5px;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      
+.git-btn:hover {
+    background-color: var(  --button-hover-bg-color);
+    opacity: var( --btn-opacity-);
+      
 }
+.visit-btn{
 
-.card-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    max-width: 1250px;
-    margin: 150px auto;
-    padding: 20px;
-    gap: 20px;
+        background-color: transparent; 
+        color: #ffff;
+        border: 1px solid #5D35BB; 
+       margin-left: 5px;
+        padding: 5px ;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      
+      .visit-btn:hover {
+        background-color: #8b5eff;
+    opacity: var( --btn-opacity-);
+      }
+
+      .container{
+        max-width: 800px;
+      }
+
+      .projectImg{
+        width: 250px;
+        height: 300px;
+      }
+      .filter-btn{
+        background-color: var( --button-bg-color);
+        color: var( --button-text-color);
+        height: auto;
+        width: fit-content;
+        justify-content: var(  --button-justify-content);
+        border: none;
+        border-radius: 8px;
+      padding: 2px;
+        margin: 5px;
+      }
+
+      .project{
+        grid-template-columns:255px repeat(2,1fr );
+        grid-template-rows: 1fr 1fr;
+padding-top: 5.5rem;
+ column-gap: 2rem;
+
+
+      }
+.project-card{
+  background-color: aquamarine;
 }
+      .techs{
+        color: var(  --font-color-1-);
+        font-size: var(  --font-size--);
+      }
 
-.card-list .card-item {
-    background: #fff;
-    padding: 26px;
-    border-radius: 8px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
-    list-style: none;
-    cursor: pointer;
-    text-decoration: none;
-    border: 2px solid transparent;
-    transition: border 0.5s ease;
-}
+      .project__title{
+        font-size: 24px;
+        margin-bottom: 1rem; 
+        color: var( --font-color-2); 
+      }
 
-.card-list .card-item:hover {
-    border: 2px solid #000;
-}
-
-.card-list .card-item img {
-    width: 100%;
-    aspect-ratio: 16/9;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
-.card-list span {
-    display: inline-block;
-    background: #F7DFF5;
-    margin-top: 32px;
-    padding: 8px 15px;
-    font-size: 0.75rem;
-    border-radius: 50px;
-    font-weight: 600;
-}
-
-.card-list .developer {
-    background-color: #F7DFF5;
-    color: #B22485;
-}
-
-.card-list .designer {
-    background-color: #d1e8ff;
-    color: #2968a8;
-}
-
-.card-list .editor {
-    background-color: #d6f8d6;
-    color: #205c20;
-}
-
-.card-item h3 {
-    color: #000;
-    font-size: 1.438rem;
-    margin-top: 28px;
-    font-weight: 600;
-}
-
-.card-item .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotate(-35deg);
-    height: 40px;
-    width: 40px;
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 50%;
-    margin-top: 40px;
-    transition: 0.2s ease;
-    padding: 8px;
-}
-
-.card-list .card-item:hover .arrow {
-    background: #000;
-    color: #fff;
-    transform: scale(1.1) rotate(-35deg); /* Scale the arrow slightly on hover */
-}
-
-@media (max-width: 1200px) {
-    .card-list .card-item {
-        padding: 15px;
-    }
-}
-
-@media screen and (max-width: 980px) {
-    .card-list {
-        margin: 0 auto;
-    }
-
-    /* Adjust font size for smaller screens */
-    .card-item h3 {
-        font-size: 1.2rem;
-    }
-
-    .card-list span {
-        font-size: 0.7rem;
-    }
-}
+      .project__desc{
+        max-width: 400px; 
+        font-size: 16px;
+         line-height: 1.6; 
+         color: var( --font-color-2);
+     
+       
+      }
