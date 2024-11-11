@@ -13,21 +13,21 @@ function Skills() {
         Here's a collection of my technical expertise and the tools I use to build amazing things.
       </p>
       <div className="skills__icons">
-        <div className="skills__icon">
+        <div className="skills__category">
+          <h3 className="skills__category-title">Languages</h3>
           <Languages />
-          <h3>Languages</h3>
         </div>
-        <div className="skills__icon">
+        <div className="skills__category">
+          <h3 className="skills__category-title">Frameworks</h3>
           <Framework />
-          <h3>Frameworks</h3>
         </div>
-        <div className="skills__icon">
+        <div className="skills__category">
+          <h3 className="skills__category-title">Tools</h3>
           <Tools />
-          <h3>Tools</h3>
         </div>
-        <div className="skills__icon">
+        <div className="skills__category">
+          <h3 className="skills__category-title">Soft Skills</h3>
           <Soft />
-          <h3>Soft Skills</h3>
         </div>
       </div>
     </div>

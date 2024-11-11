@@ -1,66 +1,78 @@
+/* General Styling */
 .skills {
-  padding: 50px 0;
   text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
 .skills__title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .skills__description {
-  font-size: 1.2rem;
-  color: #6c757d;
-  margin-bottom: 40px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
+/* Icons Section */
 .skills__icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
+  gap: 3rem;
 }
 
 .skills__category {
-  width: 200px;
-  text-align: center;
-}
-
-.skills__category-title {
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-  color: #343a40;
-}
-
-.skills__icons-group {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
+.skills__category-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Icon Styles */
 .skills__icon {
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.skills__icon p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+/* Icon Colors (Base and Hover) */
+.skills__icon .FaHtml5 { color: #e34c26; }
+.skills__icon .FaCss3Alt { color: #264de4; }
+.skills__icon .FaJs { color: #f7df1e; }
+.skills__icon .FaReact { color: #61dafb; }
+.skills__icon .FaFigma { color: #f24e1e; }
+.skills__icon .FaGithub { color: #211f1f; }
+.skills__icon .FaClock { color: #f7b731; }
+.skills__icon .FaUsers { color: #3498db; }
+
+/* Hover Effects */
 .skills__icon:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  .skills__icons {
-    flex-direction: column;
-    align-items: center;
-  }
-  .skills__category {
-    margin-bottom: 30px;
-  }
-}
+.skills__icon:hover .FaHtml5 { color: #d84a17; }
+.skills__icon:hover .FaCss3Alt { color: #3b82f6; }
+.skills__icon:hover .FaJs { color: #f7df1e; }
+.skills__icon:hover .FaReact { color: #21a1f1; }
+.skills__icon:hover .FaFigma { color: #ff9f0f; }
+.skills__icon:hover .FaGithub { color: #2c3e50; }
+.skills__icon:hover .FaClock { color: #f39c12; }
+.skills__icon:hover .FaUsers { color: #2980b9; }
