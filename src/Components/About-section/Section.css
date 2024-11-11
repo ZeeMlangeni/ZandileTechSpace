@@ -21,7 +21,9 @@
     color:var(--font-color-1)
 }
 
-
+.about{
+    margin-bottom: 20px;
+}
 
 .about.section {
     display: grid;
