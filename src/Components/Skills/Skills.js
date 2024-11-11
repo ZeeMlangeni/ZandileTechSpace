@@ -7,7 +7,7 @@ import Soft from './Icons/Soft'
 
 function Skills() {
   return (
-    <div className='skills section container'>
+    <div className='skills section container' id="#skills">
 
 <h1 className='skills__title'>My Skills</h1>
 
