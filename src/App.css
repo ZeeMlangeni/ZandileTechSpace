@@ -43,11 +43,11 @@ html {
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #0047ab; /* Bright cobalt blue for buttons */
+  --button-bg-color:  #4a90e2; /* Bright cobalt blue for buttons */
   --button-text-color: #ffffff; /* White text for clear contrast */
   --button-width: 110px;
   --button-height: 47px;
-  --button-padding: 10px;
+  --button-padding: 10px 15px;
   --button-display: flex;
   --button-justify-content: center;
   --button-align-items: center;
