@@ -5,16 +5,16 @@
 }
 
 .row {
-  display: grid; /* Set to grid layout */
-  grid-template-columns: repeat(9, 1fr); /* 9 equal columns */
-  gap: 16px; /* Space between grid items */
-  align-items: center; /* Center items vertically */
+  display: grid; 
+  grid-template-columns: repeat(9, 1fr); 
+  gap: 16px; 
+  align-items: center; 
 }
 
 .row-item {
-  display: flex; /* Center content within each item */
-  justify-content: center; /* Center horizontally */
-  position: relative; /* Position relative to allow absolute positioning of label */
+  display: flex; 
+  justify-content: center; 
+  position: relative; 
 }
 
 .svg {
@@ -25,29 +25,29 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
   padding: 7px;
   animation: move 5s linear infinite;
-  margin: 16px; /* Margin handled by gap */
-  transition: transform 0.3s ease; /* Transition for scaling effect */
+  margin: 16px; 
+  transition: transform 0.3s ease; 
 }
 
 .icon-label {
-  position: absolute; /* Position it absolutely */
-  top: -25px; /* Position it above the icon */
-  background-color: rgba(255, 255, 255, 0.9); /* Background for readability */
-  border: 1px solid #ccc; /* Optional border */
-  border-radius: 4px; /* Rounded corners */
-  padding: 4px 8px; /* Padding */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  font-size: 14px; /* Font size */
-  white-space: nowrap; /* Prevent text wrapping */
-  z-index: 10; /* Ensure label appears above other elements */
-  opacity: 0; /* Start as invisible */
-  visibility: hidden; /* Hide visually */
-  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+  position: absolute; 
+  top: -25px; 
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  padding: 4px 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  font-size: 14px; 
+  white-space: nowrap; 
+  z-index: 10; 
+  opacity: 0;
+  visibility: hidden; 
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
 
 .row-item:hover .icon-label {
-  opacity: 1; /* Make visible */
-  visibility: visible; /* Ensure it's visible */
+  opacity: 1; 
+  visibility: visible; 
 }
 
 @keyframes move {
@@ -74,5 +74,5 @@
 }
 
 .svg:hover {
-    transform: scale(1.1); /* Scale effect on hover */
+    transform: scale(1.1); 
 }
