@@ -90,6 +90,7 @@
     display: flex; /* Show the menu when active */
 }
 
+
 @media screen and (max-width: 768px) {
     .nav-list {
         display: none; /* Hide by default on small screens */

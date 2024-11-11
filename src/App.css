@@ -188,10 +188,13 @@ hr {
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.section{
+  padding: 6rem 0 2rem;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .grid {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
