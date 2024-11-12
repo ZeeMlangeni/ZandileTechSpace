@@ -1,5 +1,6 @@
 import React from 'react';
 import './Project.css';
+import Works from './Works'
 
 function Project(props) {
   return (
@@ -9,6 +10,7 @@ function Project(props) {
 
       <h2 className='section__title'>My Projects</h2>
       <span className='section__subtitle'>Most Recent</span>
+      <Works/>
     </section>
    
   );
