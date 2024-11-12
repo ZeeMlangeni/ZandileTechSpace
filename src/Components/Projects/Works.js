@@ -2,6 +2,7 @@ import React from 'react'
 
 import {projectData} from './Datas'
 import { projectNav } from './Datas'
+import WorkItems from './WorkItems'
 
 const Works=()=> {
 
@@ -20,7 +21,7 @@ const Works=()=> {
 
 {projectData.map((item)=>  {
 
-    return <WorkItems/>
+    return <WorkItems  item ={item} key={item.id}/>
 })}
     </div>
    </div>
