@@ -4,8 +4,10 @@ import "./Section.css";
 function Section() {
   return (
     <div className='about section container' id="about">
-      <h1 className='section__title'>About Me</h1>
-      <h3 className='section__subtitle'><span>--------- Here's a bit about me</span></h3>
+      <h2 className='section__title'>About Me </h2>
+      <span className='section__subtitle'>--------- Here's a bit about me</span>
+
+      <div className='about__container container grid'
       <div className='about__description'>
         <p>
           I began my coding journey in 2022 and have developed my skills to an intermediate level in HTML, CSS, JavaScript, and React. I focus on creating intuitive, visually appealing sites with clean, maintainable code.<br /><br />
