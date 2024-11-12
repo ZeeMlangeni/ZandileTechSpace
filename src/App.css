@@ -1,4 +1,4 @@
-/*============styling that applies to everything==============*/
+/*============ Universal Styling ==============*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/*======================website variables =================*/
+/*====================== Website Variables ==================*/
 :root {
   --header-height: 3rem;
 
@@ -20,8 +20,8 @@ html {
 
   /* Font Colors */
   --primary-font-color: #0047ab; /* Deep navy blue for primary text */
-  --font-color-1: #1a3a6e; /* Rich navy for secondary text */
-  --font-color-2: #002147; /* Cobalt blue for accents and highlights */
+  --heading-color: #1a3a6e; /* Rich navy for headings */
+  --subtitle-color: #002147; /* Cobalt blue for subtitles and highlights */
 
   /* Toggle Switch Colors */
   --toggle-bg: #cfd9e6; /* Soft, cool gray-blue for toggle background */
@@ -29,32 +29,36 @@ html {
 
   /* Font and Typography */
   --body-font: "Roboto", sans-serif;
-  --font-size: 16px; /* Base font size for body */
+  --font-size-md: 16px; /* Base font size */
   --font-size-about: 15px;
-  --hero-font: 48px; /* Adjusted hero font size for better readability */
+  --font-size-xs: 12px; /* Extra small */
+  --font-size-sm: 14px; /* Small */
+  --font-size-lg: 20px; /* Large */
+  --font-size-xl: 24px; /* Extra Large */
+  --font-size-hero: 48px; /* Hero font size */
 
   /* Font Weights */
-  --font-normal: 400; /* Normal weight for body text */
-  --font-medium: 500; /* Medium weight for subheadings */
-  --font-bold: 700; /* Bold weight for headings */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
 
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #4a90e2; /* Bright cobalt blue for buttons */
-  --button-text-color: #ffffff; /* White text for clear contrast */
+  --button-bg-color: #4a90e2; /* Bright cobalt blue */
+  --button-text-color: #ffffff;
   --button-width: 110px;
   --button-height: 47px;
   --button-padding: 10px 15px;
   --button-display: flex;
   --button-justify-content: center;
   --button-align-items: center;
-  --button-hover-bg-color: #002147; /* Darker navy for hover effect */
+  --button-hover-bg-color: #002147; /* Darker navy */
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
 }
 
-/* Dark mode settings */
+/* Dark Mode Settings */
 body[data-theme="dark"] {
   --first-container-background: #211c26;
   --second-container-background: #2c2a36;
@@ -63,34 +67,25 @@ body[data-theme="dark"] {
   --font-color-2: #a9a9a9;
   --toggle-bg: #f0eb96;
   --toggle-fg: #ffd000;
-  --body-font: "Roboto", sans-serif;
 
-  --font-size: 16px;
-  --font-size-about: 15px;
-  --hero-font: 48px; /* Adjusted hero font size for dark mode */
-  /*======================Font weight====================*/
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-bold: 700;
-
-  /*=================== Button styles===================== */
+  /* Button Styles */
   --button-bg-color: #5d35bb;
   --button-text-color: #fff;
   --button-hover-bg-color: #4c2f9d;
-  --button-width: 110px;
-  --button-height: 47px;
-  --button-padding: 10px;
-  --button-display: flex;
-  --button-justify-content: center;
-  --button-align-items: center;
-  --btn-opacity: 0.9;
-  --btn-font-size: 16px;
 }
 
-/*App body container styling */
+/* Global Font and Typography */
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--font-size-md);
+}
+
+/* App Container Styling */
 .app {
   background-color: var(--first-container-background);
-  border-width: 29px;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
@@ -101,45 +96,43 @@ body[data-theme="dark"] {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Styling for all links */
+/* Link Styling */
 a {
   cursor: pointer;
-  display: inline;
   text-decoration: none;
   list-style: none;
   transition: color 0.3s ease;
 }
 
-/* Heading and paragraph styles */
-h1,
-h2 {
+/* Heading and Paragraph Styling */
+h1, h2 {
   font-weight: var(--font-bold);
   color: var(--font-color-2);
-  font-size: 2.5rem; /* Large size for main headings */
+  font-size: 2.5rem;
 }
 
 h3 {
   font-weight: var(--font-medium);
   color: var(--font-color-2);
-  font-size: 1.75rem; /* Subheading size */
+  font-size: 1.75rem;
 }
 
 h4 {
   font-weight: var(--font-medium);
   color: var(--font-color-2);
-  font-size: 1.5rem; /* Smaller subheading size */
+  font-size: 1.5rem;
 }
 
 h5 {
   font-weight: var(--font-normal);
   color: var(--font-color-2);
-  font-size: 1.25rem; /* Small subheading size */
+  font-size: 1.25rem;
 }
 
 h6 {
   font-weight: var(--font-normal);
   color: var(--font-color-2);
-  font-size: 1rem; /* Smallest heading size */
+  font-size: 1rem;
 }
 
 span {
@@ -150,24 +143,22 @@ span {
 
 p {
   color: var(--font-color-2);
-  font-size: var(--font-size); /* Normal paragraph size */
-  line-height: 1.6; /* Improved line height for readability */
+  font-size: var(--font-size-md);
+  line-height: 1.6;
 }
 
-/* Button styling */
+/* Button Styling */
 .all-btn {
   border: var(--button-border);
   border-radius: var(--button-border-radius);
   background-color: var(--button-bg-color);
   color: var(--button-text-color);
-  width: auto;
   max-width: 200px;
-  height: auto;
   padding: var(--button-padding);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--btn-font-size); /* Button font size */
+  font-size: var(--btn-font-size);
 }
 
 .all-btn:hover {
@@ -175,81 +166,68 @@ p {
   opacity: var(--btn-opacity);
 }
 
-/* Image styling */
+/* Image Styling */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Grid styling */
+/* Grid Styling */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
 }
 
-/* Container styling */
+/* Container Styling */
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   max-width: 968px;
 }
-.section{
-  padding: 6rem 0 2rem;
 
+/* Section Styling */
+.section {
+  padding: 6rem 0 2rem;
 }
 
-.section__title{
+.section__title {
   font-size: large;
   color: var(--font-color-1);
 }
 
-.section__subtitle{
+.section__subtitle {
   display: block;
   font-size: small;
   text-align: center;
 }
-/* Horizontal rule */
+
+/* Horizontal Rule Styling */
 hr {
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(230, 230, 250, 0.1);
   margin: 20px 0;
   width: 100%;
-  height: 1px;
-  border-top: 1px solid rgba(230, 230, 250, 0.1);
-}
-
-/* Transitions for smooth theme change */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-.section {
-  padding: 6rem 0 2rem;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .grid {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
-  h1,
-  h2 {
-    font-size: 2rem; /* Adjusted heading size for smaller screens */
+  h1, h2 {
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.5rem; /* Subheading size for smaller screens */
+    font-size: 1.5rem;
   }
 
-  .section{
+  .section {
     padding: 2rem 0 4rem;
   }
 
-  .section__subtitle{
+  .section__subtitle {
     margin-bottom: 3rem;
   }
-
-  
 }
