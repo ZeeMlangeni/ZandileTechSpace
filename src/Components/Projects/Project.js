@@ -3,22 +3,14 @@ import './Project.css';
 
 function Project(props) {
   return (
-    <div className="project section container">
-      <div className="project__card">
-        <img className="projectImg" src={props.image} alt="image-of-project" />
-        <h2 className="project__title">{props.name}</h2>
-        <p className="project__desc">{props.description}</p>
-        <p className="techs">
-          Technologies Used
-          <br />
-          {props.technologies}
-        </p>
-        <div className="buttons">
-          <button className="git-btn">Git repository</button>
-          <button className="visit-btn">Visit Site</button>
-        </div>
-      </div>
-    </div>
+
+
+    <section className='project section' id='projects'>
+
+      <h2 className='section__title'>My Projects</h2>
+      <span className='section__subtitle'>Most Recent</span>
+    </section>
+   
   );
 }
 
