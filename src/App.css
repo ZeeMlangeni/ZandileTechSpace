@@ -16,21 +16,12 @@
   --heading-color: #1a3a6e;
   --subtitle-color: #002147;
 
-  /* Toggle Switch Colors */
-  --toggle-bg: #cfd9e6;
-  --toggle-fg: #0047ab;
+ 
 
   /* Font and Typography */
   --body-font: "Roboto", sans-serif;
 
-  /* Font Sizes */
-  --font-size-md: 16px;
-  --font-size-about: 15px;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-lg: 20px;
-  --font-size-xl: 24px;
-  --font-size-hero: 48px;
+  
   
   /* Added Font Sizes */
   --big-font-size: 3.5rem;
