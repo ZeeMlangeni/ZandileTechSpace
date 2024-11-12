@@ -8,6 +8,7 @@ function Section() {
   return (
     <div className='about section' id="about">
       <h3 className='section__title'>About Me</h3>
+      <span className='section__subtitle'>-- bits about me --</span>
     
 
       <div className='about__container container grid'>

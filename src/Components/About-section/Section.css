@@ -57,11 +57,13 @@
 /* Title and subtitle */
 .about__title {
     font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
 }
 
 .about__subtitle {
     font-size: var(--smaller-font-size);
+    color: var( --text-color);
+    font-weight: var(--font-medium);
 }
 
 /* Description styling */
@@ -85,7 +87,7 @@
     display: flex;
     border: var(--button-border);
     border-radius: var(--button-border-radius);
-    background-color: var( --primary-font-color);
+    background-color: var( --heading-color);
     color: var(--button-text-color);
     width: fit-content;
     height: var(--button-height);
