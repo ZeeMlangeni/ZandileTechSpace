@@ -21,22 +21,27 @@ const Works=()=> {
             });
             setProjects(newProject)
         }
-    })
+    },[item]);
 
+    const handleClick=(e,index)=>{
+        setItem({name: e.target.textContent});
+    }
   return (
 
    <div>
      <div className='work__filters'>
         {projectNav.map((item,index)=>{
             return (
-                <span className='work__item'>{item.name}</span>
+                <span onClick={(e)=>{
+                    handleClick (e,index)
+                }} className='work__item'>{item.name}</span>
             )
         })}
     </div>
 
     <div className='work__container container grid'>
 
-{projectData.map((item)=>  {
+{projects.map((item)=>  {
 
     return <WorkItems  item ={item} key={item.id}/>
 })}
