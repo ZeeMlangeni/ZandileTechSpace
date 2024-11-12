@@ -1,0 +1,31 @@
+.work__container{
+    grid-template-columns: repeat(2,max-content);
+    gap:3rem;
+    justify-content: center;
+}
+
+.work__card{
+    background-color: var(--first-container-background);
+    border:1px solid rgba(0,0,0,0.1);
+    padding: 1.2rem;
+    border-radius: 1rem;
+}
+.work__img{
+    width: 297px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.work__title{
+    font-size: var( --font-size-about);
+    font-weight: var( --font-medium);
+    margin-bottom: 0.5rem;
+}
+
+.work__button{
+    color: var(  --font-color-1);
+    font-size: small;
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
