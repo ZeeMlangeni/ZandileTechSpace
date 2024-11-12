@@ -70,6 +70,7 @@
 .about__description {
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
+    line-height: 1.5rem;
 }
 
 /* CV button */
@@ -89,7 +90,7 @@
     border-radius: var(--button-border-radius);
     background-color: var( --heading-color);
     color: var(--button-text-color);
-    width: fit-content;
+    width: 170px;
     height: var(--button-height);
     padding: var(--button-padding);
     justify-content: var(--button-justify-content);
