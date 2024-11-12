@@ -94,7 +94,7 @@ body{
 
 /* App Container Styling */
 .app {
-  background-color: var(--first-container-background);
+  
   margin: 0 auto;
   max-width: 100%;
   height: auto;
