@@ -205,6 +205,27 @@ hr {
 }
 
 /* Responsive Design */
+
+@media  screen and (max-width:992px) {
+
+  .container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 768px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -225,4 +246,6 @@ hr {
   .section__subtitle {
     margin-bottom: 3rem;
   }
+
+  
 }
