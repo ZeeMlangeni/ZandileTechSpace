@@ -30,20 +30,20 @@ html {
   --toggle-fg: #0047ab; /* Vibrant cobalt blue for toggle switch */
 
   /* Font and Typography */
-  --body-font: "roboto", sans-serif;
-  --font-size: 16px;
+  --body-font: "Roboto", sans-serif;
+  --font-size: 16px; /* Base font size for body */
   --font-size-about: 15px;
-  --hero-font: 50px;
+  --hero-font: 48px; /* Adjusted hero font size for better readability */
 
   /* Font Weights */
-  --font-normal: 400;
-  --font-medium: 500;
-  --font-bold: 600;
+  --font-normal: 400; /* Normal weight for body text */
+  --font-medium: 500; /* Medium weight for subheadings */
+  --font-bold: 700; /* Bold weight for headings */
 
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color:  #4a90e2; /* Bright cobalt blue for buttons */
+  --button-bg-color: #4a90e2; /* Bright cobalt blue for buttons */
   --button-text-color: #ffffff; /* White text for clear contrast */
   --button-width: 110px;
   --button-height: 47px;
@@ -69,11 +69,11 @@ body[data-theme="dark"] {
 
   --font-size: 16px;
   --font-size-about: 15px;
-  --hero-font: 50px;
+  --hero-font: 48px; /* Adjusted hero font size for dark mode */
   /*======================Font weight====================*/
   --font-normal: 400;
   --font-medium: 500;
-  --font-bold: 600;
+  --font-bold: 700;
 
   /*=================== Button styles===================== */
   --button-bg-color: #5d35bb;
@@ -117,11 +117,31 @@ h1,
 h2 {
   font-weight: var(--font-bold);
   color: var(--font-color-2);
+  font-size: 2.5rem; /* Large size for main headings */
 }
 
 h3 {
+  font-weight: var(--font-medium);
+  color: var(--font-color-2);
+  font-size: 1.75rem; /* Subheading size */
+}
+
+h4 {
+  font-weight: var(--font-medium);
+  color: var(--font-color-2);
+  font-size: 1.5rem; /* Smaller subheading size */
+}
+
+h5 {
   font-weight: var(--font-normal);
   color: var(--font-color-2);
+  font-size: 1.25rem; /* Small subheading size */
+}
+
+h6 {
+  font-weight: var(--font-normal);
+  color: var(--font-color-2);
+  font-size: 1rem; /* Smallest heading size */
 }
 
 span {
@@ -132,6 +152,8 @@ span {
 
 p {
   color: var(--font-color-2);
+  font-size: var(--font-size); /* Normal paragraph size */
+  line-height: 1.6; /* Improved line height for readability */
 }
 
 /* Button styling */
@@ -147,6 +169,7 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--btn-font-size); /* Button font size */
 }
 
 .all-btn:hover {
@@ -191,6 +214,7 @@ body {
 .section {
   padding: 6rem 0 2rem;
 }
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .grid {
@@ -200,10 +224,10 @@ body {
 
   h1,
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem; /* Adjusted heading size for smaller screens */
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Subheading size for smaller screens */
   }
 }
