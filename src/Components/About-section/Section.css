@@ -7,7 +7,7 @@
 
 /* Image styling */
 .about__img {
-    width: 250px;
+    width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
 }
@@ -51,12 +51,12 @@
 
 /* Title and subtitle */
 .about__title {
-    font-size: medium;
+    font-size: var( --small-font-size);
     font-weight: var(--font-medium);
 }
 
 .about__subtitle {
-    font-size: small;
+    font-size: var( --smaller-font-size);
 }
 
 /* Description styling */

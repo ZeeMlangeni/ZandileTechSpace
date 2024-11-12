@@ -6,8 +6,8 @@ import Info from './Information';
 
 function Section() {
   return (
-    <div className='about section container' id="about">
-      <h2 className='section__title'>About Me</h2>
+    <div className='about section' id="about">
+      <h3 className='section__title'>About Me</h3>
       <span className='section__subtitle'>--------- Here's a bit about me</span>
 
       <div className='about__container container grid'>
