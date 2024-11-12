@@ -5,7 +5,7 @@ function Information() {
    
 <div className='about__info grid'>
     <div className='about__box'>
-        <h3 className='about__title'>Skills and Goals</h3>
+        <h3 className='about__title'></h3>
         <span className ='about__subtitle'></span>
     </div>
 
