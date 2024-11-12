@@ -1,3 +1,10 @@
+.work__filters {
+    display: flex;
+    justify-content: center;
+    column-gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
 .work__container{
     grid-template-columns: repeat(2,max-content);
     gap:3rem;
@@ -28,4 +35,14 @@
     display: flex;
     align-items: center;
     column-gap: 0.25rem;
+}
+
+.work__button-icon{
+    font-size: 1.75rem;
+    transition: 0.4s;
+    color: green;
+
+}
+.work__button:hover .work__button-icon{
+    transform: translate(0.25rem);
 }

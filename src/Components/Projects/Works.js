@@ -10,7 +10,7 @@ const Works=()=> {
   return (
 
    <div>
-     <div className='work__fliters'>
+     <div className='work__filters'>
         {projectNav.map((item,index)=>{
             return (
                 <span className='work__item'>{item.name}</span>
