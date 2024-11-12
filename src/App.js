@@ -27,7 +27,7 @@ function App() {
      <hr/>
      <Skills/>
      <hr/>
-    
+    <Project/>
 
      <hr/>
 
