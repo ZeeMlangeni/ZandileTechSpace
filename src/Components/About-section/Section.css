@@ -1,22 +1,27 @@
 /* Container styles */
 .about__container {
+    display: grid; /* Make sure this is defined for grid */
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 4rem;
+    /* Ensures the content aligns properly */
 }
 
 /* Image styling */
 .about__img {
-    width: 350px;
+    width: 100%; /* Make image responsive */
+    max-width: 250px; /* Keep image size within limits */
     border-radius: 1.5rem;
     justify-self: center;
 }
 
 /* Information box grid */
 .about__info {
+    display: grid; /* Define grid for the boxes */
     grid-template-columns: repeat(3, 170px);
-    gap: 0.5rem;
+    gap: 1rem; /* Add some spacing between boxes */
     margin-bottom: 2rem;
+    justify-items: center; /* Center boxes inside their container */
 }
 
 /* Box styling */
@@ -45,18 +50,18 @@
 
 /* Hover effect for icons */
 .about__icon:hover {
-    color: #6a5acd; /* Change icon color on hover */
-    transform: scale(1.2); /* Enlarge the icon */
+    color: #6a5acd;
+    transform: scale(1.2);
 }
 
 /* Title and subtitle */
 .about__title {
-    font-size: var( --small-font-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
 .about__subtitle {
-    font-size: var( --smaller-font-size);
+    font-size: var(--smaller-font-size);
 }
 
 /* Description styling */
@@ -93,6 +98,7 @@
     font-size: var(--font-size-about);
 }
 
+/* Hover effect for button */
 .cv-btn:hover {
     background-color: var(--button-hover-bg-color);
     opacity: var(--btn-opacity);
@@ -107,6 +113,7 @@
 
     .about__img {
         padding: 0.75rem 0.5rem;
+        max-width: 200px; /* Slightly smaller on small screens */
     }
 
     .about__data {
@@ -117,27 +124,41 @@
         justify-content: center;
     }
 
-    .about__description{
-        padding: 0 5rem;
+    .about__description {
+        padding: 0 3rem;
         margin-bottom: 2rem;
     }
 }
 
 /* Media queries for smaller breakpoints */
 @media screen and (max-width: 576px) {
-    .about__info{
-        grid-template-columns: repeat(3,1fr);
-
+    .about__info {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
     }
 
-    .about__description{
-        padding: 0;
-
+    .about__description {
+        padding: 0 1rem; /* Less padding for smaller screens */
     }
 }
 
 @media screen and (max-width: 350px) {
-  .about__info{
-    grid-template-columns: repeat(2,1fr);
-  }
+    .about__info {
+        grid-template-columns: 1fr; /* Stacks the boxes vertically */
+    }
+
+    .about__description {
+        padding: 0 1rem;
+    }
+
+    .about__img {
+        max-width: 150px; /* Further reduce image size */
+    }
+
+    .about__title {
+        font-size: 1.75rem; /* Adjust title size for very small screens */
+    }
+
+    .about__subtitle {
+        font-size: 1.2rem; /* Adjust subtitle size for very small screens */
+    }
 }
