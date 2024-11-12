@@ -1,6 +1,6 @@
 import React from 'react';  
 import "./Section.css";
-import AboutImg from '../../Assets/headshot4.png';
+import AboutImg from '../../Assets/headshot4.jpg';
 import CV from '../../Assets/ZandileCV.pdf';
 import Info from './Information';
 
