@@ -1,16 +1,16 @@
 /* Container styles */
 .about__container {
-    display: grid; /* Make sure this is defined for grid */
-    grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    column-gap: 4rem;
-    /* Ensures the content aligns properly */
+    column-gap: 3rem;
+
 }
 
 /* Image styling */
 .about__img {
     width: 100%; /* Make image responsive */
-    max-width: 250px; /* Keep image size within limits */
+    max-width: 350px; /* Keep image size within limits */
     border-radius: 1.5rem;
     justify-self: center;
 }
@@ -18,7 +18,7 @@
 /* Information box grid */
 .about__info {
     display: grid; /* Define grid for the boxes */
-    grid-template-columns: repeat(3, 170px);
+    grid-template-columns: repeat(3, 147px);
     gap: 1rem; /* Add some spacing between boxes */
     margin-bottom: 2rem;
     justify-items: center; /* Center boxes inside their container */
@@ -85,7 +85,7 @@
     display: flex;
     border: var(--button-border);
     border-radius: var(--button-border-radius);
-    background-color: var(--button-bg-color);
+    background-color: var( --primary-font-color);
     color: var(--button-text-color);
     width: fit-content;
     height: var(--button-height);
@@ -100,7 +100,7 @@
 
 /* Hover effect for button */
 .cv-btn:hover {
-    background-color: var(--button-hover-bg-color);
+    background-color: var(--button-bg-color);
     opacity: var(--btn-opacity);
 }
 
