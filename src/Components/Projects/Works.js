@@ -1,4 +1,5 @@
 import React from 'react'
+import './Works.css'
 
 import {projectData} from './Datas'
 import { projectNav } from './Datas'
