@@ -1,9 +1,12 @@
 import React from 'react';
 import './Skills.css';
+import Technical from './Technical'
+import Soft from './Soft'
 /* import Languages from './Icons/Languages';
 import Framework from './Icons/Framework';
 import Tools from './Icons/Tools';
 import Soft from './Icons/Soft'; */
+
 
 function Skills() {
   return (
