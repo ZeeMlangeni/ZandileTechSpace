@@ -2,6 +2,7 @@ import React from 'react';
 import "./Section.css";
 import AboutImg from '../../Assets/headshot2.png'
 import CV from '../../Assets/ZandileCV.pdf'
+import Info from './info'
 
 function Section() {
   return (
@@ -13,7 +14,7 @@ function Section() {
 
 <img src='{AboutImg}' alt="" className='about__img'/>
 <div className='about__data'>
-  
+
 </div>
 
       </div>
