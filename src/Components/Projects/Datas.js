@@ -40,8 +40,8 @@ export const projectData = [
 ];
 
 export const projectNav = [
-  { name: 'all' },
-  { name: 'web' },
-  { name: 'app' },
-  { name: 'other' },
+  { name: 'All' },
+  { name: 'Web' },
+  { name: 'App' },
+  { name: 'Other' },
 ];
