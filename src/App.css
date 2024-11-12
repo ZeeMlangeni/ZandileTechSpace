@@ -124,7 +124,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(   --big-font-size);
+  font-size: var(   --h2-font-size);
   font-weight: var(--font-bold);
   color: var( --heading-color);
  
@@ -181,11 +181,6 @@ img {
   max-width: 968px;
 }
 
-/* Section Styling */
-.section {
-  padding: 6rem 0 2rem;
-}
-
 /* Section title styling */
 .section__title {
   font-size: var(--h1-font-size);
@@ -200,8 +195,8 @@ img {
   font-size: var(--normal-font-size);
   text-align: center;
   padding: 1rem 0; /* Add padding above and below the subtitle */
+  margin-bottom: 2rem; /* Add space below the subtitle */
 }
-
 
 /* Horizontal Rule Styling */
 hr {
