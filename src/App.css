@@ -1,41 +1,39 @@
-/*============ Universal Styling ==============*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--body-font);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/*====================== Website Variables ==================*/
 :root {
   --header-height: 3rem;
 
   /* Background Colors */
-  --first-container-background: #f5f8fa; /* Soft white for a clean, modern look */
-  --second-container-background: #e1eaf2; /* Light cobalt-tinted background for subtle contrast */
+  --first-container-background: #f5f8fa;
+  --second-container-background: #e1eaf2;
 
   /* Font Colors */
-  --primary-font-color: #0047ab; /* Deep navy blue for primary text */
-  --heading-color: #1a3a6e; /* Rich navy for headings */
-  --subtitle-color: #002147; /* Cobalt blue for subtitles and highlights */
+  --primary-font-color: #0047ab;
+  --heading-color: #1a3a6e;
+  --subtitle-color: #002147;
 
   /* Toggle Switch Colors */
-  --toggle-bg: #cfd9e6; /* Soft, cool gray-blue for toggle background */
-  --toggle-fg: #0047ab; /* Vibrant cobalt blue for toggle switch */
+  --toggle-bg: #cfd9e6;
+  --toggle-fg: #0047ab;
 
   /* Font and Typography */
   --body-font: "Roboto", sans-serif;
-  --font-size-md: 16px; /* Base font size */
+
+  /* Font Sizes */
+  --font-size-md: 16px;
   --font-size-about: 15px;
-  --font-size-xs: 12px; /* Extra small */
-  --font-size-sm: 14px; /* Small */
-  --font-size-lg: 20px; /* Large */
-  --font-size-xl: 24px; /* Extra Large */
-  --font-size-hero: 48px; /* Hero font size */
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-hero: 48px;
+  
+  /* Added Font Sizes */
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
 
   /* Font Weights */
   --font-normal: 400;
@@ -45,7 +43,7 @@ html {
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #4a90e2; /* Bright cobalt blue */
+  --button-bg-color: #4a90e2;
   --button-text-color: #ffffff;
   --button-width: 110px;
   --button-height: 47px;
@@ -53,7 +51,7 @@ html {
   --button-display: flex;
   --button-justify-content: center;
   --button-align-items: center;
-  --button-hover-bg-color: #002147; /* Darker navy */
+  --button-hover-bg-color: #002147;
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
 }
@@ -105,15 +103,21 @@ a {
 }
 
 /* Heading and Paragraph Styling */
-h1, h2 {
+h1 {
+  font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
-  color: var( --heading-color);
-  font-size: 2.5rem;
+  color: var(--font-color-2);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+  color: var(--font-color-2);
 }
 
 h3 {
   font-weight: var(--font-medium);
-  color: var( --heading-color);
+  color: var(--font-color-2);
   font-size: 1.75rem;
 }
 
@@ -216,11 +220,11 @@ hr {
   }
 
   h1, h2 {
-    font-size: 2rem;
+    font-size: var(--big-font-size);
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: var(--h2-font-size);
   }
 
   .section {
