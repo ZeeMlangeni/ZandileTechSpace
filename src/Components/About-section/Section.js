@@ -20,7 +20,7 @@ function Section() {
            
           </p>
 
-          <a download href={CV} className='cv-btn button--flex'>
+          <a download href={CV} className='cv-btn button button--flex'>
             Download CV
             <svg  width="24px" height="20px" viewBox="0 0 32 32" version="1.1">
               <title>icon 55 document text</title>
