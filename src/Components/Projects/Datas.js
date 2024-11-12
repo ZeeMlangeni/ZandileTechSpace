@@ -1,5 +1,5 @@
 import project1 from "../../Assets/placeholder.jpg"
-n 
+
 
 export const projectData = [
   {
