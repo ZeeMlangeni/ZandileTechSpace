@@ -5,6 +5,21 @@
     margin-bottom: 2rem;
 }
 
+.work__item{
+    color: var(--font-color-1);
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+
+.work__item:hover{
+    background-color: var( --button-bg-color);
+    color: white;
+
+}
 .work__container{
     grid-template-columns: repeat(2,max-content);
     gap:3rem;
