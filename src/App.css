@@ -230,4 +230,12 @@ body {
   h3 {
     font-size: 1.5rem; /* Subheading size for smaller screens */
   }
+
+  .section{
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle{
+    margin-bottom: 3rem;
+  }
 }

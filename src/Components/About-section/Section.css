@@ -116,13 +116,28 @@
     .about__info {
         justify-content: center;
     }
+
+    .about__description{
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
 }
 
 /* Media queries for smaller breakpoints */
 @media screen and (max-width: 576px) {
-    /* Additional styles for very small screens can be added here */
+    .about__info{
+        grid-template-columns: repeat(3,1fr);
+
+    }
+
+    .about__description{
+        padding: 0;
+
+    }
 }
 
 @media screen and (max-width: 350px) {
-    /* Adjustments for ultra-small screens */
+  .about__info{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
