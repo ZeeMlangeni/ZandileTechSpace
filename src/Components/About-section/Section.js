@@ -1,7 +1,7 @@
 import React from 'react'; 
 import "./Section.css";
 import AboutImg from '../../Assets/headshot2.png'
-import CV from 
+import CV from '../../Assets/ZandileCV.pdf'
 
 function Section() {
   return (
@@ -11,7 +11,10 @@ function Section() {
 
       <div className='about__container container grid'>
 
-
+<img src='{AboutImg}' alt="" className='about__img'/>
+<div className='about__data'>
+  
+</div>
 
       </div>
 
