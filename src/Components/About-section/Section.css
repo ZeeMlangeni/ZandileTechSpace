@@ -18,7 +18,7 @@
 /* Information box grid */
 .about__info {
     display: grid; /* Define grid for the boxes */
-    grid-template-columns: repeat(3, 147px);
+    grid-template-columns: repeat(3, 140px);
     gap: 1rem; /* Add some spacing between boxes */
     margin-bottom: 2rem;
     justify-items: center; /* Center boxes inside their container */
