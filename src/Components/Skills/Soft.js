@@ -14,13 +14,7 @@ function Soft() {
           </div>
         </div>
   
-        <div className="skills__data">
-          <i className='bx bxs-badge-check'></i>
-          <div>
-            <h3 className="skills__name">Problem-Solving</h3>
-            <span className="skills__level">Advanced</span>
-          </div>
-        </div>
+       
   
         <div className="skills__data">
           <i className='bx bxs-badge-check'></i>
@@ -56,13 +50,7 @@ function Soft() {
           </div>
         </div>
   
-        <div className="skills__data">
-          <i className='bx bx-badge-check'></i>
-          <div>
-            <h3 className="skills__name">Leadership</h3>
-            <span className="skills__level">Intermediate</span>
-          </div>
-        </div>
+       
   
         <div className="skills__data">
           <i className='bx bxs-badge-check'></i>

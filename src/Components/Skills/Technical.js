@@ -8,7 +8,7 @@ function Technical() {
         {/* First Group */}
         <div className="skills__group">
           <div className="skills__data">
-          <i className="uil uil-check-circle"></i>
+          <i className="bx bxs-badge-check"></i>
             <div>
               <h3 className="skills__name">HTML</h3>
               <span className="skills__level">Intermediate</span>
@@ -31,6 +31,8 @@ function Technical() {
             </div>
           </div>
         </div>
+
+        
 
         {/* Second Group */}
         <div className="skills__group">
