@@ -1,6 +1,6 @@
 import React from 'react';  
 import "./Section.css";
-import AboutImg from '../../Assets/headshot2.png';
+import AboutImg from '../../Assets/headshot4.png';
 import CV from '../../Assets/ZandileCV.pdf';
 import Info from './Information';
 
@@ -19,7 +19,7 @@ function Section() {
             Quick Bits About Me:
           </p>
 
-          <a download href={CV} className='btn button--flex'>
+          <a download href={CV} className='cv-btn button--flex'>
             Download CV
             <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1">
               <title>icon 55 document text</title>

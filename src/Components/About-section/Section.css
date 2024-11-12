@@ -1,5 +1,84 @@
+.about__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 4rem;
+
+}
 
 
+.about__img{
+    width:350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+}
+
+.about__info{
+    grid-template-columns: repeat(3,170px);
+    gap:0.5rem;
+    margin-bottom: 2rem;
+}
+
+.about__box{
+    background-color: var( --first-container-background);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about__icon{
+    font-size: 1.5rem;
+  color: var(--font-color-1);
+  margin-bottom: 0.5rem;
+
+}
+.about__title{
+    font-size: medium;
+    font-weight: var(--font-medium)
+}
+
+.about__subtitle{
+    font-size: small;
+
+}
+
+.about__description{
+    padding: 0 4rem 0 0;
+    margin-bottom: 2.5rem;
+}
+
+
+.cv-btn a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.cv-btn:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.05); 
+}
+
+.cv-btn{
+    display: flex;
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    width: 132px;
+    height: var(--button-height);
+    padding: var(--button-padding);
+    display: var(--button-display);
+    justify-content: var(--button-justify-content);
+    align-items: var(--button-align-items);
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    font-size: var(--font-size-about);
+}
+.cv-btn:hover{
+    background-color: var(  --button-hover-bg-color);
+    opacity: var( --btn-opacity);
+} 
 
 
 /*  .section__title {
@@ -88,34 +167,4 @@
     }
 }
 
-.cv-btn a {
-    color: #ffff;
-    text-decoration: none;
-}
-
-.cv-btn:hover {
-    background-color: var(--button-hover-bg-color);
-    transform: scale(1.05); 
-}
-
-.cv-btn{
-    display: flex;
-    border: var(--button-border);
-    border-radius: var(--button-border-radius);
-    background-color: var(--button-bg-color);
-    color: var(--button-text-color);
-    width: 127px;
-    height: var(--button-height);
-    padding: var(--button-padding);
-    display: var(--button-display);
-    justify-content: var(--button-justify-content);
-    align-items: var(--button-align-items);
-    transition: all 0.3s ease;
-    margin-bottom: 10px;
-    cursor: pointer; 
-    font-size: var(--font-size-about);
-}
-.cv-btn:hover{
-    background-color: var(  --button-hover-bg-color);
-    opacity: var( --btn-opacity);
-}  */
+ */
