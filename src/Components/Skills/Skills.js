@@ -15,7 +15,10 @@ function Skills() {
     <span className="section__subtitle">
       Here's a collection of my technical expertise and the tools I use to build amazing things.
     </span>
-    <div className='skills__container container grid'></div>
+    <div className='skills__container container grid'>
+      <Technical/>
+      <Soft/>
+    </div>
   </div>
   
   );
