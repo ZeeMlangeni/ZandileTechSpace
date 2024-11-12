@@ -2,7 +2,7 @@ import React from 'react';
 import "./Section.css";
 import AboutImg from '../../Assets/headshot2.png'
 import CV from '../../Assets/ZandileCV.pdf'
-import Info from './info'
+import Info from './Info'
 
 function Section() {
   return (
@@ -14,6 +14,15 @@ function Section() {
 
 <img src='{AboutImg}' alt="" className='about__img'/>
 <div className='about__data'>
+
+
+<Info/>
+<p className='about__description'>
+          I began my coding journey in 2022 and have developed my skills to an intermediate level in HTML, CSS, JavaScript, and React. I focus on creating intuitive, visually appealing sites with clean, maintainable code.<br /><br />
+          Quick Bits About Me:
+        </p>
+
+        <a download='' href={CV} className='btn button--flex'>Download CV</a>
 
 </div>
 
@@ -28,7 +37,7 @@ function Section() {
 
 
 
-      <div className='about__description'>
+      <div >
         <p>
           I began my coding journey in 2022 and have developed my skills to an intermediate level in HTML, CSS, JavaScript, and React. I focus on creating intuitive, visually appealing sites with clean, maintainable code.<br /><br />
           Quick Bits About Me:
