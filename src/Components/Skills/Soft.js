@@ -9,7 +9,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -19,7 +19,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -28,7 +28,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -37,7 +37,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -48,7 +48,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -58,7 +58,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -67,7 +67,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
@@ -76,7 +76,7 @@ function Soft() {
 <div className="skills__data">
 <i className='bx bxs-badge-check'></i>
 <div>
-    <h3 ClassName= 'skills__name'>dd</h3>
+    <h3 className= 'skills__name'>dd</h3>
     <span className='skills__level'></span>
 </div>
 </div>
