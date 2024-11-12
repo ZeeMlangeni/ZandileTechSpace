@@ -1,5 +1,5 @@
-import project1 from "./Assets/RecipeWebsite.png";
-import project2 from './Assets/Game.png';
+import project1 from "../../Assets/placeholder.jpg"
+n 
 
 export const projectData = [
   {
@@ -13,7 +13,7 @@ export const projectData = [
   
   {
     id: 2,
-    image: project2,
+    image: project1,
     name: "Puzzle Adventure Game",
     description: "A fun and engaging puzzle adventure game developed using Scratch. Players must solve challenging puzzles and explore new levels while uncovering secrets along the way. With user-friendly mechanics, it offers a thrilling experience for players of all ages.",
     technologies: "Scratch, Game Development",
@@ -31,7 +31,7 @@ export const projectData = [
 
   {
     id: 4,
-    image: project2,
+    image: project1,
     name: "Home Improvement Game",
     description: "A fun and interactive game created with GDevelop, designed to engage players in home improvement challenges. Players will use tools and materials to complete renovation projects and upgrade homes, all while learning about different aspects of construction and design in a virtual environment.",
     technologies: "GDevelop, Game Development",
