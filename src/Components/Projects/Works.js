@@ -18,7 +18,8 @@ const Works=()=> {
         else {
             const newProject =projectData.filter((project)=>{
                 return project.category === item.name;
-            })
+            });
+            setProjects(newProject)
         }
     })
 
