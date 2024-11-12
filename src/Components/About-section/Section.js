@@ -2,7 +2,7 @@ import React from 'react';
 import "./Section.css";
 import AboutImg from '../../Assets/headshot2.png'
 import CV from '../../Assets/ZandileCV.pdf'
-import Info from './Info'
+import Info from './Information'
 
 function Section() {
   return (
