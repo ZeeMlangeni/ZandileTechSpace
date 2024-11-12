@@ -89,52 +89,63 @@
 }
 
 
+/* General improvements for the header and menu background */
 @media screen and (max-width: 768px) {
     .nav-list {
-        display: none; 
-        flex-direction: column; 
-        width: 100%; 
-        padding: 1rem; 
-        background: rgba(255, 255, 255, 0.9); 
-        position: absolute; 
-        top: 4.5rem; 
-        left: 0; 
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.9); /* Consider changing this value to a solid or different color for better visibility */
+        position: absolute;
+        top: 4.5rem; /* Adjust this value to align correctly with your header */
+        left: 0;
+        right: 0; /* Ensures it covers the full width */
         pointer-events: auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
     }
 
     .nav-list.active {
-        display: flex; 
+        display: flex;
     }
 
     .nav__link {
         padding: 0.5rem 0;
-        transition: color 0.4s, background-color 0.4s; 
+        transition: color 0.4s, background-color 0.4s;
+        text-align: center; /* Center aligns links */
     }
 
     .nav__link:hover {
-        color: var(  --primary-font-color); 
-        background-color: rgba(0, 0, 0, 0.1); 
+        color: var(--primary-font-color);
+        background-color: rgba(0, 0, 0, 0.1);
     }
     
     .nav__toggle {
-        display: block; 
-        cursor: pointer; 
-        margin: 1rem 0; 
+        display: block;
+        cursor: pointer;
+        margin: 1rem 0;
     }
 
     .logo {
-       font-size: var(--small-font-size);
-    
+        font-size: var(--small-font-size);
+        max-width: 150px; /* Optional: Restrict logo width for better control */
+        height: auto; /* Maintains aspect ratio */
+        margin: 0 auto; /* Centers the logo */
     }
 }
- 
 
-@media screen and (max-width:350px) {
-    .nav__menu{
-        padding:2rem 0.25rem 4rem;
+/* Adjustments for very small screens */
+@media screen and (max-width: 350px) {
+    .nav__menu {
+        padding: 2rem 0.25rem 4rem;
     }
 
-    .nav-list{
+    .nav-list {
         column-gap: 0;
+        padding: 1rem; /* Adds consistent padding */
+    }
+
+    .logo {
+        font-size: calc(var(--small-font-size) - 2px); /* Further reduces size for very small screens */
     }
 }
