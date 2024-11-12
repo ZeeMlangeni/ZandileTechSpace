@@ -8,50 +8,12 @@ import Form from './Components/Form/Form';
 import Footer from './Components/Footer/Footer';
 
 import Project from './Components/Projects/Project';
-import project1 from "./Assets/RecipeWebsite.png"
-import project2 from './Assets/Game.png'
 
 
 
 function App() {
 
-  const projectData=[
-    {
-image:project1,
-name:"Food Recipe Website",
-description:"Working closely with the ONORI-B-team ,i collaborated to ensure that the website not only met but exceeded their expectations.",
-technologies:"",
 
-  },
-
-  {
-    image:project2,
-    name:"Sokoban Game ",
-    description:"Working closely with the ONORI-B-team ,i collaborated to ensure that the website not only met but exceeded their expectations.",
-    technologies:"",
-    
-      },
-
-
-      {
-        Image:project1,
-        name:"Onari B website",
-        description:"Working closely with the ONORI-B-team ,i collaborated to ensure that the website not only met but exceeded their expectations.",
-        technologies:"",
-        
-          },
-
-
-          {
-            Image:project2,
-            name:"Onari B website",
-            description:"Working closely with the ONORI-B-team ,i collaborated to ensure that the website not only met but exceeded their expectations.",
-            technologies:"",
-            
-              },
-
-
-]
   return (
 
 
