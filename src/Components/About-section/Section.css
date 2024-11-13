@@ -1,4 +1,4 @@
-
+/*--------------------About me section  styling----------------*/
 .about__container {
 
     grid-template-columns: repeat(2,1fr);
@@ -46,7 +46,7 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
-
+/*--------------------About me icons styling----------------*/
 .about__icon {
     font-size: 1.5rem;
     color: var(--font-color-1);
@@ -55,10 +55,7 @@
 }
 
 
-.about__icon:hover {
-    color: #6a5acd;
-    transform: scale(1.2);
-}
+
 
 
 .about__title {
@@ -81,6 +78,7 @@
     font-size: 16px;
 }
 
+/*--------------------CV button styling----------------*/
 
 .cv-btn a {
     color: #ffff;
@@ -115,11 +113,13 @@
     opacity: var(--btn-opacity);
 }
 
+/*--------------------Responsiveness  styling----------------*/
 
 @media screen and (max-width: 768px) {
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
+        padding-top: 2.5rem;
     }
 
     .about__img {
@@ -139,6 +139,11 @@
         padding: 0 3rem;
         margin-bottom: 2rem;
     }
+    #about{
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+      
+    }
 }
 
 
@@ -150,9 +155,19 @@
     .about__description {
         padding: 0 1rem; 
     }
+
+    #about{
+        margin-bottom: 1rem;
+        margin-top: 1.5rem;
+      
+    }
 }
 
 @media screen and (max-width: 350px) {
+    .about__container{
+        padding-top: 2.5rem;
+        margin-top: 2.5rem;
+    }
     .about__info {
         grid-template-columns: 1fr; 
     }
@@ -166,10 +181,10 @@
     }
 
     .about__title {
-        font-size: 1.75rem; 
+        font-size: 1.7rem; 
     }
 
     .about__subtitle {
-        font-size: 1.2rem; 
+        font-size: 1rem; 
     }
 }
