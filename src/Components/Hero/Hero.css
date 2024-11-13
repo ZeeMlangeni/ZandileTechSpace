@@ -1,16 +1,15 @@
+
+/*--------------------Hero container----------------*/
 #hero{
     margin-bottom: 2rem;
     margin-top: 2.5rem;
    height: 90vh;
-   background-color: #6a5acd;
+}
 
-}
-.home___content{
-grid-template-columns:116px repeat(2,1fr );
-padding-top:2rem;
- column-gap: 2rem;
- align-items: center;
-}
+
+
+
+/*--------------------Hero button styling ----------------*/
 .Touch-btn{
     display: flex;
     border: var(--button-border);
@@ -25,16 +24,16 @@ padding-top:2rem;
     align-items: var(--button-align-items);
     transition: all 0.3s ease;
     margin-bottom: 10px;
-    cursor: pointer; /* Change cursor on hover */
+    cursor: pointer; 
     font-size: var( --btn-font-size);
 }
 .Touch-btn:hover{
     background-color: var(  --button-bg-color);
     color: #ffff;
     opacity: var( --btn-opacity);
-    transform: scale(1.05); /* Slightly scale up button on hover */
+    transform: scale(1.05); 
 }
-
+/*--------------------Available now text styling----------------*/
 .avail-dot {
     display: flex;
     align-items: center;
@@ -55,6 +54,7 @@ padding-top:2rem;
     font-weight: var(--font-normal)
 }
 
+/*--------------------Image styling and animations----------------*/
 .headshot-img{
     object-position: center;
     object-fit: cover;
@@ -86,6 +86,8 @@ filter: drop-shadow(10px 0px 6px rgba(106, 51, 232, 0.10)) drop-shadow(0px 10px 
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }
+
+/*--------------------Social icons styling----------------*/
 .home_social{
     display: grid;
     grid-template-columns: max-content;
@@ -102,6 +104,15 @@ filter: drop-shadow(10px 0px 6px rgba(106, 51, 232, 0.10)) drop-shadow(0px 10px 
     opacity: 0.9; 
     transform: translateX(5px);
 }
+
+/*--------------------Hero content  styling----------------*/
+.home___content{
+    grid-template-columns:116px repeat(2,1fr );
+    padding-top:2rem;
+     column-gap: 2rem;
+     align-items: center;
+    }
+
 .home__title{
     margin-bottom: 0.47rem;
     font-size: 2.5rem;
