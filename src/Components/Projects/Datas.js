@@ -34,7 +34,7 @@ export const projectData = [
   {
     
       "id": 4,
-      "image": "clean",
+      "image": clean,
       "name": "SparklePro Cleaning Services",
       "description": "A professional and user-friendly website created to showcase SparklePro's exceptional cleaning services. Our team specializes in residential and commercial cleaning, offering services such as deep cleaning, carpet care, window washing, and more. Clients can easily browse available services, book appointments, and learn about our commitment to quality and eco-friendly cleaning solutions.",
       "technologies": "Web Development, HTML, CSS, JavaScript",
