@@ -8,7 +8,7 @@ function Data() {
         <span className='letter'>Front-End</span> Developer
       </h1>
       <p className='home__description'>
-      I’m on a journey to create impactful, engaging digital experiences—starting with HTML and growing through React. Driven by curiosity and a passion for using tech to uplift lives, I’m ready to build and make a difference. (No “404” here—just a builder ready to create something amazing!)
+      As a front-end developer passionate about web design, I transform digital ideas into smooth, user-friendly websites that make an impact. Let's turn your vision into something awesome.
 
 
       </p>
