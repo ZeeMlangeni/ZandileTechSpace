@@ -1,4 +1,4 @@
-/* import project1 from "../../Assets/placeholder.jpg" */
+/*   */
 import recipe from '../../Assets/recipe.png'
 import clean from '../../Assets/clean.jpg'
 import game from '../../Assets/game1.png'
@@ -21,7 +21,7 @@ export const projectData = [
     name: "Puzzle Adventure Game",
     description: "A fun and engaging puzzle adventure game developed using Scratch. Players must solve challenging puzzles and explore new levels while uncovering secrets along the way. With user-friendly mechanics, it offers a thrilling experience for players of all ages.",
     technologies: "Scratch, Game Development",
-    category: 'app'
+    category: 'other'
   },
   
   {
@@ -40,7 +40,7 @@ export const projectData = [
       "name": "SparklePro Cleaning Services",
       "description": "A professional and user-friendly website created to showcase SparklePro's exceptional cleaning services. Our team specializes in residential and commercial cleaning, offering services such as deep cleaning, carpet care, window washing, and more. Clients can easily browse available services, book appointments, and learn about our commitment to quality and eco-friendly cleaning solutions.",
       "technologies": "Web Development, HTML, CSS, JavaScript",
-      "category": "Service"
+      "category": "app"
     
     
   },
