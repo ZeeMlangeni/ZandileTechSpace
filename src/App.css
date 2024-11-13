@@ -117,7 +117,7 @@ a {
 h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
-  color: var( --heading-color);
+  color: var(   --font-color-1);
 }
 
 h2 {
