@@ -1,5 +1,6 @@
 import project1 from "../../Assets/placeholder.jpg"
 import recipe from '../../Assets/recipe.png'
+import clean from '../../Assets/clean.jpg'
 
 
 export const projectData = [
@@ -31,12 +32,15 @@ export const projectData = [
   },
 
   {
-    id: 4,
-    image: project1,
-    name: "Home Improvement Game",
-    description: "A fun and interactive game created with GDevelop, designed to engage players in home improvement challenges. Players will use tools and materials to complete renovation projects and upgrade homes, all while learning about different aspects of construction and design in a virtual environment.",
-    technologies: "GDevelop, Game Development",
-    category: 'other'
+    
+      "id": 4,
+      "image": "clean",
+      "name": "SparklePro Cleaning Services",
+      "description": "A professional and user-friendly website created to showcase SparklePro's exceptional cleaning services. Our team specializes in residential and commercial cleaning, offering services such as deep cleaning, carpet care, window washing, and more. Clients can easily browse available services, book appointments, and learn about our commitment to quality and eco-friendly cleaning solutions.",
+      "technologies": "Web Development, HTML, CSS, JavaScript",
+      "category": "Service"
+    
+    
   },
 ];
 
