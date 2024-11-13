@@ -4,7 +4,7 @@
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     column-gap: 3rem;
-    margin-bottom: 2rem;
+
  
   
 
@@ -18,7 +18,7 @@
 /* Image styling */
 .about__img {
     width: 100%; /* Make image responsive */
-    max-width: 350px; /* Keep image size within limits */
+   max-width: 350px; /* Keep image size within limits */
     border-radius: 1.5rem;
     justify-self: center;
 }
