@@ -182,6 +182,7 @@ img {
 .container {
   margin: 0 auto;
   max-width: 968px;
+
 }
 
 /* Section title styling */
@@ -204,12 +205,12 @@ img {
 /* Horizontal Rule Styling */
 hr {
   border: none;
-  border-top: 1px solid rgba(230, 230, 250, 0.1);
+  border-top: 1px solid rgba(0, 0, 214, 0.1);
   margin: 20px 0;
   width: 100%;
 }
 
-/* Responsive Design */
+
 
 @media  screen and (max-width:992px) {
 

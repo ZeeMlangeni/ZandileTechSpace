@@ -4,9 +4,12 @@
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     column-gap: 3rem;
+  
 
 }
-
+.about{
+    height: 90vh;
+}
 /* Image styling */
 .about__img {
     width: 100%; /* Make image responsive */
