@@ -4,11 +4,16 @@
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     column-gap: 3rem;
+    margin-bottom: 2rem;
+ 
   
 
 }
-.about{
+#about{
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
     height: 90vh;
+    background-color: #6a5acd;
 }
 /* Image styling */
 .about__img {
