@@ -83,3 +83,7 @@ form {
     background-color:var(--primary-font-color)
 }
  
+.head, head-two{
+    color: var( --heading-color);
+}
+
