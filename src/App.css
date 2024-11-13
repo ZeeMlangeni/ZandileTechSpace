@@ -8,7 +8,7 @@
   --header-height: 3rem;
 
   /* Background Colors */
-  --first-container-background: #f5f8fa;
+  --first-container-background: #f4f4f4;
   --second-container-background: #e1eaf2;
 
   /* Font Colors */
@@ -58,7 +58,7 @@
 
 /* Dark Mode Settings */
 body[data-theme="dark"] {
-  --first-container-background: #211c26;
+  --first-container-background: #1e1e1e;
   --second-container-background: #2c2a36;
   --primary-font-color: #5d35bb;
   --font-color-1: #ffffff;
