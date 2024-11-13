@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Form.css';
 
 function Form() {
-  // State for contact form inputs
+ 
   const [contactData, setContactData] = useState({
     name: '',
     email: '',
@@ -10,7 +10,7 @@ function Form() {
     message: ''
   });
 
-  // Handle input change for contact form fields
+  
   const handleContactChange = (e) => {
     setContactData({
       ...contactData,
@@ -18,11 +18,11 @@ function Form() {
     });
   };
 
-  // Handle form submission
+  
   const handleContactSubmit = (e) => {
     e.preventDefault();
     alert(`Message sent by ${contactData.name}:\n${contactData.message}`);
-    // Reset form fields after submission
+  
     setContactData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -32,7 +32,7 @@ function Form() {
         <h1>Get in Touch</h1>
         <p>I'd love to collaborate on a project or chat! Fill out this form, or message me on my socials.</p>
 
-        {/* Contact Info with Icons */}
+
         <div className="contact-info">
           <div className="contact-item">
             <i className="uil uil-phone"></i>
@@ -46,9 +46,9 @@ function Form() {
       </div>
 
       <div className="right-panel">
-        {/* Contact Form */}
+       
         <form onSubmit={handleContactSubmit}>
-          <h3>Send me a message</h3>
+        <h3>Send me a message</h3>
           <input
             type="text"
             name="name"
