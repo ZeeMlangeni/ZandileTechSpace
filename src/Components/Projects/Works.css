@@ -67,6 +67,34 @@ background-color: var(--button-hover-bg-color);
 color: white;
 }
 
+.view-all-button {
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    border: var(--button-border);
+    border-radius: var(--button-border-radius);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    width: var(--button-width);
+    height: var(--button-height);
+    padding: var(--button-padding);
+    display: var(--button-display);
+    justify-content: var(--button-justify-content);
+    align-items: var(--button-align-items);
+    font-size: var(--btn-font-size);
+    opacity: var(--btn-opacity);
+    cursor: pointer;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+  }
+  
+  
+  .view-all-button:hover {
+    background-color: var(--button-hover-bg-color);
+    opacity: 1; 
+  }
+  
+
 @media screen  and (max-width:992px ){
     .work__container{
         gap:1.25rem;
