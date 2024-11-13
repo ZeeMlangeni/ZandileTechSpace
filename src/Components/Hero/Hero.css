@@ -153,6 +153,8 @@ filter: drop-shadow(10px 0px 6px rgba(106, 51, 232, 0.10)) drop-shadow(0px 10px 
     .home__data{
         grid-column: 1/3;
     }
+
+    
    
 }
 

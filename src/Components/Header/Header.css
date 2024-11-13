@@ -11,6 +11,7 @@
 
 
 .logo {
+
     display: flex;
 }
 
@@ -88,6 +89,28 @@
     display: flex; 
 }
 
+/* For medium screens (Tablets) */
+@media screen and (max-width: 1024px) {
+    .nav {
+        flex-direction: row; /* Keep nav items in row */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo h2 {
+        font-size: 2rem; /* Adjust logo size for medium screens */
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.5rem;
+    }
+
+    .nav__toggle {
+        display: none; /* Hide toggle on tablets */
+    }
+}
 
 /* General improvements for the header and menu background */
 @media screen and (max-width: 768px) {
@@ -127,25 +150,30 @@
     }
 
     .logo {
-        font-size: var(--small-font-size);
-        max-width: 150px; /* Optional: Restrict logo width for better control */
-        height: auto; /* Maintains aspect ratio */
-        margin: 0 auto; /* Centers the logo */
+        font-size: 1rem;
+        white-space: nowrap;
+       
     }
 }
 
 /* Adjustments for very small screens */
+/* For very small screens */
 @media screen and (max-width: 350px) {
-    .nav__menu {
-        padding: 2rem 0.25rem 4rem;
+    .nav {
+        padding: 0.5rem 0;
     }
 
-    .nav-list {
+    .logo h2 {
+        font-size: 1.2rem; /* Keep logo smaller for small phones */
+        white-space: nowrap;
+    }
+
+    .nav__list {
+        padding: 1rem;
         column-gap: 0;
-        padding: 1rem; /* Adds consistent padding */
     }
 
-    .logo {
-        font-size: calc(var(--small-font-size) - 2px); /* Further reduces size for very small screens */
+    .nav__toggle {
+        padding: 0.5rem;
     }
 }
