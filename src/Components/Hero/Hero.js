@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Hero.css"
 import Socials from './Socials';
-import headshot from "../../Assets/headshot4.jpg";
+import headshot from "../../Assets/1.jpg";
 import Data from './Data'
 
 function Hero() {
