@@ -1,6 +1,6 @@
 import React from 'react';
 import './WorkItems.css'; // Make sure to create or update this CSS file with the styles below
-import './'
+import './WorkItems'
 
 const WorkItems = ({ item }) => {
   return (
