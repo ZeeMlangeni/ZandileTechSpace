@@ -22,7 +22,7 @@ function Section() {
 
           <a download href={CV} className='cv-btn button button--flex'>
             Download CV
-            <svg  width="24px" height="20px" viewBox="0 0 32 32" version="1.1">
+            <svg  width="20px" height="20px" viewBox="0 0 32 32" version="1.1">
               <title>icon 55 document text</title>
               <desc>Created with Sketch.</desc>
               <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">

@@ -1,9 +1,9 @@
-/* Container styles */
+
 .about__container {
 
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    column-gap: 3rem;
+    column-gap: 4rem;
 
  
   
@@ -15,24 +15,24 @@
     height: 90vh;
     background-color: #6a5acd;
 }
-/* Image styling */
+
 .about__img {
-    width: 100%; /* Make image responsive */
-   max-width: 350px; /* Keep image size within limits */
+
+  width: 350px; 
     border-radius: 1.5rem;
     justify-self: center;
 }
 
-/* Information box grid */
+
 .about__info {
-    display: grid; /* Define grid for the boxes */
+    display: grid; 
     grid-template-columns: repeat(3, 140px);
-    gap: 1rem; /* Add some spacing between boxes */
+    gap: 0.7rem; 
     margin-bottom: 2rem;
-    justify-items: center; /* Center boxes inside their container */
+    justify-items: center; 
 }
 
-/* Box styling */
+
 .about__box {
     background-color: var(--first-container-background);
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -42,13 +42,12 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for about__box */
+
 .about__box:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon styling */
 .about__icon {
     font-size: 1.5rem;
     color: var(--font-color-1);
@@ -56,13 +55,13 @@
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for icons */
+
 .about__icon:hover {
     color: #6a5acd;
     transform: scale(1.2);
 }
 
-/* Title and subtitle */
+
 .about__title {
     font-size: var(--small-font-size);
     font-weight: var(--font-bold);
@@ -74,14 +73,14 @@
     font-weight: var(--font-medium);
 }
 
-/* Description styling */
+
 .about__description {
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
     line-height: 1.5rem;
 }
 
-/* CV button */
+
 .cv-btn a {
     color: #ffff;
     text-decoration: none;
@@ -109,13 +108,13 @@
     font-size: var(--font-size-about);
 }
 
-/* Hover effect for button */
+
 .cv-btn:hover {
     background-color: var(--button-bg-color);
     opacity: var(--btn-opacity);
 }
 
-/* Responsive styling for smaller screens */
+
 @media screen and (max-width: 768px) {
     .about__container {
         grid-template-columns: 1fr;
@@ -124,7 +123,7 @@
 
     .about__img {
         padding: 0.75rem 0.5rem;
-        max-width: 200px; /* Slightly smaller on small screens */
+        max-width: 200px; 
     }
 
     .about__data {
@@ -141,20 +140,20 @@
     }
 }
 
-/* Media queries for smaller breakpoints */
+
 @media screen and (max-width: 576px) {
     .about__info {
-        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+        grid-template-columns: repeat(2, 1fr); 
     }
 
     .about__description {
-        padding: 0 1rem; /* Less padding for smaller screens */
+        padding: 0 1rem; 
     }
 }
 
 @media screen and (max-width: 350px) {
     .about__info {
-        grid-template-columns: 1fr; /* Stacks the boxes vertically */
+        grid-template-columns: 1fr; 
     }
 
     .about__description {
@@ -162,14 +161,14 @@
     }
 
     .about__img {
-        max-width: 150px; /* Further reduce image size */
+        max-width: 150px; 
     }
 
     .about__title {
-        font-size: 1.75rem; /* Adjust title size for very small screens */
+        font-size: 1.75rem; 
     }
 
     .about__subtitle {
-        font-size: 1.2rem; /* Adjust subtitle size for very small screens */
+        font-size: 1.2rem; 
     }
 }
