@@ -23,7 +23,7 @@
 
   
   
-  /* Added Font Sizes */
+  /*Font Sizes */
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
@@ -52,11 +52,11 @@
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
 
-  --text-color: #333; /* Dark gray for readability */
+  --text-color: #333; 
 
 }
 
-/* Dark Mode Settings */
+/* Dark Mode Styling */
 body[data-theme="dark"] {
   --first-container-background: #1e1e1e;
   --second-container-background: #2c2a36;
@@ -140,30 +140,9 @@ h3 {
   font-family: var(--body-font);
 }
 /*
-p {
-  color: var(--font-color-2);
-  font-size: var(--font-size-md);
-  line-height: 1.6;
-} */
 
-/* Button Styling */
-.all-btn {
-  border: var(--button-border);
-  border-radius: var(--button-border-radius);
-  background-color: var(--button-bg-color);
-  color: var(--button-text-color);
-  max-width: 200px;
-  padding: var(--button-padding);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--btn-font-size);
-}
 
-.all-btn:hover {
-  background-color: var(--button-hover-bg-color);
-  opacity: var(--btn-opacity);
-}
+
 
 /* Image Styling */
 img {
@@ -190,7 +169,7 @@ img {
   font-size: var(--h1-font-size);
   color: var(--font-color-1);
   text-align: center;
-  padding: 1rem 0; /* Add padding above and below the title */
+  padding: 1rem 0; 
 }
 
 /* Section subtitle styling */
@@ -198,20 +177,20 @@ img {
   display: block;
   font-size: var(--normal-font-size);
   text-align: center;
-  padding: 0.5rem 0; /* Add padding above and below the subtitle */
-  margin-bottom: 2rem; /* Add space below the subtitle */
+  padding: 0.5rem 0; 
+  margin-bottom: 2rem; 
 }
 
-/* Horizontal Rule Styling */
+/* Horizontal Rule Styling 
 hr {
   border: none;
   border-top: 1px solid rgba(0, 0, 214, 0.1);
   margin: 20px 0;
   width: 100%;
-}
+}*/
 
 
-
+/*responsiveness styling*/
 @media  screen and (max-width:992px) {
 
   .container{
@@ -219,9 +198,6 @@ hr {
     margin-right: 1.5rem;
   }
 }
-
-
-
 
 
 
