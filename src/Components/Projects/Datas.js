@@ -1,7 +1,8 @@
-import project1 from "../../Assets/placeholder.jpg"
+/* import project1 from "../../Assets/placeholder.jpg" */
 import recipe from '../../Assets/recipe.png'
 import clean from '../../Assets/clean.jpg'
 import game from '../../Assets/game1.png'
+import material from '../../Assets/material.jpg'
 
 
 export const projectData = [
@@ -25,7 +26,7 @@ export const projectData = [
   
   {
     id: 3,
-    image: project1,
+    image: material,
     name: "Family Hardware Catalog",
     description: "A comprehensive catalog website designed for my parents' hardware store. The platform showcases a wide variety of building materials, tools, and home improvement products. With an easy-to-navigate interface, customers can quickly browse and learn more about products available at the store, including features like product categories and descriptions.",
     technologies: "HTML, CSS, JavaScript, React",
