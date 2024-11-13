@@ -1,10 +1,11 @@
 import project1 from "../../Assets/placeholder.jpg"
+import recipe from '../../Assets/recipe.png'
 
 
 export const projectData = [
   {
     id: 1,
-    image: project1,
+    image: recipe,
     name: "Food Recipe Website",
     description: "A beautifully designed recipe website that allows users to explore, save, and share their favorite recipes. With a simple, intuitive interface and powerful filtering options, it makes meal planning a breeze. From appetizers to desserts, this website is perfect for food lovers of all skill levels.",
     technologies: "HTML, CSS, JavaScript",
