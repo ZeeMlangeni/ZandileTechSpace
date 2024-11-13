@@ -189,7 +189,7 @@ img {
   font-size: var(--h1-font-size);
   color: var(--font-color-1);
   text-align: center;
-  padding: 2rem 0; /* Add padding above and below the title */
+  padding: 1rem 0; /* Add padding above and below the title */
 }
 
 /* Section subtitle styling */
@@ -197,7 +197,7 @@ img {
   display: block;
   font-size: var(--normal-font-size);
   text-align: center;
-  padding: 1rem 0; /* Add padding above and below the subtitle */
+  padding: 0.5rem 0; /* Add padding above and below the subtitle */
   margin-bottom: 2rem; /* Add space below the subtitle */
 }
 
