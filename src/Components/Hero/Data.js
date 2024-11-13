@@ -4,7 +4,7 @@ function Data() {
   return (
     <div className='home__data'>
       <h1 className='home__title'>
-        Hi, I'm <span className='letter'>Zandile</span>,<br />
+        Hi, I'm <span className='letter'>Zandile</span><br />
         <span className='letter'>Front-End</span> Developer
       </h1>
       <p className='home__description'>

@@ -28,7 +28,7 @@
     font-size: var( --btn-font-size);
 }
 .Touch-btn:hover{
-    background-color: var(  --button-bg-color);
+    background-color: var(   --button-hover-bg-color);
     color: #ffff;
     opacity: var( --btn-opacity);
     transform: scale(1.05); 

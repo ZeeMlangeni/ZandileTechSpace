@@ -69,6 +69,7 @@ body[data-theme="dark"] {
 
   /* Button Styles */
   --button-bg-color: #5d35bb;
+  --heading-color: #5d35bb;
   --button-text-color: #fff;
   --button-hover-bg-color: #4c2f9d;
 }
