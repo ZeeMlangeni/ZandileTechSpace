@@ -1,6 +1,7 @@
 import project1 from "../../Assets/placeholder.jpg"
 import recipe from '../../Assets/recipe.png'
 import clean from '../../Assets/clean.jpg'
+import game from '../../Assets/game1.png'
 
 
 export const projectData = [
@@ -15,7 +16,7 @@ export const projectData = [
   
   {
     id: 2,
-    image: project1,
+    image: game,
     name: "Puzzle Adventure Game",
     description: "A fun and engaging puzzle adventure game developed using Scratch. Players must solve challenging puzzles and explore new levels while uncovering secrets along the way. With user-friendly mechanics, it offers a thrilling experience for players of all ages.",
     technologies: "Scratch, Game Development",
