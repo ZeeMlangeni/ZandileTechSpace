@@ -16,7 +16,7 @@ function Section() {
         <div className='about__data'>
           <Info />
           <p className='about__description'>
-          My coding journey began in 2022 when I realized how technology shapes our lives, even in the smallest daily tasks we often overlook. This ignited my curiosity to dive into coding and explore its potential impact. Since then, I’ve focused on front-end development using HTML, CSS, JavaScript, and React to build user-friendly websites. Solving problems with code and continuous learning keeps me inspired.<br /><br />
+          My coding journey began in 2022 when I realized how technology shapes our lives, even in the smallest daily tasks we often overlook. This ignited my curiosity to dive into coding and explore its potential impact. Since then, I’ve focused on front-end development using HTML, CSS, JavaScript, and React to build user-friendly websites. Solving problems with code and continuous learning keeps me inspired.
            
           </p>
 
