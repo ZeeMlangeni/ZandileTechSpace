@@ -22,19 +22,11 @@ function App() {
  {/*     <h1>hello world</h1>{/**for testing purposes */} 
      <Header/>
      <Hero/>
-     <hr/>
      <Section/>
-     <hr/>
      <Skills/>
-     <hr/>
     <Project/>
-
-     <hr/>
-
      <Form/>
-   
      <Footer/>
-
     </div>
 
 
