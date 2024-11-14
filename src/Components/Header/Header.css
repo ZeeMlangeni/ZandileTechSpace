@@ -61,7 +61,9 @@
     flex-direction: column;
     align-items: center;
     color: var(--font-color-2);
-    transition: color 0.4s;
+    transition: color 0.3s;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
 }
 
 .nav__link::after {
@@ -98,7 +100,7 @@
     }
 
     .logo h2 {
-        font-size: 2rem; /* Adjust logo size for medium screens */
+        font-size: 2rem; 
     }
 
     .nav__list {
@@ -108,24 +110,26 @@
     }
 
     .nav__toggle {
-        display: none; /* Hide toggle on tablets */
+        display: none; 
     }
 }
 
-/* General improvements for the header and menu background */
+
 @media screen and (max-width: 768px) {
+
+
     .nav-list {
         display: none;
         flex-direction: column;
         width: 100%;
         padding: 1rem;
-        background: rgba(255, 255, 255, 0.9); /* Consider changing this value to a solid or different color for better visibility */
+        background: rgba(255, 255, 255, 0.9); 
         position: absolute;
-        top: 4.5rem; /* Adjust this value to align correctly with your header */
+        top: 4.5rem; 
         left: 0;
-        right: 0; /* Ensures it covers the full width */
+        right: 0; 
         pointer-events: auto;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual separation */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     }
 
     .nav-list.active {
@@ -135,7 +139,7 @@
     .nav__link {
         padding: 0.5rem 0;
         transition: color 0.4s, background-color 0.4s;
-        text-align: center; /* Center aligns links */
+        text-align: center; 
     }
 
     .nav__link:hover {
@@ -156,15 +160,13 @@
     }
 }
 
-/* Adjustments for very small screens */
-/* For very small screens */
 @media screen and (max-width: 350px) {
     .nav {
         padding: 0.5rem 0;
     }
 
     .logo h2 {
-        font-size: 1.2rem; /* Keep logo smaller for small phones */
+        font-size: 1.2rem; 
         white-space: nowrap;
     }
 

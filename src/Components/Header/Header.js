@@ -52,11 +52,13 @@ function Header() {
               </a>
             </li>
           
-       <li className="nav__item">
-        
+       <li className="nav__item"  onClick={() => setIsMenuOpen(false)}>
+      
+
+       <DarkMode/>
+     
     {/*    <Switch /> */}
     
-       <DarkMode/>
        </li>
           </ul>
           <div className="nav__toggle" onClick={toggleMenu}> 
