@@ -192,6 +192,20 @@ hr {
 }*/
 
 
+/*Responsive typography*/
+
+
+@media screen and (max-width: 992px){
+  :root{
+  --big-font-size:2.75rem;
+  --h1-font-size:1.5rem;
+  --h2-font-size:1.25rem;
+  --normal-font-size:0.938rem;
+  --small-font-size:0.813rem;
+  --smaller-font-size:0.75rem}
+  }
+
+
 /*responsiveness styling*/
 @media  screen and (max-width:992px) {
 
