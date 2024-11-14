@@ -14,7 +14,7 @@ function Data() {
       </p>
 
       <div className='reach-me'>
-        <button className='Touch-btn'    onClick={() => {
+        <button className='Touch-btn button button-flex'    onClick={() => {
       const contactForm = document.getElementById('form');
       if (contactForm) {
         contactForm.scrollIntoView({ behavior: 'smooth' });
