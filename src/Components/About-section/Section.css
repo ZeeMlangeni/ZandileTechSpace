@@ -77,18 +77,18 @@
 
 /*--------------------CV button styling----------------*/
 
-.cv-btn a {
+.button a {
     color: #ffff;
     text-decoration: none;
 }
 
-.cv-btn:hover {
+.button:hover {
     background-color: var(--button-hover-bg-color);
     transform: scale(1.05);
 }
 
-.cv-btn {
-    display: flex;
+.button {
+    
     border: var(--button-border);
     border-radius: var(--button-border-radius);
     background-color: var( --heading-color);

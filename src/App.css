@@ -73,9 +73,7 @@ body[data-theme="dark"] {
   --button-hover-bg-color: #4c2f9d;
 }
 
-button{
-  display: inline-block;
-}
+
 /* Global Font and Typography */
 body,
 button,
@@ -115,6 +113,7 @@ a {
 
 /*button styling */
 button{
+  display: inline-block;
   cursor: pointer;
   border: none;
   outline: none;

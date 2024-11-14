@@ -8,24 +8,17 @@
 
 
 /*--------------------Hero button styling ----------------*/
-.Touch-btn{
-    display: flex;
+.button{
     border: var(--button-border);
     border-radius: var(--button-border-radius);
     background-color: var(--heading-color);
     color: #f3f0f0;
     width: fit-content;
     height: var(--button-height);
-    padding: var(--button-padding);
-    display: var(--button-display);
-    justify-content: var(--button-justify-content);
-    align-items: var(--button-align-items);
     transition: all 0.3s ease;
-    margin-bottom: 10px;
-    cursor: pointer; 
-    font-size: var( --btn-font-size);
+  
 }
-.Touch-btn:hover{
+.button:hover{
     background-color: var(   --button-hover-bg-color);
     color: #ffff;
     opacity: var( --btn-opacity);
