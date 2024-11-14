@@ -19,7 +19,7 @@ function Services() {
     <div className='services__content'>
         <div>
             <i className='uil uil-web-grid services__icon'></i>
-            <h3 className='services__title'>Web page <br/> design</h3>
+            <h3 className='services__title'>Web Development & <br/>Design</h3>
         </div>
 
         <span className='services__button  ' onClick={() => toggleTab(1)}>
@@ -31,8 +31,8 @@ function Services() {
         <div className='services__modal-content'>
             <i  onClick={()=> toggleTab(0) } className='uil uil-times services__modal-close '  ></i>
 
-            <h3 className=' services__modal-title'>Product <br/> Designer</h3>
-            <p className='services__modal-description'>Service with more the 2 years experience coding</p>
+            <h3 className=' services__modal-title'>Web Development & Design</h3>
+            <p className='services__modal-description'>Aspiring front-end developer with experience in creating responsive websites and user-centric designs</p>
             <ul>
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
@@ -41,7 +41,7 @@ function Services() {
 
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>User-Centric Design:</p>
+                    <p className='services__modal-info'>User-Centric Design</p>
                 </li>
 
                 <li className='services__modal-service'>
@@ -58,7 +58,7 @@ function Services() {
     <div className='services__content'>
         <div>
             <i className='uil uil-web-grid services__icon'></i>
-            <h3 className='services__title'>Web page <br/> design</h3>
+            <h3 className='services__title'>Technical Support & Troubleshooting <br/> (Demo Service)</h3>
         </div>
 
         <span className='services__button  ' onClick={() => toggleTab(1)}>
@@ -70,17 +70,17 @@ function Services() {
         <div className='services__modal-content'>
             <i   onClick={()=> toggleTab(0) } className='uil uil-times services__modal-close '></i>
 
-            <h3 className=' services__modal-title'>Product <br/> Designer</h3>
-            <p className='services__modal-description'>Service with more the 2 years experience coding</p>
+            <h3 className=' services__modal-title'>Technical Support & Troubleshooting (Demo Service)</h3>
+            <p className='services__modal-description'><p className='services__modal-description'>Aspiring technician with a focus on troubleshooting common tech issues and improving software performance.</p>/p>
             <ul>
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>I develop Websites</p>
+                    <p className='services__modal-info'>Troubleshooting Common Issues</p>
                 </li>
 
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>User-Centric Design:</p>
+                    <p className='services__modal-info'>Software Assistance</p>
                 </li>
 
                 <li className='services__modal-service'>
