@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import './Works.css';
 import { projectData } from './Datas';
 import { projectNav } from './Datas';
-import WorkItems from './WorkItems'; // Make sure this is correctly imported
+import WorkItems from './WorkItems'; 
 
 const Works = () => {
   const [item, setItem] = useState({ name: 'all' });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
-  const [visibleCount, setVisibleCount] = useState(2); // Start with 2 items visible
+  const [visibleCount, setVisibleCount] = useState(2); 
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
@@ -23,8 +23,8 @@ const Works = () => {
   const handleClick = (e, index) => {
     setItem({ name: e.target.textContent });
     setActive(index);
-    setVisibleCount(2); // Reset visible count when changing category
-    setShowAll(false); // Reset "View All" state
+    setVisibleCount(2); 
+    setShowAll(false); 
   };
 
   const toggleViewAll = () => {
@@ -42,7 +42,7 @@ const Works = () => {
         {projectNav.map((item, index) => (
           <span
             onClick={(e) => handleClick(e, index)}
-            className={`work__item ${active === index ? 'active-work' : ''}`}
+            className={`${active === index ? 'active-work' : ''} work__item `}
             key={index}
           >
             {item.name}
