@@ -1,0 +1,25 @@
+.services__container{
+    grid-template-columns:  repeat(3,270px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+
+.services__content{
+    position:relative;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 6rem 0 2rem 2.5rem;
+}
+
+.services__icon{
+display: block;
+font-size: 2rem;
+color: var(--text-color);
+margin-bottom: 1rem;
+}
+.services__title{
+    font-size: var(--h3-font-size);
+}
+
+.services__modal{
+    display: none;
+}
