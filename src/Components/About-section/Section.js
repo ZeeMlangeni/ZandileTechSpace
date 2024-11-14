@@ -12,7 +12,7 @@ function Section() {
     
 
       <div className='about__container container grid'>
-        <img src={AboutImg} alt="About Me" className='about__img'/>
+        <img src={AboutImg} alt="About-Me" className='about__img'/>
         <div className='about__data'>
           <Info />
           <p className='about__description'>
@@ -20,7 +20,7 @@ function Section() {
            
           </p>
 
-          <a download href={CV} className='cv-btn button button--flex'>
+          <a download href={CV} className='button button--flex cv-btn'>
             Download CV
             <svg  width="20px" height="20px" viewBox="0 0 32 32" version="1.1">
               <title>icon 55 document text</title>

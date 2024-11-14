@@ -245,18 +245,14 @@ hr {
 
 
 @media screen and (max-width: 768px) {
+  body{
+    margin: 0 0 var(--header-height) 0 ;
+  }
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
- /*  h1, h2 {
-    font-size: var(--big-font-size);
-  }
-
-  h3 {
-    font-size: var(--h2-font-size);
-  } */
-
+ 
   .section {
     padding: 2rem 0 4rem;
   }
