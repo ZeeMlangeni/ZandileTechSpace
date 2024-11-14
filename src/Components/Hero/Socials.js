@@ -3,8 +3,8 @@ import "./Socials.css"
 
 function socials() {
   return (
-    <div className="home_social">
-        <a href="example.com" className='home_social-icon' target='_blank' rel='noreferrer'><i className="uil uil-github"></i></a>
+    <div className="home_social"> {/* fix this link */}
+        <a href="https://github/zeeMlangeni" className='home_social-icon' target='_blank' rel='noreferrer'><i className="uil uil-github"></i></a>
 
         <a href="https://www.linkedin.com/feed/" className='home_social-icon' target='_blank' rel='noreferrer'>
   <i className="uil uil-linkedin"></i>
