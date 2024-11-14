@@ -270,5 +270,8 @@ hr {
 }
 
 @media screen and (max-width:350px){
-
+  .container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
