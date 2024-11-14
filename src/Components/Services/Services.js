@@ -71,7 +71,7 @@ function Services() {
             <i   onClick={()=> toggleTab(0) } className='uil uil-times services__modal-close '></i>
 
             <h3 className=' services__modal-title'>Technical Support & Troubleshooting (Demo Service)</h3>
-            <p className='services__modal-description'><p className='services__modal-description'>Aspiring technician with a focus on troubleshooting common tech issues and improving software performance.</p>/p>
+           <p className='services__modal-description'>Aspiring technician with a focus on troubleshooting common tech issues and improving software performance.</p>
             <ul>
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
@@ -85,7 +85,7 @@ function Services() {
 
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>Responsive Web Layouts</p>
+                    <p className='services__modal-info'>Technical Demo Solutions</p>
                 </li>
             </ul>
         </div>
@@ -110,22 +110,23 @@ function Services() {
         <div className='services__modal-content'>
             <i  onClick={()=> toggleTab(0) } className='uil uil-times services__modal-close '  ></i>
 
-            <h3 className=' services__modal-title'>Product <br/> Designer</h3>
-            <p className='services__modal-description'>Service with more the 2 years experience coding</p>
+            <h3 className=' services__modal-title'>Creative Design with <br/> Canva</h3>
+            <p className='services__modal-description'>Skilled in creating professional designs with Canva, including social media content, presentations, and custom graphics.</p>
+
             <ul>
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>I develop Websites</p>
+                    <p className='services__modal-info'>Custom Graphics</p>
                 </li>
 
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>User-Centric Design:</p>
+                    <p className='services__modal-info'>Social Media Content</p>
                 </li>
 
                 <li className='services__modal-service'>
                     <i className='uil uil-check-circle services_modal-icon'></i>
-                    <p className='services__modal-info'>Responsive Web Layouts</p>
+                    <p className='services__modal-info'>Professional Presentations</p>
                 </li>
             </ul>
         </div>
