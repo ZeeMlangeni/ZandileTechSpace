@@ -3,6 +3,7 @@ import "./Hero.css"
 import Socials from './Socials';
 import headshot from "../../Assets/1.jpg";
 import Data from './Data'
+import ScrollDown from './ScrollDown';
 
 function Hero() {
   return (
@@ -17,6 +18,7 @@ function Hero() {
 <Data/>
 
 </div>
+<ScrollDown/>
     </div>
 
 </section>
