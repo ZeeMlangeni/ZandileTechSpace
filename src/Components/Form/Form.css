@@ -9,12 +9,7 @@
     background-color: var( --second-container-background);
     border-radius: 8px;
 }
-#form{
-    margin-bottom: 2rem;
-    margin-top: 4rem;
-  
-  
-}
+
 
 .left-panel, .right-panel {
     flex: 1;
