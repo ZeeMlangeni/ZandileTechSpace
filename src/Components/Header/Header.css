@@ -94,7 +94,7 @@
 /* For medium screens (Tablets) */
 @media screen and (max-width: 1024px) {
     .nav {
-        flex-direction: row; /* Keep nav items in row */
+        flex-direction: row; 
         justify-content: space-between;
         align-items: center;
     }
@@ -161,8 +161,8 @@
 }
 
 @media screen and (max-width: 350px) {
-    .nav {
-        padding: 0.5rem 0;
+    .nav__menu {
+        padding:2rem 0.25rem 4rem;
     }
 
     .logo h2 {
