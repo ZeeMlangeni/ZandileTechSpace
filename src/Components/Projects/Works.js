@@ -56,9 +56,9 @@ const Works = () => {
         ))}
       </div>
 
-      {/* Show the button even if there are fewer than 4 items */}
+    
       {projects.length > 2 && (
-        <button onClick={toggleViewAll} className='view-all-button'>
+        <button onClick={toggleViewAll} className='view-all-button button button--flex'>
           {showAll ? 'Show Less' : 'View All'}
         </button>
       )}
