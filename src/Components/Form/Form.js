@@ -27,7 +27,7 @@ function Form() {
     /*********** Send the email using EmailJS************ */
     emailjs.sendForm(
       'service_0djau6q', 
-      'template_27FEDN8', 
+      'template_27fetn8', 
       e.target, 
       'u0LMgGZw5twSkzOy-' 
     ).then(
