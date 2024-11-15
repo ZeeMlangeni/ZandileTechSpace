@@ -26,7 +26,7 @@ const ScrollAnimation = () => {
     };
   }, []);
 
-  return null; // This component doesn’t render anything visually.
+  return null; 
 };
 
 export default ScrollAnimation;
