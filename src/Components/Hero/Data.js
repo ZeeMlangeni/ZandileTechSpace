@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTyperwriter,Cursor} from 'react-simple-typewriter';
 
 function Data() {
   return (
