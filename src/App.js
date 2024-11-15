@@ -10,7 +10,7 @@ import Footer from './Components/Footer/Footer';
 
 import Project from './Components/Projects/Project';
 
-
+import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation';
 
 function App() {
 
@@ -29,7 +29,10 @@ function App() {
     <Project/>
      <Form/>
      <Footer/>
+
+     <ScrollAnimation />
     </div>
+
 
 
 

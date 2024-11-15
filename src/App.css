@@ -214,6 +214,36 @@ hr {
 }*/
 
 
+
+/********Scrolling animation**********/
+/* Animation for sections */
+/* Initial state of sections */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px); /* Start from 30px below the final position */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition for both opacity and transform */
+}
+
+/* Applied when the section is in the viewport */
+.show-animate {
+  opacity: 1;
+  transform: translateY(0); /* Move to the original position */
+}
+
+/* Slide-in effect */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px); /* Start from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+
+
 /*Responsive typography*/
 
 
