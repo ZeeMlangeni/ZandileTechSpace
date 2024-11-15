@@ -35,7 +35,11 @@ function Form() {
     ).then(
       (result) => {
         console.log(result.text); 
-        toast.success('Message sent successfully!');
+        toast.success('Message sent successfully!', {
+          position: "top-right",
+          autoClose: 5000,  // The toast will disappear after 5 seconds
+          hideProgressBar: false,  // Show progress bar
+        });
         setContactData({ name: '', email: '', subject: '', message: '' });
       },
       (error) => {
@@ -107,7 +111,7 @@ function Form() {
           <button type="submit" className="form-btn">Send Message</button>
         </form>
       </div>
-      
+
        {/* ToastContainer to display notifications */}
        <ToastContainer />
     </div>
