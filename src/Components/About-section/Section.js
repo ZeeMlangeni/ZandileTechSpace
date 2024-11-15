@@ -1,49 +1,14 @@
-import React, { useEffect } from 'react'; 
+import React from 'react';  
 import "./Section.css";
 import AboutImg from '../../Assets/headshot4.jpg';
 import CV from '../../Assets/ZandileCV.pdf';
 import Info from './Information';
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { gsap } from 'gsap';
-
 
 
 function Section() {
 
- 
 
-  useEffect(() => {
-    ScrollSmoother.create({
-      smooth: 1.5, // Defines the smoothness of the scroll (1 is the default)
-      effects: true, // Enable scroll-triggered effects
-    });
   
-    gsap.from(".about__img", {
-      scrollTrigger: {
-        trigger: ".about__container",
-        start: "top 80%",
-        end: "top 30%",
-        scrub: 1, // Make sure scrub is enabled for smoother linking
-      },
-      x: -1000,
-      opacity: 0,
-      duration: 1,
-    });
-  
-    gsap.from(".about__data", {
-      scrollTrigger: {
-        trigger: ".about__container",
-        start: "top 80%",
-        end: "top 30%",
-        scrub: 1,
-      },
-      x: 1000,
-      opacity: 0,
-      duration: 1,
-    });
-  }, []);
-  
-
   return (
     <div className='about section ' id="about">
       <h3 className='section__title '>About Me</h3>
