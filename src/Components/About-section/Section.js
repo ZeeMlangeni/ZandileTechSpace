@@ -7,7 +7,7 @@ import Info from './Information';
 function Section() {
   return (
     <div className='about section' id="about">
-      <h3 className='section__title'>About Me</h3>
+      <h3 className='section__title '>About Me</h3>
       <span className='section__subtitle'>The path that lead me here</span>
     
 
