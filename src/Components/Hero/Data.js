@@ -4,14 +4,14 @@ import {useTyperwriter,Cursor} from 'react-simple-typewriter';
 function Data() {
 
   const {text} =useTyperwriter({
-    words:['Zandile','Front-End'],
+    words:['Front-end Developer','Web designer'],
     loop:{},
   })
   return (
     <div className='home__data'>
       <h1 className='home__title'>
         Hi, I'm <span className='letter'>Zandile</span><br />
-        <span className='letter'>Front-End</span> Developer
+        <span className='letter'>{text}</span> Developer
       </h1>
       <p className='home__description'>
       As a front-end developer passionate about web design, I transform digital ideas into smooth, user-friendly websites that make an impact. Let's turn your vision into something awesome.
