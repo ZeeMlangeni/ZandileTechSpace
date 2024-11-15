@@ -69,7 +69,7 @@ function Form() {
         <h3 className='head-two'>Send me a message</h3>
           <input
             type="text"
-            name="name"
+            name="from_name"
             placeholder="Name"
             value={contactData.name}
             onChange={handleContactChange}
@@ -78,7 +78,7 @@ function Form() {
           />
           <input
             type="email"
-            name="email"
+            name="from_email"
             placeholder="Email"
             value={contactData.email}
             onChange={handleContactChange}
