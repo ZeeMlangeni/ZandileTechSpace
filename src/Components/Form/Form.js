@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Form.css';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Form() {
@@ -33,12 +35,12 @@ function Form() {
     ).then(
       (result) => {
         console.log(result.text); 
-        alert('Message sent successfully!');
+        toast.success('Message sent successfully!');
         setContactData({ name: '', email: '', subject: '', message: '' });
       },
       (error) => {
         console.log(error.text);
-        alert('There was an error sending your message. Please try again.');
+        toast.error('There was an error sending your message. Please try again.');
       }
     );
   };
@@ -105,6 +107,9 @@ function Form() {
           <button type="submit" className="form-btn">Send Message</button>
         </form>
       </div>
+      
+       {/* ToastContainer to display notifications */}
+       <ToastContainer />
     </div>
   );
 }
