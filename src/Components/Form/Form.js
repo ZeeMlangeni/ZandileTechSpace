@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Form.css';
+import emailjs from 'emailjs-com';
+
 
 function Form() {
  
@@ -21,10 +23,26 @@ function Form() {
   
   const handleContactSubmit = (e) => {
     e.preventDefault();
-    alert(`Message sent by ${contactData.name}:\n${contactData.message}`);
   
-    setContactData({ name: '', email: '', subject: '', message: '' });
+    /*********** Send the email using EmailJS************ */
+    emailjs.sendForm(
+      'service_0djau6q', 
+      'template_27FEDN8', 
+      e.target, 
+      'u0LMgGZw5twSkzOy-' 
+    ).then(
+      (result) => {
+        console.log(result.text); 
+        alert('Message sent successfully!');
+        setContactData({ name: '', email: '', subject: '', message: '' });
+      },
+      (error) => {
+        console.log(error.text);
+        alert('There was an error sending your message. Please try again.');
+      }
+    );
   };
+  
 
   return (
     <div className="form-container" id="form">
