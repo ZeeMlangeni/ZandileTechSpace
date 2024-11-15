@@ -8,7 +8,7 @@ function Data() {
     loop:{},
     typeSpeed:130,
     deleteSpeed:50,
-    delaySpeed:2000,
+    delaySpeed:5000,
   })
   return (
     <div className='home__data'>
