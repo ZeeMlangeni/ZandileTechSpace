@@ -2,6 +2,11 @@ import React from 'react';
 import {useTyperwriter,Cursor} from 'react-simple-typewriter';
 
 function Data() {
+
+  const {text} =useTyperwriter({
+    words:['Zandile','Front-End'],
+    loop:{},
+  })
   return (
     <div className='home__data'>
       <h1 className='home__title'>
