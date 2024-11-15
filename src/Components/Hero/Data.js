@@ -1,11 +1,14 @@
 import React from 'react';
-import {useTyperwriter,Cursor} from 'react-simple-typewriter';
+import {useTypewriter} from 'react-simple-typewriter';
 
 function Data() {
 
-  const {text} =useTyperwriter({
-    words:['Front-end Developer','Web designer'],
+  const [text] =useTypewriter({
+    words:['Front-end ','UI/UX'],
     loop:{},
+    typeSpeed:130,
+    deleteSpeed:50,
+    delaySpeed:2000,
   })
   return (
     <div className='home__data'>
