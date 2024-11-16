@@ -11,6 +11,18 @@ import Project from './Components/Projects/Project';
 /* import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation'; */
 
 function App() {
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <div className="app">
     {/*   <ScrollAnimation />  */}
