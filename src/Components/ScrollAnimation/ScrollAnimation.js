@@ -5,39 +5,36 @@ const ScrollAnimation = () => {
     const hiddenElements = document.querySelectorAll('.hidden');
     const elements = document.querySelectorAll('.services__content');
 
-    // Set dynamic delay based on index of each element
-    const setDynamicDelays = () => {
-      elements.forEach((el, index) => {
-        const delay = (index + 1) * 200; // Adjust the delay as needed
-        el.style.setProperty('--delay', `${delay}ms`); // Using CSS variable
-      });
-    };
+    // Set dynamic delays
+    elements.forEach((el, index) => {
+      const delay = (index + 1) * 200; // Customize the delay as needed
+      el.style.setProperty('--delay', `${delay}ms`);
+    });
 
-    // Run delay setting when the component is mounted
-    setDynamicDelays();
-
-    // Observer options for IntersectionObserver
+    // Observer options
     const observerOptions = {
-      root: null, // viewport as root
+      root: null, // Use viewport as the root
       rootMargin: '0px',
-      threshold: 0.1, // trigger when 10% of element is visible
+      threshold: 0.1, // Trigger when 10% of the element is visible
     };
 
-    // Intersection Observer to observe when elements come into view
-    const observer = new IntersectionObserver((entries, observer) => {
+    // Create IntersectionObserver
+    const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('show');
-          observer.unobserve(entry.target); // Stop observing after it is shown
+        } else {
+          entry.target.classList.remove('show'); // Remove class when out of view to re-trigger animation
         }
       });
     }, observerOptions);
 
+    // Observe each hidden element
     hiddenElements.forEach((el) => {
       observer.observe(el);
     });
 
-    // Cleanup observer when component unmounts
+    // Cleanup observer on unmount
     return () => {
       hiddenElements.forEach((el) => {
         observer.unobserve(el);
