@@ -8,6 +8,10 @@ import Info from './Information';
 function Section() {
 
 
+
+
+  
+
   
   return (
     <div className='about section ' id="about">
@@ -24,7 +28,7 @@ function Section() {
            
           </p>
 
-          <a download href={CV}  aria-label="Download my CV" className='button button--flex cv-btn'>
+          <a download href={CV} className='button button--flex cv-btn'>
             Download CV
             <svg  width="20px" height="20px" viewBox="0 0 32 32" version="1.1">
               <title>icon 55 document text</title>
