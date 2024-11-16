@@ -7,7 +7,13 @@ function Header() {
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
+  const handleSmoothScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMenuOpen(false); // Close the menu after scrolling
+  };
 
 
 
@@ -31,7 +37,10 @@ function Header() {
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#about"  onClick={() => setIsMenuOpen(false)}>
+              <a className="nav__link" href="#about" onClick={() => {
+      handleSmoothScroll('projects');
+      setIsMenuOpen(false);
+    }}>
                 About
               </a>
             </li>
@@ -42,7 +51,10 @@ function Header() {
             </li>
 
             <li className="nav__item">
-              <a className="nav__link" href="#projects" onClick={() => setIsMenuOpen(false)}>
+              <a className="nav__link" href="#projects"  onClick={() => {
+      handleSmoothScroll('projects');
+      setIsMenuOpen(false);
+    }} >
                Projects
               </a>
             </li>
