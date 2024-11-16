@@ -8,22 +8,37 @@
 
 
 /*--------------------Hero button styling ----------------*/
-.button{
+.button a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: var(--button-bg-color);
+    opacity: var(--btn-opacity);
+}
+
+.button {
+    
     border: var(--button-border);
     border-radius: var(--button-border-radius);
-    background-color: var(--heading-color);
-    color: #f3f0f0;
-    width: fit-content;
+    background-color: var( --heading-color);
+    color: var(--button-text-color);
+    width: 170px;
     height: var(--button-height);
+    padding: var(--button-padding);
+    justify-content: var(--button-justify-content);
+    align-items: var(--button-align-items);
     transition: all 0.3s ease;
-  
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: var(--font-size-about);
 }
-.button:hover{
-    background-color: var(   --button-hover-bg-color);
-    color: #ffff;
-    opacity: var( --btn-opacity);
-    transform: scale(1.05); 
-}
+
+
+
+
+
 /*--------------------Available now text styling----------------*/
 .avail-dot {
     display: flex;
