@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; // Import ScrollTrigger
 
+import { ScrollSmoother } from 'gsap/ScrollSmoother'; // Make sure this is imported
+
+
 gsap.registerPlugin(ScrollTrigger); // Register the plugin
 
 const WorkItems = ({ item }) => {

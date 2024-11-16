@@ -8,25 +8,20 @@ import Services from './Components/Services/Services';
 import Form from './Components/Form/Form';
 import Footer from './Components/Footer/Footer';
 import Project from './Components/Projects/Project';
-import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation';
+/* import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation'; */
 
 function App() {
   return (
     <div className="app">
-      {/* Wrap all your content inside ScrollAnimation */}
-      <ScrollAnimation /> 
-      <div id="wrapper"> {/* This is the smooth scrolling wrapper */}
-        <div id="content"> {/* Content goes here */}
-          <Header />
-          <Hero />
-          <Section />
-          <Skills />
-          <Services />
-          <Project />
-          <Form />
-          <Footer />
-        </div>
-      </div>
+    {/*   <ScrollAnimation />  */}
+      <Header />
+      <Hero />
+      <Section  /> 
+      <Skills  /> 
+      <Services  />
+      <Project />
+      <Form />
+      <Footer />
     </div>
   );
 }
