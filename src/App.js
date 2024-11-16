@@ -13,15 +13,20 @@ import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation';
 function App() {
   return (
     <div className="app">
+      {/* Wrap all your content inside ScrollAnimation */}
       <ScrollAnimation /> 
-      <Header />
-      <Hero />
-      <Section  /> 
-      <Skills  /> 
-      <Services  />
-      <Project />
-      <Form />
-      <Footer />
+      <div id="wrapper"> {/* This is the smooth scrolling wrapper */}
+        <div id="content"> {/* Content goes here */}
+          <Header />
+          <Hero />
+          <Section />
+          <Skills />
+          <Services />
+          <Project />
+          <Form />
+          <Footer />
+        </div>
+      </div>
     </div>
   );
 }
