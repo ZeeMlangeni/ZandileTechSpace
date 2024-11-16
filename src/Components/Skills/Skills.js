@@ -8,7 +8,6 @@ import Tools from './Icons/Tools';
 import Soft from './Icons/Soft'; */
 
 
-
 function Skills() {
   return (
     <div className="skills section " id="skills">
