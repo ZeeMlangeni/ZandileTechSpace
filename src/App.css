@@ -45,7 +45,7 @@ html{
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #5d35bb; /* Consolidated to avoid duplicate declarations */
+  --button-bg-color: #0047ab; /* Consolidated to avoid duplicate declarations */
   --button-hover-bg-color: #3a77c4;
   --button-text-color: #ffffff;
   --button-width: 170px; /* Changed to match what seems consistent */
@@ -136,11 +136,13 @@ a {
   transition: all 0.3s ease;
   margin-bottom: 10px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
   background-color: var(--button-hover-bg-color);
   opacity: var(--btn-opacity);
+  transform: scale(1.05);
 }
 
 .button__icon{

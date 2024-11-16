@@ -108,7 +108,7 @@ function Form() {
             className="form-textarea"
             required
           />
-          <button type="submit" className="form-btn">Send Message</button>
+          <button type="submit" className="form-btn button button--flex">Send Message</button>
         </form>
       </div>
 

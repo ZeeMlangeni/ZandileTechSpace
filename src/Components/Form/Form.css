@@ -59,7 +59,7 @@ form {
 
 .form-input:focus, .form-textarea:focus {
     outline: none;
-    border-color: #4a90e2;
+    border-color: var( --primary-font-color);
     box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
 

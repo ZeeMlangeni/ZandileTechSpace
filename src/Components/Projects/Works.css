@@ -167,7 +167,7 @@
   margin-right: auto;
   border: var(--button-border);
   border-radius: var(--button-border-radius);
-  background-color: var(--button-bg-color);
+
   color: var(--button-text-color);
   width: var(--button-width);
   height: var(--button-height);
@@ -179,7 +179,7 @@
   font-size: var(--btn-font-size);
   opacity: var(--btn-opacity);
   cursor: pointer;
-  transition: background-color 0.3s ease, opacity 0.3s ease;
+  transition:var(--button-bg-color) 0.3s ease, opacity 0.3s ease;
 }
 
 .view-all-button:hover {

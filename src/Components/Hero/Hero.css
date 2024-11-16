@@ -8,34 +8,6 @@
 
 
 /*--------------------Hero button styling ----------------*/
-.button a {
-    color: #ffff;
-    text-decoration: none;
-}
-
-.button:hover {
-    background-color: var(--button-bg-color);
-    opacity: var(--btn-opacity);
-}
-
-.button {
-    
-    border: var(--button-border);
-    border-radius: var(--button-border-radius);
-    background-color: var( --heading-color);
-    color: var(--button-text-color);
-    width: 170px;
-    height: var(--button-height);
-    padding: var(--button-padding);
-    justify-content: var(--button-justify-content);
-    align-items: var(--button-align-items);
-    transition: all 0.3s ease;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: var(--font-size-about);
-}
-
-
 
 
 
