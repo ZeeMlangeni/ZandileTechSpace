@@ -260,7 +260,8 @@ hr {
   
   
 
-/* Initial state: hidden with opacity and a transform */
+
+/* General hidden state */
 .hidden {
   opacity: 0;
   transform: translateY(50px); /* or any other transform */
@@ -273,23 +274,17 @@ hr {
   transform: translateY(0);
 }
 
-.services__content:nth-child(2){
-  
-  transition-delay:200ms;
-  }
-  
-  .services__content:nth-child(3){
-  
-  transition-delay:400ms;
-  }
-  
-  .services__content:nth-child(4){
-  
-  transition-delay:600ms;
-  }
+/* Apply dynamic delay using the --delay custom property */
+.services__content {
+  transition-delay: var(--delay, 0ms); /* Default to 0ms if not set */
+}
 
 
-
+  @media(prefers-reduced-motion){
+    .hidden{
+    transition:none;
+    }
+    }
 
 
 

@@ -55,7 +55,7 @@ function Services() {
         </div>
 
         {/* Technical Support & Troubleshooting */}
-        <div className='services__content'>
+        <div className='services__content hidden'>
           <div>
             <i className='uil uil-wrench services__icon'></i>
             <h3 className='services__title'>
@@ -97,7 +97,7 @@ function Services() {
         </div>
 
         {/* Creative Design with Canva */}
-        <div className='services__content'>
+        <div className='services__content hidden'>
           <div>
             <i className='uil uil-image services__icon'></i>
             <h3 className='services__title'>Creative Design with <br /> Canva</h3>
