@@ -241,7 +241,7 @@ hr {
   transform:translateX(0);
   }
   
- 
+
   .logo:nth-child(2){
   
   transition-delay:200ms;
@@ -272,6 +272,21 @@ hr {
   opacity: 1;
   transform: translateY(0);
 }
+
+.services__content:nth-child(2){
+  
+  transition-delay:200ms;
+  }
+  
+  .services__content:nth-child(3){
+  
+  transition-delay:400ms;
+  }
+  
+  .services__content:nth-child(4){
+  
+  transition-delay:600ms;
+  }
 
 
 
