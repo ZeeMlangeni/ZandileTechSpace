@@ -8,24 +8,14 @@ import Services from './Components/Services/Services';
 import Form from './Components/Form/Form';
 import Footer from './Components/Footer/Footer';
 import Project from './Components/Projects/Project';
-/* import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation'; */
+import ScrollAnimation from './Components/ScrollAnimation/ScrollAnimation'; 
 
-function App() {
-
-
-
-
-
-
-
-
-
-
+function App(){
 
   
   return (
     <div className="app">
-    {/*   <ScrollAnimation />  */}
+  <ScrollAnimation />  
       <Header />
       <Hero />
       <Section  /> 

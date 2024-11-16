@@ -1,59 +1,32 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 const ScrollAnimation = () => {
   useEffect(() => {
-    const sections = document.querySelectorAll('.animate-on-scroll'); // Target all sections that need animations
-    const sectionsLeft = document.querySelectorAll('.animate-on-scroll-left'); // Left slide sections
-    const sectionsRight = document.querySelectorAll('.animate-on-scroll-right'); // Right slide sections
+    const hiddenElements = document.querySelectorAll('.hidden');
 
-    const handleScroll = () => {
-      const top = window.scrollY; // Get current scroll position
-
-      // For all sections with basic fade-in
-      sections.forEach((sec) => {
-        const offset = sec.offsetTop; // Get position of section
-        const height = sec.offsetHeight; // Get height of section
-
-        if (top >= offset - 150 && top < offset + height) {
-          sec.classList.add('show-animate'); // Add animation class when in view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
         } else {
-          sec.classList.remove('show-animate'); // Remove when out of view
+          entry.target.classList.remove('show');
         }
       });
+    }, { threshold: 0.5 });
 
-      // For sections sliding in from left
-      sectionsLeft.forEach((sec) => {
-        const offset = sec.offsetTop;
-        const height = sec.offsetHeight;
+    hiddenElements.forEach((el) => {
+      observer.observe(el);
+    });
 
-        if (top >= offset - 150 && top < offset + height) {
-          sec.classList.add('show-animate-left');
-        } else {
-          sec.classList.remove('show-animate-left');
-        }
-      });
-
-      // For sections sliding in from right
-      sectionsRight.forEach((sec) => {
-        const offset = sec.offsetTop;
-        const height = sec.offsetHeight;
-
-        if (top >= offset - 150 && top < offset + height) {
-          sec.classList.add('show-animate-right');
-        } else {
-          sec.classList.remove('show-animate-right');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScroll); // Add scroll event listener
-
+    // Cleanup observer when component unmounts
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup on unmount
+      hiddenElements.forEach((el) => {
+        observer.unobserve(el);
+      });
     };
   }, []);
 
-  return null; // This component does not render anything to the UI
+  return null; // This component doesn't render any visual content itself
 };
 
 export default ScrollAnimation;

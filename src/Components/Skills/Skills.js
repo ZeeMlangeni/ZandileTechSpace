@@ -10,7 +10,7 @@ import Soft from './Icons/Soft'; */
 
 function Skills() {
   return (
-    <div className="skills section " id="skills">
+    <div className="skills section hidden" id="skills">
     <h2 className="section__title">My Skills</h2>
     <span className="section__subtitle">
       Here's a collection of my technical expertise and the tools I use to build amazing things.
