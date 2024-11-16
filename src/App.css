@@ -45,14 +45,14 @@ html{
   /* Button Styles */
   --button-border: none;
   --button-border-radius: 13px;
-  --button-bg-color: #4a90e2;
+  --button-bg-color: #5d35bb; /* Consolidated to avoid duplicate declarations */
+  --button-hover-bg-color: #3a77c4;
   --button-text-color: #ffffff;
-  --button-width: 110px;
+  --button-width: 170px; /* Changed to match what seems consistent */
   --button-height: 47px;
   --button-padding: 10px 15px;
   --button-justify-content: center;
   --button-align-items: center;
-  --button-hover-bg-color: #002147;
   --btn-opacity: 0.9;
   --btn-font-size: 16px;
 
@@ -119,11 +119,44 @@ a {
 }
 
 /*button styling */
-button{
-  display: inline-block;
+/* Button Styling */
+.button {
+  display: inline-flex;
+  justify-content: var(--button-justify-content);
+  align-items: var(--button-align-items);
+  width: var(--button-width);
+  height: var(--button-height);
+  padding: var(--button-padding);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  font-size: var(--btn-font-size);
   cursor: pointer;
-  border: none;
-  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--button-hover-bg-color);
+  opacity: var(--btn-opacity);
+}
+
+.button__icon{
+  margin-left: 0.5rem;
+}
+
+/* Resetting anchor tags within buttons */
+.button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Supporting additional flex button layout if needed */
+.button--flex {
+  display: inline-flex;
+  align-items: center;
 }
 /* Heading and Paragraph Styling */
 h1 {
@@ -201,17 +234,9 @@ img {
 }
 
 
-.button{
-  display: inline-block; 
-}
-.button--flex{
-  display: inline-flex;
-  align-items: center;
-}
 
-.button__icon{
-  margin-left: 0.5rem;
-}
+
+
 /* Horizontal Rule Styling 
 hr {
   border: none;
