@@ -14,7 +14,8 @@ html{
 
   /* Background Colors */
   --first-container-background:	#fafafa;
-  --second-container-background: #4a6179;
+  --second-container-background: #f0f4f8; 
+
 
   /* Font Colors */
   --primary-font-color: #0047ab;
@@ -64,7 +65,7 @@ html{
 /* Dark Mode Styling */
 body[data-theme="dark"] {
   --first-container-background: #1e1e1e;
-  --second-container-background: #e4e1f0;
+  --second-container-background: #37393b;
   --primary-font-color: #5d35bb;
   --font-color-1: #ffffff;
   --font-color-2: #a9a9a9;

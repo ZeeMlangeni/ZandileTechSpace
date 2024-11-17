@@ -29,7 +29,7 @@
 
 /* Card Styling */
 .work__card {
-  background-color: #ffff;
+  background-color: var(--second-container-background);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.2rem;
   border-radius: 1rem;
