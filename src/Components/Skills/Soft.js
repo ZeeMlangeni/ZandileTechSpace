@@ -5,6 +5,8 @@ function Soft() {
     <div className="skills__content">
     <h3 className="skills__title">Soft Skills</h3>
     <div className="skills__box">
+
+         {/* Second Group */}
       <div className="skills__group">
         <div className="skills__data">
           <i className='bx bxs-badge-check'></i>
@@ -14,7 +16,7 @@ function Soft() {
           </div>
         </div>
   
-       
+        
   
         <div className="skills__data">
           <i className='bx bxs-badge-check'></i>

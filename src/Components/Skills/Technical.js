@@ -34,7 +34,7 @@ function Technical() {
 
         
 
-        {/* Second Group */}
+     
         <div className="skills__group">
           <div className="skills__data">
             <i className="bx bxs-badge-check"></i>
