@@ -6,8 +6,8 @@
   justify-content: center;
 }
 
-.skills__content {
-  background-color: var(--first-container-background);
+.skills__content {  
+   background-color: var(--second-container-background);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2rem 4rem;
   border-radius: 1.25rem;

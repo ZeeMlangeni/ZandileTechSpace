@@ -27,7 +27,7 @@
 
 
 .about__box {
-    background-color: var(--first-container-background);
+    background-color: var(--second-container-background);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.75rem;
     text-align: center;
