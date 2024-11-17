@@ -1,16 +1,17 @@
 /*--------------------About me section  styling----------------*/
 .about__container {
 
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     column-gap: 4rem;
 
 }
 
+/*--------------------About image styling----------------*/
 
 .about__img {
 
-  width: 350px; 
+    width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
 }
@@ -19,9 +20,9 @@
 .about__info {
 
     grid-template-columns: repeat(3, 140px);
-    gap: 0.5rem; 
+    gap: 0.5rem;
     margin-bottom: 2rem;
-    justify-items: center; 
+    justify-items: center;
 }
 
 
@@ -39,6 +40,7 @@
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 /*--------------------About me icons styling----------------*/
 .about__icon {
     font-size: 1.5rem;
@@ -48,7 +50,7 @@
 }
 
 
-
+/*--------------------Description and titles styling----------------*/
 
 
 .about__title {
@@ -58,7 +60,7 @@
 
 .about__subtitle {
     font-size: var(--smaller-font-size);
-    color: var( --text-color);
+    color: var(--text-color);
     font-weight: var(--font-medium);
 }
 
@@ -67,7 +69,7 @@
     padding: 0 4rem 0 0;
     margin-bottom: 2rem;
     line-height: 1.7rem;
-   
+
     font-size: 16px;
 }
 
@@ -82,45 +84,45 @@
 /*--------------------Responsiveness  styling----------------*/
 
 
-@media  screen and (max-width:992px) {
+@media screen and (max-width:992px) {
 
-    .about__container{
+    .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
     }
 
-    .about__img{
+    .about__img {
         width: 220px;
     }
 
-    .about__box{
+    .about__box {
         padding: 0.75rem 0.5rem;
     }
 
-    .about__data{
+    .about__data {
         text-align: center;
     }
 
-    .about__info{
+    .about__info {
         justify-content: center;
     }
- 
-    .about__description{
+
+    .about__description {
         padding: 0 5rem;
         margin-bottom: 2rem;
     }
-  }
+}
 
 
-
+/*--------------------Responsiveness styling----------------*/
 
 @media screen and (max-width: 576px) {
-    .about__info{
-        grid-template-columns: repeat(3,1fr);
+    .about__info {
+        grid-template-columns: repeat(3, 1fr);
 
-        .about__description{
+        .about__description {
             padding: 0;
-            
+
         }
 
     }
@@ -128,9 +130,9 @@
 
 @media screen and (max-width: 350px) {
 
-    .about__info{
-        grid-template-columns: repeat(2,1fr);
+    .about__info {
+        grid-template-columns: repeat(2, 1fr);
     }
-   
-   
+
+
 }

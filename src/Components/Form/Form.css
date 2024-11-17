@@ -1,4 +1,3 @@
-
 /*--------------------Form container styling----------------*/
 
 .form-container {
@@ -9,12 +8,13 @@
     max-width: 1000px;
     margin: auto;
     color: #333;
-    background-color: var( --second-container-background);
+    background-color: var(--second-container-background);
     border-radius: 8px;
 }
 
 
-.left-panel, .right-panel {
+.left-panel,
+.right-panel {
     flex: 1;
     min-width: 300px;
     padding: 20px;
@@ -22,7 +22,8 @@
     border-radius: 8px;
 }
 
-.left-panel h1, .right-panel h3 {
+.left-panel h1,
+.right-panel h3 {
     margin-bottom: 15px;
 }
 
@@ -44,12 +45,15 @@
     margin-right: 8px;
 }
 
+
+
 form {
     display: flex;
     flex-direction: column;
 }
 
-.form-input, .form-textarea {
+.form-input,
+.form-textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -57,9 +61,10 @@ form {
     width: 100%;
 }
 
-.form-input:focus, .form-textarea:focus {
+.form-input:focus,
+.form-textarea:focus {
     outline: none;
-    border-color: var( --primary-font-color);
+    border-color: var(--primary-font-color);
     box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
 
@@ -68,9 +73,11 @@ form {
     resize: vertical;
 }
 
+/*--------------------Form button styling----------------*/
+
 .form-btn {
     padding: 10px 15px;
-    background-color: var(   --button-hover-bg-color);
+    background-color: var(--button-hover-bg-color);
     border: none;
     border-radius: 5px;
     color: white;
@@ -78,10 +85,10 @@ form {
 }
 
 .form-btn:hover {
-    background-color:var(--button-bg-color)
-}
- 
-.head, head-two{
-    color: var( --heading-color);
+    background-color: var(--button-bg-color)
 }
 
+.head,
+head-two {
+    color: var(--heading-color);
+}

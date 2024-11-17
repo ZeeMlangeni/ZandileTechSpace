@@ -1,3 +1,5 @@
+/*--------------------Footer container styling----------------*/
+
 .footer{
   background-color: var(  --first-container-background);
   border-top: 1px solid rgba(0,0,0,0.1)
@@ -47,6 +49,7 @@ footer__container{
   display: inline-flex;
 }
 
+/*--------------------Footer links styling----------------*/
 
 .footer__social-link{
   color:  var(  --button-bg-color); 
@@ -69,7 +72,7 @@ footer__container{
 
 
 
-/*responsiveness styling*/
+/*Responsiveness styling*/
 @media  screen and (max-width:992px) {
 
 .footer__social-link{

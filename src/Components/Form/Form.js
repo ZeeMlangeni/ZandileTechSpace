@@ -1,61 +1,63 @@
-import React, { useState } from 'react';
-import './Form.css';
-import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import React, { useState } from "react";
+import "./Form.css";
+import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Form() {
- 
   const [contactData, setContactData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
-  
   const handleContactChange = (e) => {
     setContactData({
       ...contactData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
-  
   const handleContactSubmit = (e) => {
     e.preventDefault();
-  
-    /*********** Send the email using EmailJS************ */
-    emailjs.sendForm(
-      'service_0djau6q', 
-      'template_27fetn8', 
-      e.target, 
-      'u0LMgGZw5twSkzOy-' 
-    ).then(
-      (result) => {
-        console.log(result.text); 
-        toast.success('Message sent successfully!', {
-          position: "top-right",
-          autoClose: 5000,  // The toast will disappear after 5 seconds
-          hideProgressBar: false,  // Show progress bar
-        });
-        setContactData({ name: '', email: '', subject: '', message: '' });
-      },
-      (error) => {
-        console.log(error.text);
-        toast.error('There was an error sending your message. Please try again.');
-      }
-    );
-  };
-  
 
+    /*********** Send the email using EmailJS************ */
+    emailjs
+      .sendForm(
+        "service_0djau6q",
+        "template_27fetn8",
+        e.target,
+        "u0LMgGZw5twSkzOy-"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!", {
+            position: "top-right",
+            autoClose: 7000,
+            hideProgressBar: true,
+          });
+          setContactData({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error(
+            "There was an error sending your message. Please try again."
+          );
+        }
+      );
+  };
+
+  //Form component
   return (
     <div className="form-container hidden" id="form">
       <div className="left-panel">
-        <h1 className='head'>Get in Touch</h1>
-        <p>I'd love to collaborate on a project or chat! Fill out this form, or message me on my socials.</p>
-
+        <h1 className="head">Get in Touch</h1>
+        <p>
+          I'd love to collaborate on a project or chat! Fill out this form, or
+          message me on my socials.
+        </p>
 
         <div className="contact-info">
           <div className="contact-item">
@@ -70,9 +72,8 @@ function Form() {
       </div>
 
       <div className="right-panel">
-       
         <form onSubmit={handleContactSubmit}>
-        <h3 className='head-two'>Send me a message</h3>
+          <h3 className="head-two">Send me a message</h3>
           <input
             type="text"
             name="name"
@@ -108,12 +109,14 @@ function Form() {
             className="form-textarea"
             required
           />
-          <button type="submit" className="form-btn button button--flex">Send Message</button>
+          <button type="submit" className="form-btn button button--flex">
+            Send Message
+          </button>
         </form>
       </div>
 
-       {/* ToastContainer to display notifications */}
-       <ToastContainer />
+      {/* ToastContainer to display notifications */}
+      <ToastContainer />
     </div>
   );
 }
