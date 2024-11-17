@@ -1,3 +1,5 @@
+
+/*Service container styling*/
 .services__container{
     grid-template-columns:  repeat(3,270px);
     justify-content: center;
@@ -24,6 +26,8 @@ margin-bottom: 1rem;
     font-weight: var(--font-medium);
 }
 
+
+/*Services button/link styling*/
 .services__button{
     color:var(--text-color);
     font-size: var(--small-font-size);
@@ -43,6 +47,8 @@ margin-bottom: 1rem;
     transform: translate(00.25rem);
 }
 
+
+/* services overlay Styling when link is clicked */
 .services__modal{
     position: fixed;
     top: 0;
@@ -68,7 +74,7 @@ margin-bottom: 1rem;
     border-radius: 1.5rem;
 }
 
-
+/* Services close link styling */
 
 .services__modal-close{
     position: absolute;
@@ -84,6 +90,8 @@ margin-bottom: 1rem;
     color: darkred;
 }
 
+
+/* Services title and Description Styling */
 
 .services__modal-title,
 .services__modal-description{
@@ -121,7 +129,7 @@ margin-bottom: 1rem;
 .services__modal-info{
     font-size: var(--small-font-size);
 }
-
+/* when link is active */
 .active-modal{
     opacity: 1;
     visibility:visible;
@@ -129,7 +137,7 @@ margin-bottom: 1rem;
 
 
 
-
+/*Responsiveness styling*/
 
 @media  screen and (max-width:992px) {
 

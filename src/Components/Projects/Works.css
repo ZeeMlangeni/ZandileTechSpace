@@ -73,8 +73,8 @@
 
 .work__description {
   margin-bottom: 0.5rem;
-  line-height: 1.6;  /* Improved line height */
-  color: #555;  /* Darker text for clarity */
+  line-height: 1.6;
+  color: #555;
 }
 
 /* Role and Category Styling */
@@ -84,7 +84,7 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
-  background: linear-gradient(45deg, #4a90e2, #5d9df3);  /* Bluish gradient */
+  background: linear-gradient(45deg, #4a90e2, #5d9df3);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   display: inline-block;
@@ -105,9 +105,10 @@
 
 .work__role::before,
 .work__category::before {
-  content: "#";  
+  content: "#";
   margin-right: 0.5rem;
-  color: #f1c40f;  /* Fun yellow color */
+  color: #f1c40f;
+  /* Fun yellow color */
 }
 
 /* Technologies Section */
@@ -119,19 +120,20 @@
 }
 
 .work__technologies span {
-  background-color: #e0f7fa;  /* Light blue background */
+  background-color: #e0f7fa;
   padding: 0.25rem 1rem;
   border-radius: 0.5rem;
   font-size: var(--small-font-size);
-  color: #00796b;  /* Teal text */
+  color: #00796b;
+  /* Teal text */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .work__technologies span:hover {
   transform: scale(1.05);
-  background-color: #00796b;  /* Teal background on hover */
-  color: white;  /* White text when hovered */
+  background-color: #00796b;
+  color: white;
 }
 
 /* Button Styling */
@@ -147,7 +149,8 @@
 .work__button-icon {
   font-size: 1.75rem;
   transition: 0.4s;
-  color: #27ae60;  /* Green icon */
+  color: #27ae60;
+  /* Green icon */
 }
 
 .work__button:hover .work__button-icon {
@@ -179,7 +182,7 @@
   font-size: var(--btn-font-size);
   opacity: var(--btn-opacity);
   cursor: pointer;
-  transition:var(--button-bg-color) 0.3s ease, opacity 0.3s ease;
+  transition: var(--button-bg-color) 0.3s ease, opacity 0.3s ease;
 }
 
 .view-all-button:hover {
@@ -187,7 +190,7 @@
   opacity: 1;
 }
 
-/* Responsive Styles */
+/* Responsiveness Styles */
 @media screen and (max-width: 992px) {
   .work__container {
     gap: 1.25rem;
@@ -211,7 +214,7 @@
     grid-template-columns: max-content;
   }
 
-  /* Active and Focus States for Mobile */
+
   .work__role:active,
   .work__category:active,
   .work__technologies span:active {
