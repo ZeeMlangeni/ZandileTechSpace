@@ -85,3 +85,38 @@
 }
 
 
+/*--------------Responsiveness Styling-------------------*/
+@media screen and (max-width: 992px) {
+.qualification__container{
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+
+.qualification__container{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+  
+}
+
+@media screen and (max-width: 576px) {
+.qualification__sections{
+    grid-template-columns: initial;
+  
+}
+
+.qualification__button{
+    margin: 0 0.75rem;
+}
+}
+
+@media screen and (max-width: 350px) {
+    .qualification__data{
+        gap:0.5rem
+    }
+
+}
