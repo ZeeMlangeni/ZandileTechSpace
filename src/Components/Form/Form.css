@@ -74,7 +74,7 @@ form {
 }
 
 /*--------------------Form button styling----------------*/
-
+/* 
 .form-btn {
     padding: 10px 15px;
     background-color: var(--button-hover-bg-color);
@@ -86,7 +86,7 @@ form {
 
 .form-btn:hover {
     background-color: var(--button-bg-color)
-}
+} */
 
 .head,
 head-two {
