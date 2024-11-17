@@ -5,6 +5,7 @@ import Hero from './Components/Hero/Hero';
 import Section from './Components/About-section/Section';
 import Skills from './Components/Skills/Skills';
 import Services from './Components/Services/Services';
+import Qualification from './Components/Qualification/Qualification';
 import Form from './Components/Form/Form';
 import Footer from './Components/Footer/Footer';
 import Project from './Components/Projects/Project';
@@ -21,6 +22,7 @@ function App(){
       <Section  /> 
       <Skills  /> 
       <Services  />
+      <Qualification/>
       <Project />
       <Form />
       <Footer />
