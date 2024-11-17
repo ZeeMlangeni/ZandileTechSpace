@@ -29,9 +29,9 @@ const Works = () => {
 
   const toggleViewAll = () => {
     if (showAll) {
-      setVisibleCount(2); // Show only the first 2 items
+      setVisibleCount(2); 
     } else {
-      setVisibleCount(projects.length); // Show all projects
+      setVisibleCount(projects.length); 
     }
     setShowAll(!showAll);
   };
