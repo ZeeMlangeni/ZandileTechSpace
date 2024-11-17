@@ -96,6 +96,7 @@ textarea {
 body{
   background-color: var(--first-container-background);
   color: var(--text-color);
+  margin: 0;
 }
 
 
@@ -107,6 +108,7 @@ body{
   max-width: 100%;
   height: auto;
   padding: 5%;
+  padding-top: 60px;
   font-family: var(--body-font);
   backdrop-filter: blur(10px);
   align-items: center;
