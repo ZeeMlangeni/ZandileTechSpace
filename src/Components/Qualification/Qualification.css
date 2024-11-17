@@ -1,3 +1,5 @@
+
+/*--------------------Qualifications container styling----------------*/
 .qualification__container{
     max-width: 768px;
 }
@@ -8,6 +10,7 @@
     margin-bottom: 2rem;
 }
 
+/*--------------------Qualification button  styling----------------*/
 .qualification__button{
     font-size: var(  --h2-font-size);
     font-weight: var(--font-medium);

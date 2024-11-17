@@ -28,6 +28,7 @@ const Qualification=() => {
     </div>
 
     <div className='qualification__sections'>
+    {togglingState === 1 && (
         <div className='qualification__content qualification__content-active'>
             <div className='qualification__data'>
                 <div>
@@ -117,7 +118,88 @@ const Qualification=() => {
 </div>
                 </div>
         </div>
+    </div>)}
+
+
+
+
+
+    {togglingState === 2 && (
+  <div className='qualification__content qualification__content-active'>
+    <div className='qualification__data'>
+      <div>
+        <h3 className='qualification__title'>Demo Company</h3>
+        <span className='qualification__subtitle'>
+          Senior Software Developer (NQF Level 7)
+        </span>
+        <div className='qualification__calendar'>
+          <i className='uil uil-calendar-alt'></i>2021-2024
+        </div>
+      </div>
+
+      <div>
+        <span className='qualification__rounder'></span>
+        <span className='qualification__line'></span>
+      </div>
     </div>
+
+    <div className='qualification__data'>
+      <div></div>
+
+      <div>
+        <span className='qualification__rounder'></span>
+        <span className='qualification__line'></span>
+      </div>
+
+      <div>
+        <h3 className='qualification__title'>Lead Web Developer</h3>
+        <span className='qualification__subtitle'>
+          Led front-end development teams, implemented responsive UI designs.
+        </span>
+        <div className='qualification__calendar'>
+          <i className='uil uil-calendar-alt'></i>2019-2021
+        </div>
+      </div>
+    </div>
+
+    <div className='qualification__data'>
+      <div>
+        <h3 className='qualification__title'>Tech Solutions Co.</h3>
+        <span className='qualification__subtitle'>
+          Software Engineering Intern (NQF Level 6)
+        </span>
+        <div className='qualification__calendar'>
+          <i className='uil uil-calendar-alt'></i>2018-2019
+        </div>
+      </div>
+
+      <div>
+        <span className='qualification__rounder'></span>
+        <span className='qualification__line'></span>
+      </div>
+    </div>
+
+    <div className='qualification__data'>
+      <div></div>
+
+      <div>
+        <span className='qualification__rounder'></span>
+        <span className='qualification__line'></span>
+      </div>
+
+      <div>
+        <h3 className='qualification__title'>Intern Developer</h3>
+        <span className='qualification__subtitle'>
+          Assisted in bug fixes, code optimizations, and collaborated in sprint cycles.
+        </span>
+        <div className='qualification__calendar'>
+          <i className='uil uil-calendar-alt'></i>2017-2018
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
 </div>
 </div>
   </section>
