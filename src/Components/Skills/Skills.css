@@ -1,10 +1,10 @@
+/*Skills container styling*/
+
 .skills__container {
   grid-template-columns: repeat(2, 350px);
   column-gap: 3rem;
   justify-content: center;
 }
-
-
 
 .skills__content {
   background-color: var(--first-container-background);
@@ -36,7 +36,7 @@
   display: flex;
   column-gap: 0.5rem;
 }
-
+/*skills icon styling*/
 .skills .bx-badge-check {
   font-size: 1rem;
   color: black;
@@ -55,30 +55,28 @@
 
 /* Responsive Design Styling */
 @media (max-width: 992px) {
-
-  .skills__container{
+  .skills__container {
     grid-template-columns: max-content;
     row-gap: 2rem;
   }
-  
 }
 
 @media (max-width: 576px) {
-  .skills__container{
+  .skills__container {
     grid-template-columns: 1fr;
   }
 
-  .skills__content{
+  .skills__content {
     padding: 1.5rem;
   }
 }
 
 @media (max-width: 350px) {
-  .skills__box{
-    column-gap:1.25rem;
+  .skills__box {
+    column-gap: 1.25rem;
   }
 
-  .skills__name{
+  .skills__name {
     font-size: var(--small-font-size);
   }
 }

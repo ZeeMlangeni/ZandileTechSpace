@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Technical() {
   return (
@@ -8,7 +8,7 @@ function Technical() {
         {/* First Group */}
         <div className="skills__group">
           <div className="skills__data">
-          <i className="bx bxs-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
             <div>
               <h3 className="skills__name">HTML</h3>
               <span className="skills__level">Intermediate</span>
@@ -32,9 +32,6 @@ function Technical() {
           </div>
         </div>
 
-        
-
-     
         <div className="skills__group">
           <div className="skills__data">
             <i className="bx bxs-badge-check"></i>
@@ -60,10 +57,6 @@ function Technical() {
             </div>
           </div>
 
-        
-
-    
-
           <div className="skills__data">
             <i className="bx bxs-badge-check"></i>
             <div>
@@ -71,8 +64,6 @@ function Technical() {
               <span className="skills__level">Good</span>
             </div>
           </div>
-
-         
         </div>
       </div>
     </div>
