@@ -1,4 +1,4 @@
-import React, { useState } from "react"; // Import useState
+import React, { useState } from "react"; // Imported useState
 import "./Header.css";
 /* import Switch from "./Switch"; */
 import DarkMode from "./DarkMode.js";
@@ -7,6 +7,8 @@ function Header() {
   
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
+  //This function is the one that enables smooth scrolling to a specific element on the page.
   const handleSmoothScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
