@@ -50,6 +50,7 @@
 
 .skills__level {
   font-size: var(--small-font-size);
+  color: #d1d6e2;
 }
 
 /* Responsive Design Styling */
