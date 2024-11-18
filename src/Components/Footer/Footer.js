@@ -26,8 +26,19 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a href="#about" className="footer__link">
-              CV
+            <a href="#services" className="footer__link">
+             Services
+            </a>
+          </li>
+
+          <li>
+            <a href="#qualifications" className="footer__link">
+           Qualifications
+            </a>
+          </li>
+          <li>
+            <a href="#projects" className="footer__link">
+              Projects
             </a>
           </li>
           <li>
