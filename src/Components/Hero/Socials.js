@@ -7,7 +7,7 @@ function socials() {
       {" "}
       {/* fix this link */}
       <a
-        href="https://github/zeeMlangeni"
+        href="https://github.com/ZeeMlangeni"
         className="home_social-icon"
         target="_blank"
         rel="noreferrer"
