@@ -12,7 +12,7 @@ const Qualification=() => {
   return (
   <section className='qualification__section hidden '  id='qualifications'>
     <h2 className='section__title'> Qualifications</h2>
-    <span className='section__subtitle'>My Studies</span>
+    <span className='section__subtitle'>My Studies and Experience</span>
 
 <div  className='qualification__container container'>
     <div className='qualification__tabs'>
