@@ -98,10 +98,10 @@ function Header() {
             <li className="nav__item">
               <a
                 className="nav__link"
-                href="#about"
+                href="#form"
                 onClick={() => setIsMenuOpen(false)}
               >
-                CV
+              Contact
               </a>
             </li>
 
