@@ -32,11 +32,6 @@ function Footer() {
           </li>
 
           <li>
-            <a href="#qualifications" className="footer__link">
-           Qualifications
-            </a>
-          </li>
-          <li>
             <a href="#projects" className="footer__link">
               Projects
             </a>
