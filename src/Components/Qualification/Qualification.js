@@ -114,7 +114,7 @@ const Qualification=() => {
                     Customer assistance, inventory management, daily operations
                         </span>
 <div className='qualification__calendar'>
-<i className='uil uil-calendar-alt'></i>2023-Present
+<i className='uil uil-calendar-alt'></i>2021-Present
 </div>
                 </div>
         </div>
