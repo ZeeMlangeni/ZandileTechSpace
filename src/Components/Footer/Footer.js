@@ -50,7 +50,7 @@ function Footer() {
 
         <div className="footer__social">
           <a
-            href="https://github/zeeMlangeni"
+            href="https://github.com/ZeeMlangeni"
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
