@@ -66,6 +66,26 @@ function Header() {
             <li className="nav__item">
               <a
                 className="nav__link"
+                href="#services"
+                onClick={() => setIsMenuOpen(false)}
+              >
+               Services
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a
+                className="nav__link"
+                href="#qualifications"
+                onClick={() => setIsMenuOpen(false)}
+              >
+               Qualifications
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a
+                className="nav__link"
                 href="#projects"
                 onClick={() => {
                   handleSmoothScroll("projects");
