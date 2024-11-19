@@ -51,7 +51,7 @@ function Form() {
 
   //Form component
   return (
-    <div className="form-container hidden" id="form">
+    <div className="form-container " id="form">
       <div className="left-panel">
         <h1 className="head">Get in Touch</h1>
         <p>

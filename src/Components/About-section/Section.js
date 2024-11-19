@@ -8,7 +8,7 @@ function Section() {
   //About me section component
 
   return (
-    <div className="about section hidden" id="about">
+    <div className="about section " id="about">
       <h3 className="section__title ">About Me</h3>
       <span className="section__subtitle">The path that lead me here</span>
 
